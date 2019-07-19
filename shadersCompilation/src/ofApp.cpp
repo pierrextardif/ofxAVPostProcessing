@@ -57,9 +57,7 @@ void ofApp::draw(){
     
     
     ofBackground(ofColor::pink);
-    
-    vector < bool > activeS = {gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6]};
-    sManager.draw(activeS);
+    sManager.draw({gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6]});
     
 
     
