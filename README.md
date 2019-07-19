@@ -17,6 +17,42 @@ addons.make should look like this :
 ![.](assets/1.png)
 
 - - - -
+
+The effects shaders are :
+```cpp
+//dotFrag
+Delay
+HSB
+Mirror
+MirrorAxis
+ThreeTones
+InvertStrobe
+EchoTrace
+Turbolence
+FXAA
+Twist
+RadialRemap
+Live
+Monochrome
+//ofxPostProcessing
+fxaa
+bloom
+dof
+kaleido
+noisewarp
+pixelate
+edge
+verticaltiltshift
+godrays
+//personal shaders (ofxKsmrFragmentFx, THREE.JS & custom)
+Invert
+Glitch
+Vertical noise
+noise
+edgeOnTop
+fringe
+halftone
+```
 ## Getting Started
 
 Add this to your local addon folder.
