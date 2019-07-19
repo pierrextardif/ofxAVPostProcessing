@@ -14,12 +14,13 @@ addons.make should look like this :
 
 - - - -
 
-![.](assets/)
+![.](assets/1.png)
 
 - - - -
 ## Getting Started
 
 Add this to your local addon folder.
+</br>
 Try the example.
 
 ## Author
@@ -37,8 +38,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](./LICENSE)
 * [Three.js](https://threejs.org/)
 * [Neil Mendoza](https://github.com/neilmendoza/ofxPostProcessing)
 * [Nicola Pisenty](https://github.com/npisanti/ofxDotFrag)
-
-
-## Next
-</br>
-Adding the libray precompiled straight into the `/lib` folder of the repo (no external install).
