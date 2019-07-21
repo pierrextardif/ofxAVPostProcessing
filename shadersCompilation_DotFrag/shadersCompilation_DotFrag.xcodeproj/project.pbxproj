@@ -264,7 +264,7 @@
 		D998DA30FB31B14DA997936E /* VerticalNoise.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VerticalNoise.hpp; path = src/shaderManager/types/verticalNoise/VerticalNoise.hpp; sourceTree = SOURCE_ROOT; };
 		DBE61C28D1C2DF24B23E77A4 /* dotFragDelayManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragDelayManager.hpp; path = src/shaderManager/typesDotF/dotFragDelay/dotFragDelayManager.hpp; sourceTree = SOURCE_ROOT; };
 		DF7F461411673A8E1D08B1AF /* dotFragDelayManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragDelayManager.cpp; path = src/shaderManager/typesDotF/dotFragDelay/dotFragDelayManager.cpp; sourceTree = SOURCE_ROOT; };
-		DFBFF1C9FFEA487BCEE20405 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderManager/typesDotF/dotFragEchoTrace/shader/shader.vert; sourceTree = SOURCE_ROOT; };
+		DFBFF1C9FFEA487BCEE20405 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = shader.vert; path = src/shaderManager/typesDotF/dotFragEchoTrace/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		E19AC41C639251D91F4831D3 /* Base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Base.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Base.h; sourceTree = SOURCE_ROOT; };
 		E420EC5DF71C6E7AFF796DEA /* shader.vert */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = shader.vert; path = src/shaderManager/typesDotF/dotFragHSB/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../../libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
@@ -464,7 +464,7 @@
 		FA53957947C064DFAC39DCD8 /* ShaderManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShaderManager.hpp; path = src/shaderManager/ShaderManager.hpp; sourceTree = SOURCE_ROOT; };
 		FCC9F1A0760FE32CB5EAF228 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderManager/types/fringe/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		FE4ADD158043187A38103599 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = shader.vert; path = src/shaderManager/typesDotF/dotFragTurbulence/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		FF5E273D215214C7B6F0650F /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderManager/typesDotF/dotFragEchoTrace/shader/shader.frag; sourceTree = SOURCE_ROOT; };
+		FF5E273D215214C7B6F0650F /* shader.frag */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = shader.frag; path = src/shaderManager/typesDotF/dotFragEchoTrace/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

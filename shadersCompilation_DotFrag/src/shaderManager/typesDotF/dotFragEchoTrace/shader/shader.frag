@@ -1,43 +1,36 @@
 #version 150
 
-uniform float Volume;
-uniform float Phase;
-uniform float ScaleW;
-uniform float ScaleH;
-
-uniform sampler2DRect tex0;
-
 in vec2 vUv;
 out vec4 outputColor;
 
-void main(void){
+
+uniform vec2 u_resolution;
+uniform float u_time;
+
+uniform sampler2DRect tex0;
+uniform sampler2DRect tex1;
+
+uniform float u_gain;
+uniform float u_threshold;
+uniform float u_invert;
+uniform float u_hardcutoff;
+
+void main () {
     vec2 st = vUv;
-    vec4 col;
-    vec3 maximum = vec3(0.0,0.0,0.0);
-    vec3 minimum = vec3(1.0,1.0,1.0);
+//    gl_FragCoord.xy/u_resolution;
     
-    int i = 0;
-    int j = 0;
-    for (i; i < 3;i++){
-        for (j; j < 3;j++){
-            vec4 c = texture(tex0, vec2(st.x + float(i) - 1.0,
-                                              st.y + float(j) - 1.0));
-            
-            maximum.r = max(maximum.r, c.r);
-            minimum.r = min(minimum.r, c.r);
-            maximum.g = max(maximum.g, c.g);
-            minimum.g = min(minimum.g, c.g);
-            maximum.b = max(maximum.b, c.b);
-            minimum.b = min(minimum.b, c.b);
-            
-        }
-    }
+    vec4 freshPixel = texture( tex0, st );
+    vec4 stalePixel = texture( tex1, st );
+    float brightLevel = 0.299*freshPixel.r +  0.587*freshPixel.g + 0.114*freshPixel.b;
     
-    col = texture(tex0, vec2(st.x, st.y));
+    // invert
+    brightLevel = mix( brightLevel, 1.0 - brightLevel, u_invert );
     
-    vec3 br = vec3(pow(maximum.r - minimum.r,2.0),
-                   pow(maximum.g - minimum.g,2.0),
-                   pow(maximum.b - minimum.b,2.0));
+    brightLevel = brightLevel * u_gain;
     
-    outputColor = vec4(br,1.0) + col;
+    // hard cutof
+    brightLevel = mix( brightLevel, step( u_threshold, brightLevel ), u_hardcutoff );
+    
+    outputColor = mix( freshPixel, stalePixel, brightLevel);
+    
 }
