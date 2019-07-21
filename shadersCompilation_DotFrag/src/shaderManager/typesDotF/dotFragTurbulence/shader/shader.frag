@@ -1,43 +1,30 @@
 #version 150
 
-uniform float Volume;
-uniform float Phase;
-uniform float ScaleW;
-uniform float ScaleH;
-
-uniform sampler2DRect tex0;
-
 in vec2 vUv;
 out vec4 outputColor;
 
-void main(void){
+uniform vec2 u_resolution;
+uniform float u_time;
+uniform sampler2DRect tex0;
+
+uniform float u_amount_x;
+uniform float u_amount_y;
+
+float rand(vec2 st, float t){
+    return fract(sin(dot(st.xy + fract(t*0.0013) ,vec2(12.9898,78.233))) * 43758.5453);
+}
+
+void main(){
     vec2 st = vUv;
-    vec4 col;
-    vec3 maximum = vec3(0.0,0.0,0.0);
-    vec3 minimum = vec3(1.0,1.0,1.0);
+    vec2 dt;
     
-    int i = 0;
-    int j = 0;
-    for (i; i < 3;i++){
-        for (j; j < 3;j++){
-            vec4 c = texture(tex0, vec2(st.x + float(i) - 1.0,
-                                              st.y + float(j) - 1.0));
-            
-            maximum.r = max(maximum.r, c.r);
-            minimum.r = min(minimum.r, c.r);
-            maximum.g = max(maximum.g, c.g);
-            minimum.g = min(minimum.g, c.g);
-            maximum.b = max(maximum.b, c.b);
-            minimum.b = min(minimum.b, c.b);
-            
-        }
-    }
+    float amtx = u_amount_x * u_amount_x * 0.2;
+    float amty = u_amount_y * u_amount_y * 0.2;
     
-    col = texture(tex0, vec2(st.x, st.y));
+    dt.x = st.x + (rand(st, u_time)*u_resolution.x * 2 - u_resolution.x) * amtx;
+    dt.y = st.y + (rand(st, u_time)*u_resolution.y - u_resolution.y) * amty;
     
-    vec3 br = vec3(pow(maximum.r - minimum.r,2.0),
-                   pow(maximum.g - minimum.g,2.0),
-                   pow(maximum.b - minimum.b,2.0));
+    vec4 source = texture( tex0, dt );
     
-    outputColor = vec4(br,1.0) + col;
+    outputColor = source;
 }
