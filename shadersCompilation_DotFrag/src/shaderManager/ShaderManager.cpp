@@ -151,13 +151,22 @@ void ShaderManager::draw(vector <bool> activeShaders){
         
         swap(srcPtr, dstPtr);
     }
-    
     if(activeShaders[9]){
         dstPtr->begin();
         dotFragTurbulence.begin(srcPtr->getTextureReference());
         
         srcPtr->draw(0,0);
         dotFragTurbulence.end();
+        dstPtr->end();
+        
+        swap(srcPtr, dstPtr);
+    }
+    if(activeShaders[10]){
+        dstPtr->begin();
+        dotFragTwist.begin(srcPtr->getTextureReference());
+        
+        srcPtr->draw(0,0);
+        dotFragTwist.end();
         dstPtr->end();
         
         swap(srcPtr, dstPtr);

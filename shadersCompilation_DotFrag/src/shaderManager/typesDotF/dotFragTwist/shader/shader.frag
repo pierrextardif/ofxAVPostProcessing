@@ -1,43 +1,29 @@
 #version 150
 
-uniform float Volume;
-uniform float Phase;
-uniform float ScaleW;
-uniform float ScaleH;
 
-uniform sampler2DRect tex0;
-
-in vec2 vUv;
+in  vec2 vUv;
 out vec4 outputColor;
 
-void main(void){
+uniform float u_time;
+uniform sampler2DRect tex0;
+
+uniform vec2 u_resolution;
+
+uniform float rand;
+uniform float val1,val2,val3,val4;
+uniform float multx, multy;
+
+void main ()
+{
+    
     vec2 st = vUv;
-    vec4 col;
-    vec3 maximum = vec3(0.0,0.0,0.0);
-    vec3 minimum = vec3(1.0,1.0,1.0);
     
-    int i = 0;
-    int j = 0;
-    for (i; i < 3;i++){
-        for (j; j < 3;j++){
-            vec4 c = texture(tex0, vec2(st.x + float(i) - 1.0,
-                                              st.y + float(j) - 1.0));
-            
-            maximum.r = max(maximum.r, c.r);
-            minimum.r = min(minimum.r, c.r);
-            maximum.g = max(maximum.g, c.g);
-            minimum.g = min(minimum.g, c.g);
-            maximum.b = max(maximum.b, c.b);
-            minimum.b = min(minimum.b, c.b);
-            
-        }
-    }
+    vec2 dt;
+    float addvar = rand*val2;
+    dt.x = st.x + sin( st.y / u_resolution.y * multx + addvar + u_time*3.0)*val3 * u_resolution.x;
+    dt.y = st.y + cos( st.x / u_resolution.x * multy + addvar + u_time*2.4)*val3 * u_resolution.y;
     
-    col = texture(tex0, vec2(st.x, st.y));
+    vec4 source = texture( tex0, dt );
     
-    vec3 br = vec3(pow(maximum.r - minimum.r,2.0),
-                   pow(maximum.g - minimum.g,2.0),
-                   pow(maximum.b - minimum.b,2.0));
-    
-    outputColor = vec4(br,1.0) + col;
+    outputColor = source;
 }

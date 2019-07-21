@@ -29,7 +29,6 @@ const std::string ofx::dotfrag::Twist::fragment = OFXDOTFRAGSOURCE(
     uniform vec2 u_resolution;
     uniform float u_time;
     uniform sampler2D u_tex0;
-    uniform vec2 u_tex0Resolution;
 
     varying vec2 dt;
 

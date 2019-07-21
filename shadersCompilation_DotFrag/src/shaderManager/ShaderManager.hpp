@@ -55,6 +55,7 @@ class ShaderManager{
     dotFragHSBManager               dotFragHSB;
     dotFragMirrorAxisManager        dotFragMirrorAxis;
     dotFragTurbulenceManager        dotFragTurbulence;
+    dotFragTwistManager             dotFragTwist;
     
     
     void setup(ofFbo* f, ofFbo::Settings settings);
