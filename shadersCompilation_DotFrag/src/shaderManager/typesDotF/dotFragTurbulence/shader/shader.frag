@@ -22,7 +22,7 @@ void main(){
     float amty = u_amount_y * u_amount_y * 0.2;
     
     dt.x = st.x + (rand(st, u_time)*u_resolution.x * 2 - u_resolution.x) * amtx;
-    dt.y = st.y + (rand(st, u_time)*u_resolution.y - u_resolution.y) * amty;
+    dt.y = st.y + (rand(st, u_time)*u_resolution.y * 2 - u_resolution.y) * amty;
     
     vec4 source = texture( tex0, dt );
     

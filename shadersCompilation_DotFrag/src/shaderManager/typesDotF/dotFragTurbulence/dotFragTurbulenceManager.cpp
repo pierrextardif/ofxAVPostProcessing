@@ -35,6 +35,7 @@ void dotFragTurbulenceManager::begin(ofTexture tex){
     shader.begin();
     shader.setUniform1f("u_amount_x", x);
     shader.setUniform1f("u_amount_y", y);
+    shader.setUniform1f("u_time", ofGetElapsedTimef());
     shader.setUniformTexture("tex0", tex, 0);
     shader.setUniform2f("u_resolution", {WIDTH, HEIGHT});
 }
