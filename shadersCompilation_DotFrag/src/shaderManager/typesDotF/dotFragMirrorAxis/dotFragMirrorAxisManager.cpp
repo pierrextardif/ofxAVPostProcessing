@@ -37,6 +37,7 @@ void dotFragMirrorAxisManager::begin(ofTexture tex){
     shader.setUniform1f("u_horizontal", (horizontal)?   1.0f : 0.0f );
     shader.setUniform1f("u_vertical",   (vertical)?     1.0f : 0.0f );
     shader.setUniformTexture("tex0", tex, 0);
+    shader.setUniform2f("u_resolution", {WIDTH / 2, HEIGHT / 2});
 }
 
 void dotFragMirrorAxisManager::end(){

@@ -8,23 +8,18 @@ uniform sampler2DRect tex0;
 uniform float u_vertical;
 uniform float u_horizontal;
 
+uniform vec2 u_resolution;
 
 void main () {
     
     vec2 st = vUv;
-    vec2 texFlipCoords = st;
     
-//    float invx = step( 0.5, st.x) * u_horizontal;
-//    texFlipCoords.x = mix( st.x, 0.5 - st.x, 0.5 );
+    float invx = step( u_resolution.x, st.x) * u_horizontal;
+    st.x = mix( st.x, u_resolution.x * 2 - st.x, invx );
     
+    float invy = step( u_resolution.y, st.y) * u_vertical;
+    st.y = mix( st.y, u_resolution.y * 2 - st.y, invy );
     
-    texFlipCoords.x = vUv.x;
-    if(vUv.x > 0.5)texFlipCoords.x = (vUv.x - 0.5);
-    
-//    float invy = step( 0.5, st.y) * u_vertical;
-//    texFlipCoords.y = mix( st.y, 0.5 - st.y, 0.5 );
-    
-    vec4 source = texture( tex0, texFlipCoords );
-    outputColor = source;
+    outputColor = texture( tex0, st );
     
 }
