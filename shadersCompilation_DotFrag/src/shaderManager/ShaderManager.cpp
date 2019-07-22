@@ -181,6 +181,16 @@ void ShaderManager::draw(vector <bool> activeShaders){
         
         swap(srcPtr, dstPtr);
     }
+    if(activeShaders[12]){
+        dstPtr->begin();
+        dotFragMonochrome.begin(dstPtr->getTextureReference());
+        
+        srcPtr->draw(0,0);
+        dotFragMonochrome.end();
+        dstPtr->end();
+        
+        swap(srcPtr, dstPtr);
+    }
     
     srcPtr->draw(0,0);
     

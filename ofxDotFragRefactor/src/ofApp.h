@@ -58,5 +58,5 @@ class ofApp : public ofBaseApp{
 #include "dotfrag/Live.h"
 #include "dotfrag/Monochrome.h"
      */
-        ofx::dotfrag::EchoTrace frag;
+        ofx::dotfrag::Monochrome frag;
 };
