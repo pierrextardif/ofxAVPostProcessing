@@ -14,7 +14,10 @@
 // ==== constants imports ==== //
 #include "../../../constants.h"
 
-class dotFragMirrorAxisManager {
+// ==== include the baseManager ==== //
+#include "../../managerBase/managerBase.hpp"
+
+class dotFragMirrorAxisManager : managerBase {
     
     public :
     

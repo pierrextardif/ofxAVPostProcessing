@@ -14,7 +14,10 @@
 // ==== constants imports ==== //
 #include "../../../constants.h"
 
-class EdgeOnTopManager {
+// ==== include the baseManager ==== //
+#include "../../managerBase/managerBase.hpp"
+
+class EdgeOnTopManager : managerBase {
     
     public :
     

@@ -14,7 +14,10 @@
 // ==== constants imports ==== //
 #include "../../../constants.h"
 
-class FringeManager {
+// ==== include the baseManager ==== //
+#include "../../managerBase/managerBase.hpp"
+
+class FringeManager : managerBase {
     
     public :
     

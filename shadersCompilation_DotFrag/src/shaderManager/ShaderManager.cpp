@@ -64,6 +64,10 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
         
     };
     
+    for( int i = 0; i < names.size(); i++){
+//        string nameManager = names[i] +
+//        shadersManagerVector.push_back(nameManager);
+    }
 }
 
 

@@ -44,6 +44,7 @@ class ShaderManager{
     
     
     vector < string > names;
+    vector < managerBase > shadersManagerVector;
     
     HalftoneManager                 halftoneShader;
     GlitchManager                   glitchShader;

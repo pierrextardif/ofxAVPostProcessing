@@ -14,7 +14,10 @@
 // ==== constants imports ==== //
 #include "../../../constants.h"
 
-class GlitchManager{
+// ==== include the baseManager ==== //
+#include "../../managerBase/managerBase.hpp"
+
+class GlitchManager : managerBase{
     
     public :
     

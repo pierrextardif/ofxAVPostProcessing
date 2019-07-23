@@ -14,7 +14,10 @@
 // ==== constants imports ==== //
 #include "../../../constants.h"
 
-class VerticalNoise {
+// ==== include the baseManager ==== //
+#include "../../managerBase/managerBase.hpp"
+
+class VerticalNoise : managerBase {
     
     public :
     
