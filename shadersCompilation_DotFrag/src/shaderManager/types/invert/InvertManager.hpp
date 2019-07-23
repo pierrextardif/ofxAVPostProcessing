@@ -14,7 +14,10 @@
 // ==== constants imports ==== //
 #include "../../../constants.h"
 
-class InvertManager {
+// ==== include the baseManager ==== //
+#include "../../managerBase/managerBase.hpp"
+
+class InvertManager : managerBase {
     
     public :
     

@@ -47,6 +47,23 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
     buffer[0].allocate(settings);
     buffer[1].allocate(settings);
     
+    // ==== shaders names ==== //
+    names = {
+        "halftoneShader",
+        "glitchShader",
+        "fringeShader",
+        "invertShader",
+        "vertNoiseShader",
+        "noiseShader",
+        "edgeOnTopShader",
+        "dotFragHSB",
+        "dotFragMirrorAxis",
+        "dotFragTurbulence",
+        "dotFragTwist",
+        "dotFragMonochrome"
+        
+    };
+    
 }
 
 
@@ -171,17 +188,17 @@ void ShaderManager::draw(vector <bool> activeShaders){
         
         swap(srcPtr, dstPtr);
     }
+//    if(activeShaders[11]){
+//        dstPtr->begin();
+//        dotFragEchoTrace.begin(dstPtr->getTextureReference());
+//        
+//        srcPtr->draw(0,0);
+//        dotFragEchoTrace.end();
+//        dstPtr->end();
+//        
+//        swap(srcPtr, dstPtr);
+//    }
     if(activeShaders[11]){
-        dstPtr->begin();
-        dotFragEchoTrace.begin(dstPtr->getTextureReference());
-        
-        srcPtr->draw(0,0);
-        dotFragEchoTrace.end();
-        dstPtr->end();
-        
-        swap(srcPtr, dstPtr);
-    }
-    if(activeShaders[12]){
         dstPtr->begin();
         dotFragMonochrome.begin(dstPtr->getTextureReference());
         

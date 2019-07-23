@@ -9,6 +9,8 @@ uniform float u_saturation;
 uniform float u_brightness;
 uniform float u_contrast;
 
+uniform float sine;
+
 in vec2 vUv;
 out vec4 outputColor;
 
@@ -28,7 +30,7 @@ void main () {
     
     vec4 source = texture( tex0, vUv );
     
-    vec3 color = applyHue( source.rgb, u_hue );
+    vec3 color = applyHue( source.rgb, u_hue * sine );
     
     color = ((color - 0.5) * u_contrast) + 0.5;
 //    color.g = ((color.g - 0.5) * u_contrast) + 0.5;

@@ -40,6 +40,7 @@ void dotFragHSBManager::begin(ofTexture tex){
     shader.setUniform1f("u_saturation", saturation);
     shader.setUniform1f("u_contrast", contrast);
     shader.setUniformTexture("tex0", tex, 0);
+    shader.setUniform1f("sine", ofGetElapsedTimef());
     
 }
 

@@ -43,7 +43,7 @@ class ShaderManager{
     }
     
     
-    int amntShaders;
+    vector < string > names;
     
     HalftoneManager                 halftoneShader;
     GlitchManager                   glitchShader;
@@ -56,7 +56,6 @@ class ShaderManager{
     dotFragMirrorAxisManager        dotFragMirrorAxis;
     dotFragTurbulenceManager        dotFragTurbulence;
     dotFragTwistManager             dotFragTwist;
-    dotFragEchoTraceManager         dotFragEchoTrace;
     dotFragMonochromeManager        dotFragMonochrome;
     
     
