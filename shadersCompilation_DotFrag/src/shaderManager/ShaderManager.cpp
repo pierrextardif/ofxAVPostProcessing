@@ -46,6 +46,7 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
     sourceBuf = f;
     buffer[0].allocate(settings);
     buffer[1].allocate(settings);
+    srcPtr->allocate(settings);
     
     // ==== shaders names ==== //
     names = {
@@ -64,23 +65,51 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
         
     };
     
-    for( int i = 0; i < names.size(); i++){
-//        string nameManager = names[i] +
-//        shadersManagerVector.push_back(nameManager);
-    }
+//    for( int i = 0; i < names.size(); i++){
+//
+//        HalftoneManager                 halftoneShader;
+//        shadersManagerVector.push_back(halftoneShader);
+//        GlitchManager                   glitchShader;
+//        shadersManagerVector.push_back(glitchShader);
+//        FringeManager                   fringeShader;
+//        shadersManagerVector.push_back(fringeShader);
+//        InvertManager                   invertShader;
+//        shadersManagerVector.push_back(invertShader);
+//        VerticalNoise                   vertNoiseShader;
+//        shadersManagerVector.push_back(vertNoiseShader);
+//        NoiseManager                    noiseShader;
+//        shadersManagerVector.push_back(noiseShader);
+//        EdgeOnTopManager                edgeOnTopShader;
+//        shadersManagerVector.push_back(edgeOnTopShader);
+//        dotFragHSBManager               dotFragHSB;
+//        shadersManagerVector.push_back(dotFragHSB);
+//        dotFragMirrorAxisManager        dotFragMirrorAxis;
+//        shadersManagerVector.push_back(dotFragMirrorAxis);
+//        dotFragTurbulenceManager        dotFragTurbulence;
+//        shadersManagerVector.push_back(dotFragTurbulence);
+//        dotFragTwistManager             dotFragTwist;
+//        shadersManagerVector.push_back(dotFragTwist);
+//        dotFragMonochromeManager        dotFragMonochrome;
+//        shadersManagerVector.push_back(dotFragMonochrome);
+////        string nameManager = names[i] +
+////        shadersManagerVector.push_back(nameManager);
+//    }
 }
 
 
 
 void ShaderManager::draw(vector <bool> activeShaders){
     
-    buffer[0].begin();
+//    buffer[0].begin();
+    srcPtr->begin();
     ofClear(0);
     sourceBuf->draw(0,0);
-    buffer[0].end();
+    srcPtr->end();
+//    buffer[0].end();
     
-    srcPtr = &buffer[0];
-    dstPtr = &buffer[1];
+//    srcPtr = &buffer[0];
+//    dstPtr = &buffer[1];
+    dstPtr = srcPtr;
     
     int indexShaderActivation = 0;
     
