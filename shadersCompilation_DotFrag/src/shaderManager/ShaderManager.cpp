@@ -46,7 +46,7 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
     sourceBuf = f;
     buffer[0].allocate(settings);
     buffer[1].allocate(settings);
-    srcPtr->allocate(settings);
+//    srcPtr->allocate(settings);
     
     // ==== shaders names ==== //
     names = {
@@ -100,16 +100,16 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
 
 void ShaderManager::draw(vector <bool> activeShaders){
     
-//    buffer[0].begin();
-    srcPtr->begin();
+    buffer[0].begin();
+//    srcPtr->begin();
     ofClear(0);
     sourceBuf->draw(0,0);
-    srcPtr->end();
-//    buffer[0].end();
+//    srcPtr->end();
+    buffer[0].end();
     
-//    srcPtr = &buffer[0];
-//    dstPtr = &buffer[1];
-    dstPtr = srcPtr;
+    srcPtr = &buffer[0];
+    dstPtr = &buffer[1];
+//    dstPtr = srcPtr;
     
     int indexShaderActivation = 0;
     

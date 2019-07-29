@@ -25,6 +25,8 @@ class ofApp : public ofBaseApp{
     
     ofVboMesh vbo;
     
+    ofVideoPlayer myPlayer;
+
     //plane
     ofVboMesh setupPlane(int sizePlane, int amount);
     void addOnPlane(ofVboMesh* vbo, ofVec3f pos,ofVec2f texC, int amount);

@@ -36,9 +36,14 @@ void ofApp::setup(){
 //    gui.add(sManager.dotFragEchoTrace.shaderControl);
     gui.add(sManager.dotFragMonochrome.shaderControl);
     gui.finishSetup();
+    
+    
+    myPlayer.load("Exportsample04_orsomethingwithyourmouth.mov");
+    myPlayer.play();
 };
 
 void ofApp::update(){
+    myPlayer.update();
     gui.update();
 };
 
@@ -50,17 +55,18 @@ void ofApp::draw(){
     fbo.begin();
     ofClear(0);
     
-    ofEnableDepthTest();
-        cam.begin();
+//    ofEnableDepthTest();
+//        cam.begin();
+//
+//            ofBackground(0);
     
-            ofBackground(0);
+//            ofRotateX(ofGetElapsedTimef() * 12.0);
+//            ofRotateZ(ofGetElapsedTimef() * 5.0);
+//            vbo.draw();
+    myPlayer.draw(0,0);
     
-            ofRotateX(ofGetElapsedTimef() * 12.0);
-            ofRotateZ(ofGetElapsedTimef() * 5.0);
-            vbo.draw();
-    
-        cam.end();
-    ofDisableDepthTest();
+//        cam.end();
+//    ofDisableDepthTest();
     
     fbo.end();
     

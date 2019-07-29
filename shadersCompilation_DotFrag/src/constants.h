@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 
-#define WIDTH  1080
-#define HEIGHT 720
+#define WIDTH  1920
+#define HEIGHT 1080
 
 // ==== shaders ====//
 #define VERSION 3
