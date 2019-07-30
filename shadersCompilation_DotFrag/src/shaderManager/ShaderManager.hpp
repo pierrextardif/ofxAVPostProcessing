@@ -19,6 +19,7 @@
 #include "types/verticalNoise/VerticalNoise.hpp"
 #include "types/noise/NoiseManager.hpp"
 #include "types/edgeOnTop/EdgeOnTopManager.hpp"
+#include "types/scanLines/scanLinesManager.hpp"
 
 // ==== ShaderHandlers ofxDotFrag ==== //
 #include "typesDotF/dotFragDelay/dotFragDelayManager.hpp"
@@ -53,6 +54,8 @@ class ShaderManager{
     VerticalNoise                   vertNoiseShader;
     NoiseManager                    noiseShader;
     EdgeOnTopManager                edgeOnTopShader;
+    ScanLinesManager                scanLinesShader;
+    
     dotFragHSBManager               dotFragHSB;
     dotFragMirrorAxisManager        dotFragMirrorAxis;
     dotFragTurbulenceManager        dotFragTurbulence;
@@ -68,6 +71,9 @@ class ShaderManager{
     
     ofFbo *srcPtr;
     ofFbo *dstPtr;
+    
+    void tableShaderCorrespondanceBegin(int indexShader);
+    void tableShaderCorrespondanceEnd(int indexShader);
     
 };
 

@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <control_section>
 	<halftone>
-		<radius>2.71429</radius>
-		<rotateR>0.801427</rotateR>
-		<rotateG>0.865541</rotateG>
+		<radius>1</radius>
+		<rotateR>0</rotateR>
+		<rotateG>1</rotateG>
 		<rotateB>1</rotateB>
 		<scatter>1</scatter>
 		<shape>1</shape>
 		<blending>1</blending>
 		<blendingMode>1</blendingMode>
 	</halftone>
-	<activator_halftone>1</activator_halftone>
+	<activator_halftone>0</activator_halftone>
 	<glitch>
 		<amount>0</amount>
 		<angle>1</angle>
@@ -22,19 +22,19 @@
 	</glitch>
 	<activator_glitch>0</activator_glitch>
 	<fringe>
-		<Volume>0.1</Volume>
+		<Volume>0.00510204</Volume>
 		<ScaleW>0</ScaleW>
 		<ScaleH>1</ScaleH>
 	</fringe>
-	<activator_fringe>0</activator_fringe>
+	<activator_fringe>1</activator_fringe>
 	<invert />
 	<activator_invert>0</activator_invert>
 	<vertical_Noise />
 	<activator_vertical_Noise>0</activator_vertical_Noise>
 	<noise>
-		<Volume>0.408163</Volume>
+		<Volume>0.306122</Volume>
 	</noise>
-	<activator_noise>0</activator_noise>
+	<activator_noise>1</activator_noise>
 	<edgeOnTop>
 		<Volume>0.1</Volume>
 		<ScaleW>0</ScaleW>
@@ -42,7 +42,7 @@
 	</edgeOnTop>
 	<activator_edgeOnTop>0</activator_edgeOnTop>
 	<dotFragHSB>
-		<hue>0.397959</hue>
+		<hue>0.163265</hue>
 		<brightness>0</brightness>
 		<saturation>1</saturation>
 		<contrast>1</contrast>
@@ -54,10 +54,10 @@
 	</dotFragMirrorAxis>
 	<activator_dotFragMirrorAxis>1</activator_dotFragMirrorAxis>
 	<dotFragTurbulence>
-		<x>0.112245</x>
-		<y>0.0663265</y>
+		<x>0</x>
+		<y>0</y>
 	</dotFragTurbulence>
-	<activator_dotFragTurbulence>1</activator_dotFragTurbulence>
+	<activator_dotFragTurbulence>0</activator_dotFragTurbulence>
 	<dotFragTwist>
 		<amount>0.5</amount>
 		<variation>0.5</variation>
@@ -68,4 +68,8 @@
 		<high>1</high>
 	</dotFragMonochrome>
 	<activator_dotFragMonochrome>0</activator_dotFragMonochrome>
+	<ScanLines>
+		<scanLines>0.1, 3.7501, 2.27155</scanLines>
+	</ScanLines>
+	<activator_ScanLines>1</activator_ScanLines>
 </control_section>

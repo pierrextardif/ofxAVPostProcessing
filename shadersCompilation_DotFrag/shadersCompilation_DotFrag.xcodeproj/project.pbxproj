@@ -3501,6 +3501,116 @@
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
+			<key>2BA1165A52EA98F6446BA9BF</key>
+			<dict>
+				<key>fileRef</key>
+				<string>7A3B05EC6B4B3C8CC362B314</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>7A3B05EC6B4B3C8CC362B314</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.cpp.cpp</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>scanLinesManager.cpp</string>
+				<key>path</key>
+				<string>src/shaderManager/types/scanLines/scanLinesManager.cpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>7E8C052E9232D6C61EED6542</key>
+			<dict>
+				<key>fileRef</key>
+				<string>97DEAD21D1BF31F5C5097BDD</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>97DEAD21D1BF31F5C5097BDD</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>file</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>shader.frag</string>
+				<key>path</key>
+				<string>src/shaderManager/types/scanLines/shader/shader.frag</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>6B74F98DABAD37E1021018D7</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>F08DC3F5872FE3C49D3386C1</string>
+					<string>97DEAD21D1BF31F5C5097BDD</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>shader</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>3E75D35AB24FF2C923A92334</key>
+			<dict>
+				<key>fileRef</key>
+				<string>F08DC3F5872FE3C49D3386C1</string>
+				<key>isa</key>
+				<string>PBXBuildFile</string>
+			</dict>
+			<key>F08DC3F5872FE3C49D3386C1</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>file</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>shader.vert</string>
+				<key>path</key>
+				<string>src/shaderManager/types/scanLines/shader/shader.vert</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
+			<key>389666047D153FA060141116</key>
+			<dict>
+				<key>children</key>
+				<array>
+					<string>72FAF118FEF5C6014284ACD1</string>
+					<string>6B74F98DABAD37E1021018D7</string>
+					<string>7A3B05EC6B4B3C8CC362B314</string>
+				</array>
+				<key>isa</key>
+				<string>PBXGroup</string>
+				<key>name</key>
+				<string>scanLines</string>
+				<key>sourceTree</key>
+				<string>&lt;group&gt;</string>
+			</dict>
+			<key>72FAF118FEF5C6014284ACD1</key>
+			<dict>
+				<key>explicitFileType</key>
+				<string>sourcecode.c.h</string>
+				<key>fileEncoding</key>
+				<string>4</string>
+				<key>isa</key>
+				<string>PBXFileReference</string>
+				<key>name</key>
+				<string>scanLinesManager.hpp</string>
+				<key>path</key>
+				<string>src/shaderManager/types/scanLines/scanLinesManager.hpp</string>
+				<key>sourceTree</key>
+				<string>SOURCE_ROOT</string>
+			</dict>
 			<key>F2A4BE44DE139F5A2FC93E13</key>
 			<dict>
 				<key>fileRef</key>
@@ -3963,6 +4073,7 @@
 					<string>5A102B0848B5DEC9346AD060</string>
 					<string>B86A6724FA1CA680EEC9ECEC</string>
 					<string>EE9DD4631D02B567F2DCAB99</string>
+					<string>389666047D153FA060141116</string>
 					<string>B2A87C1CA45A9AB6C886F686</string>
 					<string>119C535C12FF5340E20B12D7</string>
 					<string>B02B9895512A6AF4290AD611</string>
@@ -4242,6 +4353,8 @@ fi
 						<string>src/shaderManager/types/invert/shader</string>
 						<string>src/shaderManager/types/noise</string>
 						<string>src/shaderManager/types/noise/shader</string>
+						<string>src/shaderManager/types/scanLines</string>
+						<string>src/shaderManager/types/scanLines/shader</string>
 						<string>src/shaderManager/types/verticalNoise</string>
 						<string>src/shaderManager/types/verticalNoise/shader</string>
 						<string>src/shaderManager/typesDotF/dotFragDelay</string>
@@ -4336,6 +4449,8 @@ fi
 						<string>src/shaderManager/types/invert/shader</string>
 						<string>src/shaderManager/types/noise</string>
 						<string>src/shaderManager/types/noise/shader</string>
+						<string>src/shaderManager/types/scanLines</string>
+						<string>src/shaderManager/types/scanLines/shader</string>
 						<string>src/shaderManager/types/verticalNoise</string>
 						<string>src/shaderManager/types/verticalNoise/shader</string>
 						<string>src/shaderManager/typesDotF/dotFragDelay</string>
@@ -7189,6 +7304,8 @@ fi
 						<string>src/shaderManager/types/invert/shader</string>
 						<string>src/shaderManager/types/noise</string>
 						<string>src/shaderManager/types/noise/shader</string>
+						<string>src/shaderManager/types/scanLines</string>
+						<string>src/shaderManager/types/scanLines/shader</string>
 						<string>src/shaderManager/types/verticalNoise</string>
 						<string>src/shaderManager/types/verticalNoise/shader</string>
 						<string>src/shaderManager/typesDotF/dotFragDelay</string>
@@ -7303,6 +7420,8 @@ fi
 						<string>src/shaderManager/types/invert/shader</string>
 						<string>src/shaderManager/types/noise</string>
 						<string>src/shaderManager/types/noise/shader</string>
+						<string>src/shaderManager/types/scanLines</string>
+						<string>src/shaderManager/types/scanLines/shader</string>
 						<string>src/shaderManager/types/verticalNoise</string>
 						<string>src/shaderManager/types/verticalNoise/shader</string>
 						<string>src/shaderManager/typesDotF/dotFragDelay</string>
@@ -7377,6 +7496,9 @@ fi
 					<string>EB7207490F59BD43E735AE91</string>
 					<string>2D0155CE9917DCFF631C76C8</string>
 					<string>F2A4BE44DE139F5A2FC93E13</string>
+					<string>3E75D35AB24FF2C923A92334</string>
+					<string>7E8C052E9232D6C61EED6542</string>
+					<string>2BA1165A52EA98F6446BA9BF</string>
 					<string>9BE22BCD97FAED609811E16E</string>
 					<string>6FC48E4B5AD37E4CAE1F2600</string>
 					<string>28539BFA8FF082E10F8A5E70</string>
@@ -7576,6 +7698,8 @@ fi
 						<string>src/shaderManager/types/invert/shader</string>
 						<string>src/shaderManager/types/noise</string>
 						<string>src/shaderManager/types/noise/shader</string>
+						<string>src/shaderManager/types/scanLines</string>
+						<string>src/shaderManager/types/scanLines/shader</string>
 						<string>src/shaderManager/types/verticalNoise</string>
 						<string>src/shaderManager/types/verticalNoise/shader</string>
 						<string>src/shaderManager/typesDotF/dotFragDelay</string>
@@ -7681,6 +7805,8 @@ fi
 						<string>src/shaderManager/types/invert/shader</string>
 						<string>src/shaderManager/types/noise</string>
 						<string>src/shaderManager/types/noise/shader</string>
+						<string>src/shaderManager/types/scanLines</string>
+						<string>src/shaderManager/types/scanLines/shader</string>
 						<string>src/shaderManager/types/verticalNoise</string>
 						<string>src/shaderManager/types/verticalNoise/shader</string>
 						<string>src/shaderManager/typesDotF/dotFragDelay</string>

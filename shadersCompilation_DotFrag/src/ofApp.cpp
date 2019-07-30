@@ -29,6 +29,7 @@ void ofApp::setup(){
     gui.add(sManager.vertNoiseShader.shaderControl);
     gui.add(sManager.noiseShader.shaderControl);
     gui.add(sManager.edgeOnTopShader.shaderControl);
+    gui.add(sManager.scanLinesShader.shaderControl);
     gui.add(sManager.dotFragHSB.shaderControl);
     gui.add(sManager.dotFragMirrorAxis.shaderControl);
     gui.add(sManager.dotFragTurbulence.shaderControl);
@@ -55,24 +56,24 @@ void ofApp::draw(){
     fbo.begin();
     ofClear(0);
     
-//    ofEnableDepthTest();
-//        cam.begin();
+    ofEnableDepthTest();
+        cam.begin();
 //
 //            ofBackground(0);
     
-//            ofRotateX(ofGetElapsedTimef() * 12.0);
-//            ofRotateZ(ofGetElapsedTimef() * 5.0);
-//            vbo.draw();
-    myPlayer.draw(0,0);
+            ofRotateX(ofGetElapsedTimef() * 12.0);
+            ofRotateZ(ofGetElapsedTimef() * 5.0);
+            vbo.draw();
+//    myPlayer.draw(0,0);
     
-//        cam.end();
-//    ofDisableDepthTest();
+        cam.end();
+    ofDisableDepthTest();
     
     fbo.end();
     
     
     ofBackground(ofColor::pink);
-    sManager.draw({gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6], gui.activatedShaders[7], gui.activatedShaders[8], gui.activatedShaders[9], gui.activatedShaders[10],  gui.activatedShaders[11]});
+    sManager.draw({gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6], gui.activatedShaders[7], gui.activatedShaders[8], gui.activatedShaders[9], gui.activatedShaders[10],  gui.activatedShaders[11], gui.activatedShaders[12]});
     
 
     
