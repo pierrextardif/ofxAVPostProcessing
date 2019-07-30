@@ -11,6 +11,16 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
     
     // ==== buffer shaders ==== //
     sourceBuf = f;
+    
+//    dotFragDelay.fDelay1.allocate(settings);
+//    dotFragDelay.fDelay2.allocate(settings);
+    
+    for( int i = 0; i < dotFragDelay.fbos.size(); i++){
+        dotFragDelay.fbos[i].allocate( settings );
+        dotFragDelay.fbos[i].begin();
+        ofClear(0, 0, 0, 0);
+        dotFragDelay.fbos[i].end();
+    }
 }
 
 
@@ -41,7 +51,6 @@ void ShaderManager::tableShaderCorrespondanceBegin(int indexShader){
     switch(indexShader){
         case 0:
             halftoneShader.begin();
-
             break;
         case 1:
             glitchShader.begin();
@@ -64,17 +73,25 @@ void ShaderManager::tableShaderCorrespondanceBegin(int indexShader){
         case 7:
             scanLinesShader.begin(srcPtr->getTextureReference());
             break;
+            
         case 8:
             dotFragHSB.begin(srcPtr->getTextureReference());
             break;
         case 9:
             dotFragMirrorAxis.begin(srcPtr->getTextureReference());
             break;
+            
         case 10:
-            dotFragTwist.begin(srcPtr->getTextureReference());
+            dotFragTurbulence.begin(srcPtr->getTextureReference());
             break;
         case 11:
+            dotFragTwist.begin(srcPtr->getTextureReference());
+            break;
+        case 12:
             dotFragMonochrome.begin(srcPtr->getTextureReference());
+            break;
+        case 13:
+            dotFragDelay.begin(srcPtr->getTextureReference());
             break;
             
     }
@@ -116,10 +133,16 @@ void ShaderManager::tableShaderCorrespondanceEnd(int indexShader){
             dotFragMirrorAxis.end();
             break;
         case 10:
-            dotFragTwist.end();
+            dotFragTurbulence.end();
             break;
         case 11:
+            dotFragTwist.end();
+            break;
+        case 12:
             dotFragMonochrome.end();
+            break;
+        case 13:
+            dotFragDelay.end();
             break;
             
     }

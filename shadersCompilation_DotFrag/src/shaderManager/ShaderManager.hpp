@@ -34,6 +34,7 @@
 #include "typesDotF/dotFragTwist/dotFragTwistManager.hpp"
 #include "typesDotF/dotFragRadialRemap/dotFragRadialRemapManager.hpp"
 #include "typesDotF/dotFragMonochrome/dotFragMonochromeManager.hpp"
+#include "typesDotF/dotFragDelay/dotFragDelayManager.hpp"
 
 
 class ShaderManager{
@@ -58,6 +59,7 @@ class ShaderManager{
     dotFragTurbulenceManager        dotFragTurbulence;
     dotFragTwistManager             dotFragTwist;
     dotFragMonochromeManager        dotFragMonochrome;
+    dotFragDelayManager             dotFragDelay;
     
     
     void setup(ofFbo* f, ofFbo::Settings settings);

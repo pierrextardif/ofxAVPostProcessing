@@ -17,6 +17,10 @@ void ofApp::setup(){
     settings.height = HEIGHT;
     fbo.allocate(WIDTH, HEIGHT);
     
+    
+    
+    
+    
     // ==== shaders ==== //
     sManager.setup(&fbo, settings);
     gui.add(sManager.halftoneShader.shaderControl);
@@ -34,6 +38,7 @@ void ofApp::setup(){
     gui.add(sManager.dotFragTwist.shaderControl);
 //    gui.add(sManager.dotFragEchoTrace.shaderControl);
     gui.add(sManager.dotFragMonochrome.shaderControl);
+    gui.add(sManager.dotFragDelay.shaderControl);
     gui.finishSetup();
 };
 
@@ -66,7 +71,7 @@ void ofApp::draw(){
     
     
     ofBackground(ofColor::pink);
-    sManager.draw({gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6], gui.activatedShaders[7], gui.activatedShaders[8], gui.activatedShaders[9], gui.activatedShaders[10],  gui.activatedShaders[11], gui.activatedShaders[12]});
+    sManager.draw({gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6], gui.activatedShaders[7], gui.activatedShaders[8], gui.activatedShaders[9], gui.activatedShaders[10],  gui.activatedShaders[11], gui.activatedShaders[12], gui.activatedShaders[13]});
     
 
     

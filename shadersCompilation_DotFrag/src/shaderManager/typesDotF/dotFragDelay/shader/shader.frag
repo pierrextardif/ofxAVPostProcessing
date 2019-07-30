@@ -1,43 +1,43 @@
 #version 150
 
-uniform float Volume;
-uniform float Phase;
-uniform float ScaleW;
-uniform float ScaleH;
 
-uniform sampler2DRect tex0;
-
+// ==== custom ==== //
 in vec2 vUv;
 out vec4 outputColor;
+// ==== custom ==== //
 
-void main(void){
-    vec2 st = vUv;
-    vec4 col;
-    vec3 maximum = vec3(0.0,0.0,0.0);
-    vec3 minimum = vec3(1.0,1.0,1.0);
+uniform float u_time;
+
+uniform sampler2DRect tex0;
+uniform sampler2DRect tex1;
+
+uniform float u_feedback;
+uniform int u_blendmode;
+
+void main () {
     
-    int i = 0;
-    int j = 0;
-    for (i; i < 3;i++){
-        for (j; j < 3;j++){
-            vec4 c = texture(tex0, vec2(st.x + float(i) - 1.0,
-                                              st.y + float(j) - 1.0));
-            
-            maximum.r = max(maximum.r, c.r);
-            minimum.r = min(minimum.r, c.r);
-            maximum.g = max(maximum.g, c.g);
-            minimum.g = min(minimum.g, c.g);
-            maximum.b = max(maximum.b, c.b);
-            minimum.b = min(minimum.b, c.b);
-            
-        }
+    
+    vec4 now = texture(tex0, vUv);
+    vec4 delay = texture(tex1, vUv);
+    
+    float alpha = max( now.a, delay.a );
+    
+    if( u_blendmode==0 ){
+        // screen
+        vec3 screen = 1.0-((1.0-now.xyz)*(1.0-delay.xyz));
+        outputColor = vec4(now.xyz*(1.0-u_feedback) + screen*u_feedback, alpha);
+    }else if( u_blendmode==1 ){
+        // sum
+        vec3 sum = min(now.xyz + delay.xyz*u_feedback, vec3(1.0));
+        outputColor = vec4( sum, alpha );
+    }else if( u_blendmode==2 ){
+        // lerp
+        outputColor = vec4(now.xyz*(1.0-u_feedback) + delay.xyz*u_feedback, alpha);
+    }else if( u_blendmode==3 ){
+        // blend max
+        outputColor = vec4( max(now.xyz, delay.xyz*u_feedback), alpha );
+    }else{
+        // blend min
+        outputColor = vec4( min(now.xyz, delay.xyz*u_feedback), alpha );
     }
-    
-    col = texture(tex0, vec2(st.x, st.y));
-    
-    vec3 br = vec3(pow(maximum.r - minimum.r,2.0),
-                   pow(maximum.g - minimum.g,2.0),
-                   pow(maximum.b - minimum.b,2.0));
-    
-    outputColor = vec4(br,1.0) + col;
-}
+    }
