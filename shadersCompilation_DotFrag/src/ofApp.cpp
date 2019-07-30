@@ -18,9 +18,6 @@ void ofApp::setup(){
     fbo.allocate(WIDTH, HEIGHT);
     
     // ==== shaders ==== //
-    
-    vector < string > shaders = {"halftone", "glitch", "fringe", "invert", "verticalNoise"};
-    
     sManager.setup(&fbo, settings);
     gui.add(sManager.halftoneShader.shaderControl);
     gui.add(sManager.glitchShader.shaderControl);
@@ -30,6 +27,7 @@ void ofApp::setup(){
     gui.add(sManager.noiseShader.shaderControl);
     gui.add(sManager.edgeOnTopShader.shaderControl);
     gui.add(sManager.scanLinesShader.shaderControl);
+    //dot frag
     gui.add(sManager.dotFragHSB.shaderControl);
     gui.add(sManager.dotFragMirrorAxis.shaderControl);
     gui.add(sManager.dotFragTurbulence.shaderControl);
@@ -37,14 +35,9 @@ void ofApp::setup(){
 //    gui.add(sManager.dotFragEchoTrace.shaderControl);
     gui.add(sManager.dotFragMonochrome.shaderControl);
     gui.finishSetup();
-    
-    
-    myPlayer.load("Exportsample04_orsomethingwithyourmouth.mov");
-    myPlayer.play();
 };
 
 void ofApp::update(){
-    myPlayer.update();
     gui.update();
 };
 
@@ -58,8 +51,8 @@ void ofApp::draw(){
     
     ofEnableDepthTest();
         cam.begin();
-//
-//            ofBackground(0);
+    
+            ofBackground(0);
     
             ofRotateX(ofGetElapsedTimef() * 12.0);
             ofRotateZ(ofGetElapsedTimef() * 5.0);

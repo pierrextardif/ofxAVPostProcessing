@@ -11,52 +11,21 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
     
     // ==== buffer shaders ==== //
     sourceBuf = f;
-    buffer[0].allocate(settings);
-    buffer[1].allocate(settings);
-    
-    // ==== shaders names ==== //
-    names = {
-        "halftoneShader",
-        "glitchShader",
-        "fringeShader",
-        "invertShader",
-        "vertNoiseShader",
-        "noiseShader",
-        "edgeOnTopShader",
-        "scanLinesShader",
-        "dotFragHSB",
-        "dotFragMirrorAxis",
-        "dotFragTurbulence",
-        "dotFragTwist",
-        "dotFragMonochrome"
-        
-    };
-    
 }
 
 
 
 void ShaderManager::draw(vector <bool> activeShaders){
     
-    buffer[0].begin();
-//    srcPtr->begin();
-    ofClear(0);
-    sourceBuf->draw(0,0);
-//    srcPtr->end();
-    buffer[0].end();
-    
-    srcPtr = &buffer[0];
-    dstPtr = &buffer[1];
-//    dstPtr = srcPtr;
+    srcPtr = sourceBuf;
+    dstPtr = sourceBuf;
     
     for( int i = 0; i < activeShaders.size(); i++){
         if(activeShaders[i]){
             dstPtr->begin();
             tableShaderCorrespondanceBegin(i);
-            //        halftoneShader.begin();
             srcPtr->draw(0,0);
             tableShaderCorrespondanceEnd(i);
-            //        halftoneShader.end();
             dstPtr->end();
             
             swap(srcPtr, dstPtr);

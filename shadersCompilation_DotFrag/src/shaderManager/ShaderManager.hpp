@@ -43,10 +43,7 @@ class ShaderManager{
         
     }
     
-    
-    vector < string > names;
-    vector < managerBase > shadersManagerVector;
-    
+    // ==== shader Managers ==== //
     HalftoneManager                 halftoneShader;
     GlitchManager                   glitchShader;
     FringeManager                   fringeShader;
@@ -66,9 +63,10 @@ class ShaderManager{
     void setup(ofFbo* f, ofFbo::Settings settings);
     void draw(vector < bool > activeShaders);
     
+    // pointer to the fbo used to Draw things
     ofFbo *sourceBuf;
-    ofFbo buffer[2];
     
+    // points to swapping fbos for multi shader effects
     ofFbo *srcPtr;
     ofFbo *dstPtr;
     
