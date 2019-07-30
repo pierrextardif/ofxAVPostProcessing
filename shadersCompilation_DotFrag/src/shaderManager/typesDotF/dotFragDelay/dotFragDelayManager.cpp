@@ -21,7 +21,7 @@ void dotFragDelayManager::setup(){
     shaderControl.setName("dotFragHSB");
     
     indexBuffer = 0;
-    amountDelays = 5;
+    amountDelays = 2;
     fbos.resize(amountDelays);
     
     initGui();

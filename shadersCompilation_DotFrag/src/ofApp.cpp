@@ -6,9 +6,11 @@ void ofApp::setup(){
     ofSetVerticalSync(true);
     cam.setDistance(500);
     
+//    ofHideCursor();
+    
 //    vbo = setupSphere(400, 10);
     
-    vbo = setupPlane(10, 60);
+    vbo = setupPlane(40, 6);
     
     gui.setup();
     
@@ -40,6 +42,8 @@ void ofApp::setup(){
     gui.add(sManager.dotFragMonochrome.shaderControl);
     gui.add(sManager.dotFragDelay.shaderControl);
     gui.finishSetup();
+    
+    gui.gui.loadFromFile("settings.xml");
 };
 
 void ofApp::update(){
@@ -70,7 +74,7 @@ void ofApp::draw(){
     fbo.end();
     
     
-    ofBackground(ofColor::pink);
+//    ofBackground(ofColor::pink);
     sManager.draw({gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6], gui.activatedShaders[7], gui.activatedShaders[8], gui.activatedShaders[9], gui.activatedShaders[10],  gui.activatedShaders[11], gui.activatedShaders[12], gui.activatedShaders[13]});
     
 
