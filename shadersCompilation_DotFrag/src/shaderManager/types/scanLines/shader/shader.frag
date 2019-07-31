@@ -19,7 +19,7 @@ float random (in vec2 st) {
 float noise (in vec2 st) {
     vec2 i = floor(st);
     vec2 f = fract(st);
-    
+
     // Four corners in 2D of a tile
     float a = random(i);
     float b = random(i + vec2(1.0, 0.0));
@@ -32,21 +32,25 @@ float noise (in vec2 st) {
 }
 
 void main() {
+
     vec2 st = vUv.xy;
-    
+
     vec4 colorRGBA = texture(tex0, st).rgba;
-    
+
     if(colorRGBA.a == 1.0){
-        
+
         vec2 newSt = vec2(st.x + noise(vec2(0.1, 0.1) ), st.y);
         float colorR = sin(time) * 0.5 + + 0.3 + 0.2 * texture(tex0,newSt).r;
-        
+
         float scanVol = st.y * 800 * scanL.x;
         float scanLines = sin(scanVol)*0.04 * scanL.y;
-        
+
         colorRGBA.r -= scanLines * scanL.z;
         colorRGBA.g -= scanLines * scanL.z;
         colorRGBA.b -= scanLines * scanL.z;
     }
     outColor = colorRGBA;
 }
+
+
+
