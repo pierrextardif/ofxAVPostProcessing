@@ -38,9 +38,9 @@ void ofApp::setup(){
     gui.add(sManager.dotFragMirrorAxis.shaderControl);
     gui.add(sManager.dotFragTurbulence.shaderControl);
     gui.add(sManager.dotFragTwist.shaderControl);
-//    gui.add(sManager.dotFragEchoTrace.shaderControl);
+//    gui.add(	);
     gui.add(sManager.dotFragMonochrome.shaderControl);
-    gui.add(sManager.dotFragDelay.shaderControl);
+//    gui.add(sManager.dotFragDelay.shaderControl);
     gui.finishSetup();
     
     gui.gui.loadFromFile("settings.xml");
@@ -75,7 +75,7 @@ void ofApp::draw(){
     
     
 //    ofBackground(ofColor::pink);
-    sManager.draw({gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6], gui.activatedShaders[7], gui.activatedShaders[8], gui.activatedShaders[9], gui.activatedShaders[10],  gui.activatedShaders[11], gui.activatedShaders[12], gui.activatedShaders[13]});
+    sManager.draw({gui.activatedShaders[0], gui.activatedShaders[1], gui.activatedShaders[2], gui.activatedShaders[3], gui.activatedShaders[4], gui.activatedShaders[5], gui.activatedShaders[6], gui.activatedShaders[7], gui.activatedShaders[8], gui.activatedShaders[9], gui.activatedShaders[10],  gui.activatedShaders[11], gui.activatedShaders[12]});
     
 
     

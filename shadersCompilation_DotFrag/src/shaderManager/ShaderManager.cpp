@@ -15,12 +15,12 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
 //    dotFragDelay.fDelay1.allocate(settings);
 //    dotFragDelay.fDelay2.allocate(settings);
     
-    for( int i = 0; i < dotFragDelay.fbos.size(); i++){
-        dotFragDelay.fbos[i].allocate( settings );
-        dotFragDelay.fbos[i].begin();
-        ofClear(0, 0, 0, 0);
-        dotFragDelay.fbos[i].end();
-    }
+//    for( int i = 0; i < dotFragDelay.fbos.size(); i++){
+//        dotFragDelay.fbos[i].allocate( settings );
+//        dotFragDelay.fbos[i].begin();
+//        ofClear(0, 0, 0, 0);
+//        dotFragDelay.fbos[i].end();
+//    }
 }
 
 
@@ -90,9 +90,9 @@ void ShaderManager::tableShaderCorrespondanceBegin(int indexShader){
         case 12:
             dotFragMonochrome.begin(srcPtr->getTextureReference());
             break;
-        case 13:
-            dotFragDelay.begin(srcPtr->getTextureReference());
-            break;
+//        case 13:
+//            dotFragDelay.begin(srcPtr->getTextureReference());
+//            break;
             
     }
 }
@@ -141,9 +141,9 @@ void ShaderManager::tableShaderCorrespondanceEnd(int indexShader){
         case 12:
             dotFragMonochrome.end();
             break;
-        case 13:
-            dotFragDelay.end();
-            break;
+//        case 13:
+//            dotFragDelay.end();
+//            break;
             
     }
 }

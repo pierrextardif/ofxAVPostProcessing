@@ -59,7 +59,7 @@ class ShaderManager{
     dotFragTurbulenceManager        dotFragTurbulence;
     dotFragTwistManager             dotFragTwist;
     dotFragMonochromeManager        dotFragMonochrome;
-    dotFragDelayManager             dotFragDelay;
+//    dotFragDelayManager             dotFragDelay;
     
     
     void setup(ofFbo* f, ofFbo::Settings settings);
