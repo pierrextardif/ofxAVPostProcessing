@@ -1,8 +1,7 @@
-#version 150
-
 float Volume = 1.0;
+
+uniform float verticalNoiseActive;
 uniform float Phase;
-uniform sampler2DRect tex0;
 
 const int   oct  = 8;
 const float per  = 0.5;
@@ -11,8 +10,6 @@ const float cCorners = 1.0 / 16.0;
 const float cSides   = 1.0 / 8.0;
 const float cCenter  = 1.0 / 4.0;
 
-in vec2 vUv;
-out vec4 outputColor;
 
 // 補間関数
 float interpolate(float a, float b, float x){
@@ -55,16 +52,16 @@ float snoise(vec2 p, vec2 q, vec2 r){
     noise(vec2(p.x + r.x, p.y + r.y)) * (1.0 - q.x) * (1.0 - q.y);
 }
 
-void main(void){
+vec3 verticalNoiseColors(vec2 vUv, sampler2DRect tex, float iTime){
     vec2 st = vUv;
-    vec2 t = vec2(st.y,Phase*100.0);
+    vec2 t = vec2(st.y,iTime*100.0);
     float ns = (noise(t) - 0.5)*Volume*300.0;
     
     vec3 col;
     
-    col.r = texture(tex0, vec2(st.x+ns,st.y)).r;
-    col.b = texture(tex0, vec2(st.x+ns,st.y)).b;
-    col.g = texture(tex0, vec2(st.x+ns,st.y)).g;
+    col.r = texture(tex, vec2(st.x+ns,st.y)).r;
+    col.b = texture(tex, vec2(st.x+ns,st.y)).b;
+    col.g = texture(tex, vec2(st.x+ns,st.y)).g;
     
-    outputColor = vec4(col,1.0);
+    return col;
 }

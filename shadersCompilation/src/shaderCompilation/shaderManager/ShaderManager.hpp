@@ -62,7 +62,6 @@ class ShaderManager{
     // points to swapping fbos for multi shader effects
     ofFbo *srcPtr;
     ofFbo *dstPtr;
-
     
     
     ofShader mainShader;

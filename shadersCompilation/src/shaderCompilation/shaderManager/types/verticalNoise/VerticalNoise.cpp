@@ -29,9 +29,4 @@ void VerticalNoise::addUniforms(ofShader* shader, bool active){
     
     shader->setUniform1f(name+"Active", active?1:0);
     
-    if(active){
-        shader->setUniform1f("Phase", ofGetElapsedTimef());
-        
-    }
-    
 }

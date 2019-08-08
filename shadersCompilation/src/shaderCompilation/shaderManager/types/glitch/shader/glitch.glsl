@@ -10,10 +10,6 @@ uniform float distortion_x;
 uniform float distortion_y;
 
 
-float rand(vec2 co){
-    return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
-}
-
 vec4 glitchColors(vec2 p, float amount, float angle, float seed, float seed_x, float seed_y, float distortion_x, float distortion_y, sampler2DRect tDisp){
 
     float xs = floor(gl_FragCoord.x / 0.5);

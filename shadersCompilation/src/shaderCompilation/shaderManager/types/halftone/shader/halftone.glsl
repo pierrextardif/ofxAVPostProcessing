@@ -1,5 +1,3 @@
-#version 150
-
 #define SQRT2_MINUS_ONE 0.41421356
 #define SQRT2_HALF_MINUS_ONE 0.20710678
 #define PI2 6.28318531
@@ -13,12 +11,8 @@
 #define BLENDING_LIGHTER 4
 #define BLENDING_DARKER 5
 
-in vec2 vUV;
-out vec4 outputColor;
 
-
-
-uniform sampler2DRect tDiffuse;
+uniform float halftoneActive;
 uniform float radius;
 uniform float rotateR;
 uniform float rotateG;
@@ -27,10 +21,8 @@ uniform float scatter;
 uniform float width;
 uniform float height;
 uniform int shape;
-bool disable = false;
 uniform float blending;
 uniform int blendingMode;
-bool greyscale = false;
 const int samples = 8;
 
 float blend( float a, float b, float t ) {
@@ -48,11 +40,9 @@ float hypot( float x, float y ) {
 }
 
 float rand( vec2 seed ){
-
-    // get pseudo-random number
     return fract( sin( dot( seed.xy, vec2( 12.9898, 78.233 ) ) ) * 43758.5453 );
-
 }
+
 
 float distanceToDotRadius( float channel, vec2 coord, vec2 normal, vec2 p, float angle, float rad_max ) {
 
@@ -108,10 +98,10 @@ struct Cell {
 
 };
 
-vec4 getSample( vec2 point ) {
+vec4 getSample( vec2 point, sampler2DRect tex) {
 
     // multi-sampled point
-    vec4 tex = texture( tDiffuse, vec2( point.x / width, point.y / height ) );
+    vec4 tex4 = texture( tex, vec2( point.x / width, point.y / height ) );
     float base = rand( vec2( floor( point.x ), floor( point.y ) ) ) * PI2;
     float step = PI2 / float( samples );
     float dist = radius * 0.66;
@@ -120,40 +110,40 @@ vec4 getSample( vec2 point ) {
 
         float r = base + step * float( i );
         vec2 coord = point + vec2( cos( r ) * dist, sin( r ) * dist );
-        tex += texture( tDiffuse, vec2( coord.x / width, coord.y / height ) );
+        tex4 += texture( tex, vec2( coord.x / width, coord.y / height ) );
 
     }
 
-    tex /= float( samples ) + 1.0;
-    return tex;
+    tex4 /= float( samples ) + 1.0;
+    return tex4;
 
 }
 
-float getDotColour( Cell c, vec2 p, int channel, float angle, float aa ) {
+float getDotColour( Cell c, vec2 p, int channel, float angle, float aa, sampler2DRect tex ) {
 
 // get colour for given point
     float dist_c_1, dist_c_2, dist_c_3, dist_c_4, res;
 
     if ( channel == 0 ) {
 
-        c.samp1 = getSample( c.p1 ).r;
-        c.samp2 = getSample( c.p2 ).r;
-        c.samp3 = getSample( c.p3 ).r;
-        c.samp4 = getSample( c.p4 ).r;
+        c.samp1 = getSample( c.p1, tex ).r;
+        c.samp2 = getSample( c.p2, tex ).r;
+        c.samp3 = getSample( c.p3, tex ).r;
+        c.samp4 = getSample( c.p4, tex ).r;
 
     } else if (channel == 1) {
 
-        c.samp1 = getSample( c.p1 ).g;
-        c.samp2 = getSample( c.p2 ).g;
-        c.samp3 = getSample( c.p3 ).g;
-        c.samp4 = getSample( c.p4 ).g;
+        c.samp1 = getSample( c.p1, tex ).g;
+        c.samp2 = getSample( c.p2, tex ).g;
+        c.samp3 = getSample( c.p3, tex ).g;
+        c.samp4 = getSample( c.p4, tex ).g;
 
     } else {
 
-        c.samp1 = getSample( c.p1 ).b;
-        c.samp3 = getSample( c.p3 ).b;
-        c.samp2 = getSample( c.p2 ).b;
-        c.samp4 = getSample( c.p4 ).b;
+        c.samp1 = getSample( c.p1, tex ).b;
+        c.samp3 = getSample( c.p3, tex ).b;
+        c.samp2 = getSample( c.p2, tex ).b;
+        c.samp4 = getSample( c.p4, tex ).b;
 
     }
 
@@ -237,39 +227,24 @@ float blendColour( float a, float b, float t ) {
 
 }
 
-void main() {
+vec3 halftoneColors(vec2 vUv, sampler2DRect tex, vec4 color) {
 
-    if ( ! disable ) {
+    // setup
+    vec2 p = vec2( vUv.x * width, vUv.y * height );
+    vec2 origin = vec2( 0, 0 );
+    float aa = ( radius < 2.5 ) ? radius * 0.5 : 1.25;
 
-        // setup
-        vec2 p = vec2( vUV.x * width, vUV.y * height );
-        vec2 origin = vec2( 0, 0 );
-        float aa = ( radius < 2.5 ) ? radius * 0.5 : 1.25;
+    // get channel samples
+    Cell cell_r = getReferenceCell( p, origin, rotateR, radius );
+    Cell cell_g = getReferenceCell( p, origin, rotateG, radius );
+    Cell cell_b = getReferenceCell( p, origin, rotateB, radius );
+    float r = getDotColour( cell_r, p, 0, rotateR, aa, tex );
+    float g = getDotColour( cell_g, p, 1, rotateG, aa, tex );
+    float b = getDotColour( cell_b, p, 2, rotateB, aa, tex );
+    
+    r = blendColour( r, color.r, blending );
+    g = blendColour( g, color.g, blending );
+    b = blendColour( b, color.b, blending );
 
-        // get channel samples
-        Cell cell_r = getReferenceCell( p, origin, rotateR, radius );
-        Cell cell_g = getReferenceCell( p, origin, rotateG, radius );
-        Cell cell_b = getReferenceCell( p, origin, rotateB, radius );
-        float r = getDotColour( cell_r, p, 0, rotateR, aa );
-        float g = getDotColour( cell_g, p, 1, rotateG, aa );
-        float b = getDotColour( cell_b, p, 2, rotateB, aa );
-
-        // blend with original
-        vec4 colour = texture( tDiffuse, vUV );
-        r = blendColour( r, colour.r, blending );
-        g = blendColour( g, colour.g, blending );
-        b = blendColour( b, colour.b, blending );
-
-        if ( greyscale ) {
-            r = g = b = (r + b + g) / 3.0;
-        }
-
-        outputColor = vec4( r, g, b, 1.0 );
-
-    } else {
-
-        outputColor = texture( tDiffuse, vUV );
-
-    }
-
+    return vec3( r, g, b );
 }

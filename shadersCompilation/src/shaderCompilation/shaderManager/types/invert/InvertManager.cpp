@@ -18,14 +18,22 @@ void InvertManager::setup(){
     
     shaderControl.setName("invert");
     
+    initGui();
+}
+
+void InvertManager::initGui(){
+    
+    shaderControl.setName(name);
+    
+    shaderControl.add(Volume.set("Volume", 1, 0,1));
 }
 
 void InvertManager::addUniforms(ofShader* shader, bool active){
     
     shader->setUniform1f(name+"Active", active?1:0);
     
-//    if(active){
-//        shader->setUniform1f("Volume", 1.0);
-//    }
+    if(active){
+        shader->setUniform1f("VolumeInvert", Volume);
+    }
     
 }

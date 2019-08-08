@@ -34,6 +34,7 @@ class FringeManager : managerBase {
     void setup();
     // ==== control ==== //
     void initGui();
+    ofVec2f uniformsWidthHeight;
     
     
     void addUniforms(ofShader* shader, bool active);

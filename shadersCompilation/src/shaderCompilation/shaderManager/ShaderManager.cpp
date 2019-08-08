@@ -15,6 +15,10 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
     // ==== main shader Load ==== //
     mainShader.load("../../src/shaderCompilation/shaderManager/mainShader/mainShader.vert",
                     "../../src/shaderCompilation/shaderManager/mainShader/mainShader.frag");
+    
+    ofVec2f widthHeight = {(float)settings.width, (float)settings.height};
+    
+    fringeManager.uniformsWidthHeight = widthHeight;
 }
 
 
@@ -35,6 +39,7 @@ void ShaderManager::draw(vector <ofParameter<bool>> activeShaders){
     scanLinesManager.addUniforms(   &mainShader, activeShaders[7]);
     
     mainShader.setUniformTexture("tex0", srcPtr->getTextureReference(), 0);
+    mainShader.setUniform1f("iTime", ofGetElapsedTimef());
     srcPtr->draw(0,0);
     mainShader.end();
     

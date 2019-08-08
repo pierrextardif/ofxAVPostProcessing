@@ -32,7 +32,8 @@ class InvertManager : managerBase {
     };
     
     void setup();
-    // ==== control ==== //    
+    // ==== control ==== //
+    void initGui();
     
     void addUniforms(ofShader* shader, bool active);
     

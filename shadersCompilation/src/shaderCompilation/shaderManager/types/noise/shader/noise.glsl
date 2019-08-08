@@ -1,12 +1,7 @@
-#version 150
 
-uniform float Volume;
-uniform float Phase;
-uniform sampler2DRect tex0;
+uniform float noiseActive;
+uniform float VolumeNoise;
 
-in vec2 vUv;
-
-out vec4 outputColor;
 
 vec3 mod289(vec3 x) {
     return x - floor(x * (1.0 / 289.0)) * 289.0;
@@ -69,16 +64,10 @@ float snoise(vec2 v)
     return 130.0 * dot(m, g);
 }
 
-void main(void){
-    vec2 st = vUv;
-    vec3 col;
+float noiseColors(vec2 vUv, sampler2DRect tex, float Phase){
     
-    col.r = texture(tex0, vec2(st.x,st.y)).r;
-    col.b = texture(tex0, vec2(st.x,st.y)).b;
-    col.g = texture(tex0, vec2(st.x,st.y)).g;
+    float noiseCol = snoise(vec2(vUv.x*vUv.y+Phase*231.5 ,
+                           vUv.x+vUv.y-Phase*324.1))*VolumeNoise;
     
-    col.rgb += snoise(vec2(st.x*st.y+Phase*231.5 ,
-                           st.x+st.y-Phase*324.1))*Volume;
-    
-    outputColor = vec4(col,1.0);
-    }
+    return noiseCol;
+}
