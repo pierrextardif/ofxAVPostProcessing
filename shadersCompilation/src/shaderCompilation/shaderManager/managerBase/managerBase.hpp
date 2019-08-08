@@ -19,6 +19,7 @@ class managerBase {
     public :
     
     string name = "";
+    string pathToShader = "../../src/shaderCompilation/shaderManager/types/";
     ofShader shader;
     
     ofParameterGroup shaderControl;

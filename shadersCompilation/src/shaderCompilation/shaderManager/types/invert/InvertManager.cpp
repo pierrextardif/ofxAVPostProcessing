@@ -10,7 +10,7 @@
 
 void InvertManager::setup(){
     
-    string fullPath = 	 + name + "/shader";
+    string fullPath = pathToShader + name + "/shader";
     filesystem::path path = filesystem::path(fullPath);
     shader.load(path/"shader.vert", path/"shader.frag");
     

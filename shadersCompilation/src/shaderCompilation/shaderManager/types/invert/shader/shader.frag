@@ -12,9 +12,7 @@ void main(void){
     vec2 st = vUv;
     vec3 col;
     
-    col.r = texture(tex0, vec2(st.x,st.y)).r;
-    col.b = texture(tex0, vec2(st.x,st.y)).b;
-    col.g = texture(tex0, vec2(st.x,st.y)).g;
+    col = texture(tex0, vec2(st.x,st.y)).rgb;
     
     col.r += ((1.0 - col.r) - col.r) * Volume;
     col.g += ((1.0 - col.g) - col.g) * Volume;
