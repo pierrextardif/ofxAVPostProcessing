@@ -22,8 +22,8 @@
 #include "types/scanLines/scanLinesManager.hpp"
 
 // ==== ShaderHandlers ofxDotFrag ==== //
-//#include "typesDotF/dotFragHSB/dotFragHSBManager.hpp"
-//#include "typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.hpp"
+#include "typesDotF/dotFragHSB/dotFragHSBManager.hpp"
+#include "typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.hpp"
 //#include "typesDotF/dotFragTurbulence/dotFragTurbulenceManager.hpp"
 //#include "typesDotF/dotFragTwist/dotFragTwistManager.hpp"
 //#include "typesDotF/dotFragMonochrome/dotFragMonochromeManager.hpp"
@@ -46,8 +46,8 @@ class ShaderManager{
     EdgeOnTopManager                edgeOnTopManager;
     ScanLinesManager                scanLinesManager;
     
-//    dotFragHSBManager               dotFragHSB;
-//    dotFragMirrorAxisManager        dotFragMirrorAxis;
+    dotFragHSBManager               dotFragHSB;
+    dotFragMirrorAxisManager        dotFragMirrorAxis;
 //    dotFragTurbulenceManager        dotFragTurbulence;
 //    dotFragTwistManager             dotFragTwist;
 //    dotFragMonochromeManager        dotFragMonochrome;

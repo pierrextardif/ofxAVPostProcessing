@@ -10,13 +10,13 @@
 
 void dotFragHSBManager::setup(){
     
-    string fullPath = pathToDotShader + name + "/shader";
-    filesystem::path path = filesystem::path(fullPath);
-    shader.load(path/"shader.vert", path/"shader.frag");
-    
-    if(!shader.isLoaded())cout << "issue loading the dotFragHSB shader" << endl;
-    
-    shaderControl.setName("dotFragHSB");
+//    string fullPath = pathToDotShader + name + "/shader";
+//    filesystem::path path = filesystem::path(fullPath);
+//    shader.load(path/"shader.vert", path/"shader.frag");
+//    
+//    if(!shader.isLoaded())cout << "issue loading the dotFragHSB shader" << endl;
+//    
+//    shaderControl.setName("dotFragHSB");
     
     initGui();
     
@@ -32,18 +32,16 @@ void dotFragHSBManager::initGui(){
     shaderControl.add(contrast.set("contrast", 1, 0, 2));
 }
 
-void dotFragHSBManager::begin(ofTexture tex){
+void dotFragHSBManager::addUniforms(ofShader* shader, bool active){
     
-    shader.begin();
-    shader.setUniform1f("u_hue", hue);
-    shader.setUniform1f("u_brightness", brightness);
-    shader.setUniform1f("u_saturation", saturation);
-    shader.setUniform1f("u_contrast", contrast);
-    shader.setUniformTexture("tex0", tex, 0);
-    shader.setUniform1f("sine", ofGetElapsedTimef());
+    shader->setUniform1f(name+"Active", active?1:0);
     
-}
-
-void dotFragHSBManager::end(){
-    shader.end();
+    if(active){
+        shader->setUniform1f("u_hue", hue);
+        shader->setUniform1f("u_brightness", brightness);
+        shader->setUniform1f("u_saturation", saturation);
+        shader->setUniform1f("u_contrast", contrast);
+//        shader.setUniform1f("sine", ofGetElapsedTimef());
+    }
+    
 }

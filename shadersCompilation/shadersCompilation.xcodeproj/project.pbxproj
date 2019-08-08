@@ -10,9 +10,9 @@
 		014259909A3A0898DC5D1B1B /* Monochrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E9481E74C26AB39128011D5 /* Monochrome.cpp */; };
 		0367E43F2E740E3B0F079649 /* invert.glsl in Sources */ = {isa = PBXBuildFile; fileRef = E4319593DD71F163E2DDF7DF /* invert.glsl */; };
 		03A7A88F6F1518052A5FDCE7 /* Twist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E74DC4AC82DCB9E4CB00B2E /* Twist.cpp */; };
-		0A55188BB01C64225D9FF839 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = BDC047D91BDA7FBB8414AF3F /* shader.vert */; };
 		1669BD4C979BCFA4D4ADD205 /* halftone.glsl in Sources */ = {isa = PBXBuildFile; fileRef = CF8C0844FA1E886F40E8C6DD /* halftone.glsl */; };
 		19462D783FC8B60D49486742 /* EdgeOnTopManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D07ED3DF9400132097860794 /* EdgeOnTopManager.cpp */; };
+		195ABAE20FA09E6C24B6CAC1 /* twist.glsl in Sources */ = {isa = PBXBuildFile; fileRef = E1D40A9A3F2A38DB060057BB /* twist.glsl */; };
 		22ADA7CDDB06EE40E14A2235 /* edgeOnTop.glsl in Sources */ = {isa = PBXBuildFile; fileRef = C14680786233D69FAA653EC4 /* edgeOnTop.glsl */; };
 		22E09892872B43074F5D63F9 /* ofxOscParameterSync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C611585187EC7F0A17EFE /* ofxOscParameterSync.cpp */; };
 		234706253E26D151FB2869C0 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0C830C492125CD037A54961 /* ofxBaseGui.cpp */; };
@@ -20,32 +20,26 @@
 		26E58A0988E8F327E49C7FBE /* dotFragHSBManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB3FCBB0EE513DC41F90F803 /* dotFragHSBManager.cpp */; };
 		286FAF885FF7F1F1AA003ED8 /* VerticalNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948C08414631C9DE1C0B38DA /* VerticalNoise.cpp */; };
 		2B32AC5150C0560BEE393ECD /* InvertManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A7B95F71C1FE5E0B1A3FF /* InvertManager.cpp */; };
-		2BB68972ECD12488CE90A9D6 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = FDE253C3D4646EBED3794E89 /* shader.vert */; };
 		2E10ECD6C8F192B2B6DCDCA0 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB4BE1D869B8A07980341064 /* ofxSlider.cpp */; };
-		2F40C5A6E8222541FA56E5E6 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 117A20E05CCDFB5D8368CFE6 /* shader.vert */; };
 		3360D9867A7D10BF8D25FE0E /* fringe.glsl in Sources */ = {isa = PBXBuildFile; fileRef = 8DE81E565FA5EB35C10C125F /* fringe.glsl */; };
 		3AE967A2915233D836214BC8 /* yellowWater.jpg in Sources */ = {isa = PBXBuildFile; fileRef = C851E6A708EE2FC7D5AADF6E /* yellowWater.jpg */; };
-		3FDB72E67495151561C7C45D /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = C74F65A07C74313E29DC075E /* shader.frag */; };
 		40D976264D1D571EC0BB9D5A /* NoiseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F5B2B03C9134FEB67341DF6 /* NoiseManager.cpp */; };
 		41DF9B9DD54763E30BA553C6 /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5E89372127006B2C6EC78E6 /* OscPrintReceivedElements.cpp */; };
 		459D5AA7815A99B4A46CC5D8 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC35246417669CFF4E9BF2 /* ofxPanel.cpp */; };
 		4A216EC0422A3A0766445892 /* ofxOscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69D9D936B23FDFF7DE212738 /* ofxOscMessage.cpp */; };
 		4A527DEEDFAE47F879B9BF8B /* mainShader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 861D17E76AA5894074022DF3 /* mainShader.vert */; };
 		4C83FBFB2C2061CB93D73F75 /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 649FC11B6275DD76790B7E6C /* UdpSocket.cpp */; };
-		50F48ADEBFB75D2B84BCBAE9 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 18AB949B943E9A4666FADADA /* shader.frag */; };
 		57065E6289D9C72E2C8616CF /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3CEB48407FEB3C485B78C5 /* Base.cpp */; };
 		590DC284EBAF8A468FBDA39C /* GlitchManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 412EA0B63F6EEE47561FA2E3 /* GlitchManager.cpp */; };
-		5A0E3D6007B20EC20D8606A3 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = C8BF1F4175211AB665C9D2EE /* shader.frag */; };
 		5AC7AEAAC883AB9A4E574216 /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 338308928850EB86A08E8385 /* IpEndpointName.cpp */; };
-		6210A3D659434D2291360465 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 152E4B6DB7455C491DD48D93 /* shader.frag */; };
+		5E19682FA82E8A72C1BEF38E /* hsb.glsl in Sources */ = {isa = PBXBuildFile; fileRef = 6A492D616D73943FE31D782E /* hsb.glsl */; };
 		622B1347900B81E4E564B301 /* dotFragTwistManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61FBAADB04757FC8A19609B9 /* dotFragTwistManager.cpp */; };
+		6237A4142640A5889DCB7B64 /* MonoChrome.glsl in Sources */ = {isa = PBXBuildFile; fileRef = 2F8B0F96B7EC7CFF2232F586 /* MonoChrome.glsl */; };
 		68C9223A2437393BA19CC6F8 /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E27B10CC40871F4EF35DD2C9 /* ShaderManager.cpp */; };
 		69EC95A7C91D5FCA370C270B /* ThreeTones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11C7AAE24AC22975052999B1 /* ThreeTones.cpp */; };
 		6F1151B3C6A4B29096F5761F /* dotFragTurbulenceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7652E05DE85A37F1D43A03A0 /* dotFragTurbulenceManager.cpp */; };
-		6FDE870699D43DFEE58C4CFF /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 26ABBCCB4F089A2286B09E72 /* shader.frag */; };
 		770172BF2CD6FE0C4C1E2D42 /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B097ECB624E4AF0C1E30 /* OscTypes.cpp */; };
 		8004E9A6B5793C0745BEB46A /* Mirror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7918159487312394BFAF09F1 /* Mirror.cpp */; };
-		821D7F777174FBBFFC2F76D7 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 135AD35F6BC4806ABE66BAFE /* shader.vert */; };
 		82F97C3E2ED9139168531FFF /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C77E1260F7184457B53C9AB0 /* ofxLabel.cpp */; };
 		886E94742BC2AE75AD73B564 /* GuiApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E755A84BC94B1AFACB9A1AA /* GuiApp.cpp */; };
 		8EB5E6C2A9C9617C75FB8126 /* FXAA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2594928751848B6CB899BB61 /* FXAA.cpp */; };
@@ -54,6 +48,7 @@
 		9AF75F77C3BA985CBF2E9DDE /* dotFragMirrorAxisManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A74F94CEDAD28BC75F97D5B /* dotFragMirrorAxisManager.cpp */; };
 		9D8358C848C33A71A6573C5E /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2628C3D77BA6F18C8F6D6F3E /* ofxToggle.cpp */; };
 		A5794B6133C0162DEE059979 /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02C517B8E85B5879B79F9B87 /* OscOutboundPacketStream.cpp */; };
+		AAEC718B83656A72C5CA6266 /* turbulence.glsl in Sources */ = {isa = PBXBuildFile; fileRef = 3D14EB8BE7D99F3B1AA15A57 /* turbulence.glsl */; };
 		ABE5E7809A1F255E20B75ECE /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFA72091C61F938E4126A640 /* ofxGuiGroup.cpp */; };
 		ACE121F3B941377F224C721A /* scanLinesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD02EF21B8A50DF7FE36C88 /* scanLinesManager.cpp */; };
 		B8237B47FC078AB5B5869CE8 /* Turbolence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CC92C2F30159EC100C26C69 /* Turbolence.cpp */; };
@@ -67,12 +62,12 @@
 		C49E89702227B221E13018AD /* Delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67C4955394207BA9EE6A10B8 /* Delay.cpp */; };
 		C64FF57E2DD92F79680F85FE /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98B77A42EF831A80FE31FF94 /* ofxButton.cpp */; };
 		D405271054541043A61ED91A /* ofxColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31685B98464DAACAF16B70CA /* ofxColorPicker.cpp */; };
+		DC2C75880DF9AECE420C9A3B /* mirrorAxis.glsl in Sources */ = {isa = PBXBuildFile; fileRef = CCCE469B302683C6E75B08BD /* mirrorAxis.glsl */; };
 		DEF4DC6855EA2F6359177485 /* FringeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67D9343C5E25FC46BA30805 /* FringeManager.cpp */; };
 		E13FF40C2C50A715AFFFB97B /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 984828DE3AD630CCF2B39517 /* ofxOscSender.cpp */; };
 		E293771ADEA454C7DE557AF1 /* noise.glsl in Sources */ = {isa = PBXBuildFile; fileRef = B638BA854BB7040858454D64 /* noise.glsl */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
-		E998C00203D1583C5A7BF132 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 8AC290327182E0DAECB85A98 /* shader.vert */; };
 		ED4BA18C7A584EEDCB633AD4 /* Live.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D15F01351A6C70BE64CE50 /* Live.cpp */; };
 		F0287896CC57C2D88D1B5DE0 /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCE629C560A9EEE1621FAEA3 /* ofxOscReceiver.cpp */; };
 		F0BF09634C9145D5249797C3 /* mainShader.frag in Sources */ = {isa = PBXBuildFile; fileRef = EA9AC26FA5826B12C3DAE0C6 /* mainShader.frag */; };
@@ -106,27 +101,23 @@
 		0A5E1FF521DA099341000B78 /* MirrorAxis.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MirrorAxis.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/MirrorAxis.cpp; sourceTree = SOURCE_ROOT; };
 		0B7A7B95F71C1FE5E0B1A3FF /* InvertManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InvertManager.cpp; path = src/shaderCompilation/shaderManager/types/invert/InvertManager.cpp; sourceTree = SOURCE_ROOT; };
 		0F7BA5C2B60DB42B49ECA8DB /* PacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PacketListener.h; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h; sourceTree = SOURCE_ROOT; };
-		117A20E05CCDFB5D8368CFE6 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		11C7AAE24AC22975052999B1 /* ThreeTones.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ThreeTones.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/ThreeTones.cpp; sourceTree = SOURCE_ROOT; };
-		135AD35F6BC4806ABE66BAFE /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		152E4B6DB7455C491DD48D93 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		175F19827AE1CF353B5ABC12 /* ofxOscBundle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOscBundle.h; path = ../local_addons/ofxOsc/src/ofxOscBundle.h; sourceTree = SOURCE_ROOT; };
 		17B5B65A49DBD4FBAC492604 /* IpEndpointName.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = IpEndpointName.h; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h; sourceTree = SOURCE_ROOT; };
-		18AB949B943E9A4666FADADA /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTwist/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		1A7C0ABEEA958DC69F92B949 /* VerticalNoise.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VerticalNoise.hpp; path = src/shaderCompilation/shaderManager/types/verticalNoise/VerticalNoise.hpp; sourceTree = SOURCE_ROOT; };
 		1AD02EF21B8A50DF7FE36C88 /* scanLinesManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scanLinesManager.cpp; path = src/shaderCompilation/shaderManager/types/scanLines/scanLinesManager.cpp; sourceTree = SOURCE_ROOT; };
-		1DF28428F25F3CC4CAEE7365 /* verticalNoise.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = verticalNoise.glsl; path = src/shaderCompilation/shaderManager/types/verticalNoise/shader/verticalNoise.glsl; sourceTree = SOURCE_ROOT; };
+		1DF28428F25F3CC4CAEE7365 /* verticalNoise.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = verticalNoise.glsl; path = src/shaderCompilation/shaderManager/types/verticalNoise/shader/verticalNoise.glsl; sourceTree = SOURCE_ROOT; };
 		1E74DC4AC82DCB9E4CB00B2E /* Twist.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Twist.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Twist.cpp; sourceTree = SOURCE_ROOT; };
 		1F3F8C426DF31120D73CAB9B /* ofxDotFrag.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxDotFrag.h; path = ../local_addons/ofxDotFrag/src/ofxDotFrag.h; sourceTree = SOURCE_ROOT; };
 		2594928751848B6CB899BB61 /* FXAA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FXAA.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/FXAA.cpp; sourceTree = SOURCE_ROOT; };
 		25E0072C3297100E957ED6BE /* GlitchManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GlitchManager.hpp; path = src/shaderCompilation/shaderManager/types/glitch/GlitchManager.hpp; sourceTree = SOURCE_ROOT; };
 		2628C3D77BA6F18C8F6D6F3E /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxToggle.cpp; path = ../local_addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
-		26ABBCCB4F089A2286B09E72 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		26EF9E9598CFC94EEBC43A5F /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscOutboundPacketStream.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h; sourceTree = SOURCE_ROOT; };
 		2A74F94CEDAD28BC75F97D5B /* dotFragMirrorAxisManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragMirrorAxisManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.cpp; sourceTree = SOURCE_ROOT; };
 		2B245CCD433A1926062FD3A9 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscPrintReceivedElements.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.h; sourceTree = SOURCE_ROOT; };
 		2E3FB14E431924F6F4B62EC0 /* ofxInputField.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxInputField.cpp; path = ../local_addons/ofxGui/src/ofxInputField.cpp; sourceTree = SOURCE_ROOT; };
 		2E9481E74C26AB39128011D5 /* Monochrome.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Monochrome.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Monochrome.cpp; sourceTree = SOURCE_ROOT; };
+		2F8B0F96B7EC7CFF2232F586 /* MonoChrome.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = MonoChrome.glsl; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader/MonoChrome.glsl; sourceTree = SOURCE_ROOT; };
 		308D88CB92199CC4EA34047B /* NetworkingUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NetworkingUtils.h; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h; sourceTree = SOURCE_ROOT; };
 		315B98101C47D45DC2E28B8E /* ofxColorPicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxColorPicker.h; path = ../local_addons/ofxGui/src/ofxColorPicker.h; sourceTree = SOURCE_ROOT; };
 		31685B98464DAACAF16B70CA /* ofxColorPicker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxColorPicker.cpp; path = ../local_addons/ofxGui/src/ofxColorPicker.cpp; sourceTree = SOURCE_ROOT; };
@@ -135,6 +126,7 @@
 		386261FECFE2C7A5F251DED3 /* EdgeOnTopManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EdgeOnTopManager.hpp; path = src/shaderCompilation/shaderManager/types/edgeOnTop/EdgeOnTopManager.hpp; sourceTree = SOURCE_ROOT; };
 		3C87ED8E92EFFA1AE2A21FED /* dotFragTurbulenceManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragTurbulenceManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/dotFragTurbulenceManager.hpp; sourceTree = SOURCE_ROOT; };
 		3CC92C2F30159EC100C26C69 /* Turbolence.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Turbolence.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Turbolence.cpp; sourceTree = SOURCE_ROOT; };
+		3D14EB8BE7D99F3B1AA15A57 /* turbulence.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = turbulence.glsl; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader/turbulence.glsl; sourceTree = SOURCE_ROOT; };
 		3FD1A63F6062D54CB96FFBEC /* EchoTrace.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EchoTrace.h; path = ../local_addons/ofxDotFrag/src/dotfrag/EchoTrace.h; sourceTree = SOURCE_ROOT; };
 		412EA0B63F6EEE47561FA2E3 /* GlitchManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GlitchManager.cpp; path = src/shaderCompilation/shaderManager/types/glitch/GlitchManager.cpp; sourceTree = SOURCE_ROOT; };
 		42FECC0B446B3EA400A98D7D /* FXAA.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FXAA.h; path = ../local_addons/ofxDotFrag/src/dotfrag/FXAA.h; sourceTree = SOURCE_ROOT; };
@@ -151,6 +143,7 @@
 		64D31F0818BD6C0D005543CF /* constants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = constants.h; path = src/constants.h; sourceTree = SOURCE_ROOT; };
 		67C4955394207BA9EE6A10B8 /* Delay.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Delay.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Delay.cpp; sourceTree = SOURCE_ROOT; };
 		69D9D936B23FDFF7DE212738 /* ofxOscMessage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOscMessage.cpp; path = ../local_addons/ofxOsc/src/ofxOscMessage.cpp; sourceTree = SOURCE_ROOT; };
+		6A492D616D73943FE31D782E /* hsb.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = hsb.glsl; path = src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader/hsb.glsl; sourceTree = SOURCE_ROOT; };
 		6C308753569799B6631A3AA3 /* ofxOsc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOsc.h; path = ../local_addons/ofxOsc/src/ofxOsc.h; sourceTree = SOURCE_ROOT; };
 		6F53E73CF9BB468FB1B8D2FC /* OscReceivedElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscReceivedElements.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h; sourceTree = SOURCE_ROOT; };
 		6F5B2B03C9134FEB67341DF6 /* NoiseManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NoiseManager.cpp; path = src/shaderCompilation/shaderManager/types/noise/NoiseManager.cpp; sourceTree = SOURCE_ROOT; };
@@ -168,14 +161,13 @@
 		8418606430BF694792DFD99D /* Monochrome.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Monochrome.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Monochrome.h; sourceTree = SOURCE_ROOT; };
 		861D17E76AA5894074022DF3 /* mainShader.vert */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = mainShader.vert; path = src/shaderCompilation/shaderManager/mainShader/mainShader.vert; sourceTree = SOURCE_ROOT; };
 		876DF62D2D428C181D5D2F45 /* ofxButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxButton.h; path = ../local_addons/ofxGui/src/ofxButton.h; sourceTree = SOURCE_ROOT; };
-		8AC290327182E0DAECB85A98 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTwist/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		8B6C611585187EC7F0A17EFE /* ofxOscParameterSync.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOscParameterSync.cpp; path = ../local_addons/ofxOsc/src/ofxOscParameterSync.cpp; sourceTree = SOURCE_ROOT; };
 		8CB0704AD0D0961B0A3CB963 /* FringeManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FringeManager.hpp; path = src/shaderCompilation/shaderManager/types/fringe/FringeManager.hpp; sourceTree = SOURCE_ROOT; };
 		8D3B89C043D98A021AF15643 /* RadialRemap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RadialRemap.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/RadialRemap.cpp; sourceTree = SOURCE_ROOT; };
-		8DE81E565FA5EB35C10C125F /* fringe.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = fringe.glsl; path = src/shaderCompilation/shaderManager/types/fringe/shader/fringe.glsl; sourceTree = SOURCE_ROOT; };
+		8DE81E565FA5EB35C10C125F /* fringe.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = fringe.glsl; path = src/shaderCompilation/shaderManager/types/fringe/shader/fringe.glsl; sourceTree = SOURCE_ROOT; };
 		8DEC35246417669CFF4E9BF2 /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxPanel.cpp; path = ../local_addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
 		90D8BE02CD7989ADC840A8C0 /* dotFragMonochromeManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragMonochromeManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/dotFragMonochromeManager.cpp; sourceTree = SOURCE_ROOT; };
-		90DA571C5F9086B8229DA7A9 /* scanLines.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = scanLines.glsl; path = src/shaderCompilation/shaderManager/types/scanLines/shader/scanLines.glsl; sourceTree = SOURCE_ROOT; };
+		90DA571C5F9086B8229DA7A9 /* scanLines.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = scanLines.glsl; path = src/shaderCompilation/shaderManager/types/scanLines/shader/scanLines.glsl; sourceTree = SOURCE_ROOT; };
 		93D7FEF011E4C8CEA5DB7A23 /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxGui.h; path = ../local_addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
 		948C08414631C9DE1C0B38DA /* VerticalNoise.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VerticalNoise.cpp; path = src/shaderCompilation/shaderManager/types/verticalNoise/VerticalNoise.cpp; sourceTree = SOURCE_ROOT; };
 		954258E74EBA4479DD81FBA8 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSlider.h; path = ../local_addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
@@ -192,32 +184,31 @@
 		B0C830C492125CD037A54961 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxBaseGui.cpp; path = ../local_addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
 		B47A6F7174395F48E3D462F8 /* dotFragTwistManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragTwistManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTwist/dotFragTwistManager.hpp; sourceTree = SOURCE_ROOT; };
 		B61824DA7CAFABF4C8A0BDBB /* Twist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Twist.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Twist.h; sourceTree = SOURCE_ROOT; };
-		B638BA854BB7040858454D64 /* noise.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = noise.glsl; path = src/shaderCompilation/shaderManager/types/noise/shader/noise.glsl; sourceTree = SOURCE_ROOT; };
+		B638BA854BB7040858454D64 /* noise.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = noise.glsl; path = src/shaderCompilation/shaderManager/types/noise/shader/noise.glsl; sourceTree = SOURCE_ROOT; };
 		B7C87DAC6351CAB0C4E25140 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxLabel.h; path = ../local_addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
 		B9A96AADCDC4392C1D8676CA /* dotFragMirrorAxisManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragMirrorAxisManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.hpp; sourceTree = SOURCE_ROOT; };
 		BA2C482B26F8E60D5B25F8ED /* HSB.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HSB.h; path = ../local_addons/ofxDotFrag/src/dotfrag/HSB.h; sourceTree = SOURCE_ROOT; };
 		BB3FCBB0EE513DC41F90F803 /* dotFragHSBManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragHSBManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/dotFragHSBManager.cpp; sourceTree = SOURCE_ROOT; };
-		BDC047D91BDA7FBB8414AF3F /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		BFA72091C61F938E4126A640 /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxGuiGroup.cpp; path = ../local_addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
 		C004D98E067D088CB9175BFF /* OscHostEndianness.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscHostEndianness.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscHostEndianness.h; sourceTree = SOURCE_ROOT; };
-		C14680786233D69FAA653EC4 /* edgeOnTop.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = edgeOnTop.glsl; path = src/shaderCompilation/shaderManager/types/edgeOnTop/shader/edgeOnTop.glsl; sourceTree = SOURCE_ROOT; };
+		C14680786233D69FAA653EC4 /* edgeOnTop.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = edgeOnTop.glsl; path = src/shaderCompilation/shaderManager/types/edgeOnTop/shader/edgeOnTop.glsl; sourceTree = SOURCE_ROOT; };
 		C156B097ECB624E4AF0C1E30 /* OscTypes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OscTypes.cpp; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp; sourceTree = SOURCE_ROOT; };
 		C5B51D2F6EC6D7591F45DA33 /* RadialRemap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RadialRemap.h; path = ../local_addons/ofxDotFrag/src/dotfrag/RadialRemap.h; sourceTree = SOURCE_ROOT; };
 		C6A59B10DFE32BCB364CD7C8 /* OscTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscTypes.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h; sourceTree = SOURCE_ROOT; };
-		C74F65A07C74313E29DC075E /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		C77E1260F7184457B53C9AB0 /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxLabel.cpp; path = ../local_addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
 		C851E6A708EE2FC7D5AADF6E /* yellowWater.jpg */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = yellowWater.jpg; path = src/shaderCompilation/shaderManager/types/glitch/texture/yellowWater.jpg; sourceTree = SOURCE_ROOT; };
-		C8BF1F4175211AB665C9D2EE /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		CB0A08B30227B7CA8377F859 /* InvertStrobe.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InvertStrobe.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/InvertStrobe.cpp; sourceTree = SOURCE_ROOT; };
 		CB4BE1D869B8A07980341064 /* ofxSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxSlider.cpp; path = ../local_addons/ofxGui/src/ofxSlider.cpp; sourceTree = SOURCE_ROOT; };
 		CC0C45938D83C7265E07E426 /* dotFragMonochromeManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragMonochromeManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/dotFragMonochromeManager.hpp; sourceTree = SOURCE_ROOT; };
+		CCCE469B302683C6E75B08BD /* mirrorAxis.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = mirrorAxis.glsl; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader/mirrorAxis.glsl; sourceTree = SOURCE_ROOT; };
 		CCE629C560A9EEE1621FAEA3 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOscReceiver.cpp; path = ../local_addons/ofxOsc/src/ofxOscReceiver.cpp; sourceTree = SOURCE_ROOT; };
 		CDB3DEEBB8599D5F27CCD9DE /* Mirror.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Mirror.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Mirror.h; sourceTree = SOURCE_ROOT; };
-		CF8C0844FA1E886F40E8C6DD /* halftone.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = halftone.glsl; path = src/shaderCompilation/shaderManager/types/halftone/shader/halftone.glsl; sourceTree = SOURCE_ROOT; };
+		CF8C0844FA1E886F40E8C6DD /* halftone.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = halftone.glsl; path = src/shaderCompilation/shaderManager/types/halftone/shader/halftone.glsl; sourceTree = SOURCE_ROOT; };
 		D07ED3DF9400132097860794 /* EdgeOnTopManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EdgeOnTopManager.cpp; path = src/shaderCompilation/shaderManager/types/edgeOnTop/EdgeOnTopManager.cpp; sourceTree = SOURCE_ROOT; };
 		D5471DB8E4228C898132735B /* scanLinesManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scanLinesManager.hpp; path = src/shaderCompilation/shaderManager/types/scanLines/scanLinesManager.hpp; sourceTree = SOURCE_ROOT; };
-		DDBFA2B5BE4B273695B6924B /* glitch.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = glitch.glsl; path = src/shaderCompilation/shaderManager/types/glitch/shader/glitch.glsl; sourceTree = SOURCE_ROOT; };
+		DDBFA2B5BE4B273695B6924B /* glitch.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = glitch.glsl; path = src/shaderCompilation/shaderManager/types/glitch/shader/glitch.glsl; sourceTree = SOURCE_ROOT; };
 		E19AC41C639251D91F4831D3 /* Base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Base.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Base.h; sourceTree = SOURCE_ROOT; };
+		E1D40A9A3F2A38DB060057BB /* twist.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = twist.glsl; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTwist/shader/twist.glsl; sourceTree = SOURCE_ROOT; };
 		E27B10CC40871F4EF35DD2C9 /* ShaderManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShaderManager.cpp; path = src/shaderCompilation/shaderManager/ShaderManager.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../../libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../../libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
@@ -394,7 +385,7 @@
 		E42963712163EDD300A6A9E2 /* ofFmodSoundPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofFmodSoundPlayer.h; path = ../../../libs/openFrameworks/sound/ofFmodSoundPlayer.h; sourceTree = SOURCE_ROOT; };
 		E42963722163EDD300A6A9E2 /* ofSoundBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofSoundBuffer.cpp; path = ../../../libs/openFrameworks/sound/ofSoundBuffer.cpp; sourceTree = SOURCE_ROOT; };
 		E42963732163EDD300A6A9E2 /* ofSoundBaseTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofSoundBaseTypes.h; path = ../../../libs/openFrameworks/sound/ofSoundBaseTypes.h; sourceTree = SOURCE_ROOT; };
-		E4319593DD71F163E2DDF7DF /* invert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = invert.glsl; path = src/shaderCompilation/shaderManager/types/invert/shader/invert.glsl; sourceTree = SOURCE_ROOT; };
+		E4319593DD71F163E2DDF7DF /* invert.glsl */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = invert.glsl; path = src/shaderCompilation/shaderManager/types/invert/shader/invert.glsl; sourceTree = SOURCE_ROOT; };
 		E4AEF8ABF9A7A92C31B2E387 /* UdpSocket.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = UdpSocket.h; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* shadersCompilationDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shadersCompilationDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -414,7 +405,6 @@
 		F774A21F9AA663EF94A3B5C8 /* HSB.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HSB.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/HSB.cpp; sourceTree = SOURCE_ROOT; };
 		FA3CEB48407FEB3C485B78C5 /* Base.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Base.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Base.cpp; sourceTree = SOURCE_ROOT; };
 		FBA03C2704454766B0502AF7 /* managerBase.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = managerBase.hpp; path = src/shaderCompilation/shaderManager/managerBase/managerBase.hpp; sourceTree = SOURCE_ROOT; };
-		FDE253C3D4646EBED3794E89 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -597,8 +587,7 @@
 		3A7C7A9C9D8D1CE0A482C699 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				FDE253C3D4646EBED3794E89 /* shader.vert */,
-				26ABBCCB4F089A2286B09E72 /* shader.frag */,
+				6A492D616D73943FE31D782E /* hsb.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -606,8 +595,7 @@
 		3B7C5A7AC95904EDEDADDF0D /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				135AD35F6BC4806ABE66BAFE /* shader.vert */,
-				152E4B6DB7455C491DD48D93 /* shader.frag */,
+				3D14EB8BE7D99F3B1AA15A57 /* turbulence.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -679,8 +667,7 @@
 		786331EE830A9E0953AB97D5 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				8AC290327182E0DAECB85A98 /* shader.vert */,
-				18AB949B943E9A4666FADADA /* shader.frag */,
+				E1D40A9A3F2A38DB060057BB /* twist.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -704,8 +691,7 @@
 		7DD44C470E3507CD2A40558B /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				117A20E05CCDFB5D8368CFE6 /* shader.vert */,
-				C8BF1F4175211AB665C9D2EE /* shader.frag */,
+				CCCE469B302683C6E75B08BD /* mirrorAxis.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -809,8 +795,7 @@
 		B97D6FD15A55C69BC95DCAC8 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				BDC047D91BDA7FBB8414AF3F /* shader.vert */,
-				C74F65A07C74313E29DC075E /* shader.frag */,
+				2F8B0F96B7EC7CFF2232F586 /* MonoChrome.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -1378,19 +1363,14 @@
 				BD444C2540D1DEB2098A3973 /* HalftoneManager.cpp in Sources */,
 				1669BD4C979BCFA4D4ADD205 /* halftone.glsl in Sources */,
 				26E58A0988E8F327E49C7FBE /* dotFragHSBManager.cpp in Sources */,
-				2BB68972ECD12488CE90A9D6 /* shader.vert in Sources */,
-				6FDE870699D43DFEE58C4CFF /* shader.frag in Sources */,
+				5E19682FA82E8A72C1BEF38E /* hsb.glsl in Sources */,
 				622B1347900B81E4E564B301 /* dotFragTwistManager.cpp in Sources */,
-				E998C00203D1583C5A7BF132 /* shader.vert in Sources */,
-				50F48ADEBFB75D2B84BCBAE9 /* shader.frag in Sources */,
-				2F40C5A6E8222541FA56E5E6 /* shader.vert in Sources */,
-				5A0E3D6007B20EC20D8606A3 /* shader.frag in Sources */,
+				195ABAE20FA09E6C24B6CAC1 /* twist.glsl in Sources */,
+				DC2C75880DF9AECE420C9A3B /* mirrorAxis.glsl in Sources */,
 				9AF75F77C3BA985CBF2E9DDE /* dotFragMirrorAxisManager.cpp in Sources */,
 				6F1151B3C6A4B29096F5761F /* dotFragTurbulenceManager.cpp in Sources */,
-				821D7F777174FBBFFC2F76D7 /* shader.vert in Sources */,
-				6210A3D659434D2291360465 /* shader.frag in Sources */,
-				0A55188BB01C64225D9FF839 /* shader.vert in Sources */,
-				3FDB72E67495151561C7C45D /* shader.frag in Sources */,
+				AAEC718B83656A72C5CA6266 /* turbulence.glsl in Sources */,
+				6237A4142640A5889DCB7B64 /* MonoChrome.glsl in Sources */,
 				F7A629FA4AFA37C636DC4EEC /* dotFragMonochromeManager.cpp in Sources */,
 				F0BF09634C9145D5249797C3 /* mainShader.frag in Sources */,
 				4A527DEEDFAE47F879B9BF8B /* mainShader.vert in Sources */,

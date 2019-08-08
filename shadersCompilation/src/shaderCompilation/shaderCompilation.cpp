@@ -27,7 +27,7 @@ void shaderCompilation::setup(int _width, int _height){
     guiPanel.add(sManager.edgeOnTopManager.shaderControl);
     guiPanel.add(sManager.scanLinesManager.shaderControl);
 //    //dot frag
-//    gui.add(sManager.dotFragHSB.shaderControl);
+    guiPanel.add(sManager.dotFragHSB.shaderControl);
 //    gui.add(sManager.dotFragMirrorAxis.shaderControl);
 //    gui.add(sManager.dotFragTurbulence.shaderControl);
 //    gui.add(sManager.dotFragTwist.shaderControl);

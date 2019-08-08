@@ -37,6 +37,7 @@ void ShaderManager::draw(vector <ofParameter<bool>> activeShaders){
     noiseManager.addUniforms(       &mainShader, activeShaders[5]);
     edgeOnTopManager.addUniforms(   &mainShader, activeShaders[6]);
     scanLinesManager.addUniforms(   &mainShader, activeShaders[7]);
+    dotFragHSB.addUniforms(         &mainShader, activeShaders[8]);
     
     mainShader.setUniformTexture("tex0", srcPtr->getTextureReference(), 0);
     mainShader.setUniform1f("iTime", ofGetElapsedTimef());

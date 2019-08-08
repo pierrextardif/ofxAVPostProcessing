@@ -3,6 +3,8 @@ precision highp float;
 
 
 // ==== imports glsl from types ==== //
+
+//customs
 #pragma include "../types/halftone/shader/halftone.glsl"
 #pragma include "../types/glitch/shader/glitch.glsl"
 #pragma include "../types/fringe/shader/fringe.glsl"
@@ -12,7 +14,8 @@ precision highp float;
 #pragma include "../types/edgeOnTop/shader/edgeOnTop.glsl"
 #pragma include "../types/scanLines/shader/scanLines.glsl"
 
-
+//dotFrag
+#pragma include "../typesDotF/dotFragHSB/shader/hsb.glsl"
 
 
 // ==== imports glsl from types ==== //
@@ -55,6 +58,7 @@ void main () {
         
     }
     
+    if(dotFragHSBActive == 1)   colors.rgb = hsbColors(colors.rgb, iTime);
     if(edgeOnTopActive == 1)    colors.rgb += edgeOnTopColors(vUv, tex0);
     if(noiseActive == 1)        colors.rgb += noiseColors(vUv, tex0, iTime);
     if(invertActive == 1)       colors = invertColors(vUv, colors);
