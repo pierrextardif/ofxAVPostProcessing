@@ -9,6 +9,9 @@ precision highp float;
 #pragma include "../types/invert/shader/invert.glsl"
 #pragma include "../types/verticalNoise/shader/verticalNoise.glsl"
 #pragma include "../types/noise/shader/noise.glsl"
+#pragma include "../types/edgeOnTop/shader/edgeOnTop.glsl"
+#pragma include "../types/scanLines/shader/scanLines.glsl"
+
 
 
 
@@ -46,9 +49,15 @@ void main () {
         colors.rgb += verticalNoiseColors(vUv, tex0, iTime);
 //        colors.rgb = mix(newColors, colors.rgb, colors.rgb - newColors);
     }
+    if(scanLinesActive == 1){
+        newColors = scanLinesColors(vUv, tex0, colors);
+        colors.rgb = mix(newColors, colors.rgb, colors.rgb - newColors);
+        
+    }
     
-    if(noiseActive  == 1)colors.rgb += noiseColors(vUv, tex0, iTime);
-    if(invertActive == 1)colors = invertColors(vUv, colors);
+    if(edgeOnTopActive == 1)    colors.rgb += edgeOnTopColors(vUv, tex0);
+    if(noiseActive == 1)        colors.rgb += noiseColors(vUv, tex0, iTime);
+    if(invertActive == 1)       colors = invertColors(vUv, colors);
     
     outputColor = colors;
 }

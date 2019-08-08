@@ -1,16 +1,7 @@
-#version 150
 
-uniform float Volume;
-uniform float Phase;
-uniform float ScaleW;
-uniform float ScaleH;
+uniform float edgeOnTopActive;
 
-uniform sampler2DRect tex0;
-
-in vec2 vUv;
-out vec4 outputColor;
-
-void main(void){
+vec3 edgeOnTopColors(vec2 vUv, sampler2DRect tex){
     vec2 st = vUv;
     vec4 col;
     vec3 maximum = vec3(0.0,0.0,0.0);
@@ -20,8 +11,8 @@ void main(void){
     int j = 0;
     for (i; i < 3;i++){
         for (j; j < 3;j++){
-            vec4 c = texture(tex0, vec2(st.x + float(i) - 1.0,
-                                              st.y + float(j) - 1.0));
+            vec4 c = texture(tex, vec2(vUv.x + float(i) - 1.0,
+                                              vUv.y + float(j) - 1.0));
             
             maximum.r = max(maximum.r, c.r);
             minimum.r = min(minimum.r, c.r);
@@ -33,11 +24,7 @@ void main(void){
         }
     }
     
-    col = texture(tex0, vec2(st.x, st.y));
-    
-    vec3 br = vec3(pow(maximum.r - minimum.r,2.0),
+    return vec3(pow(maximum.r - minimum.r,2.0),
                    pow(maximum.g - minimum.g,2.0),
                    pow(maximum.b - minimum.b,2.0));
-    
-    outputColor = vec4(br,1.0) + col;
 }

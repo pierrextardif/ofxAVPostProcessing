@@ -21,7 +21,7 @@ class ScanLinesManager : managerBase {
     
     public :
     
-    string name = "ScanLines";
+    string name = "scanLines";
     ofShader shader;
     
     ofParameterGroup shaderControl;

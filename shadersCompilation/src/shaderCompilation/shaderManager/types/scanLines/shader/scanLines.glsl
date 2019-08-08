@@ -1,14 +1,7 @@
-#version 150
 
-in vec2 vUv;
-out vec4 outColor;
-
-// ==== custom ==== //
-uniform sampler2DRect tex0;
-
+uniform  float scanLinesActive;
 uniform float time;
 uniform vec3 scanL;
-// ==== custom ==== //
 
 
 float random (in vec2 st) {
@@ -16,7 +9,7 @@ float random (in vec2 st) {
                          vec2(12.9898,78.233)))*43758.5453123);
 }
 
-float noise (in vec2 st) {
+float noiseScanLines (in vec2 st) {
     vec2 i = floor(st);
     vec2 f = fract(st);
 
@@ -31,25 +24,21 @@ float noise (in vec2 st) {
     (d - b) * u.x * u.y;
 }
 
-void main() {
+vec3 scanLinesColors(vec2 vUv, sampler2DRect tex0, vec4 colors) {
 
-    vec2 st = vUv.xy;
-
-    vec4 colorRGBA = texture(tex0, st).rgba;
+    vec4 colorRGBA = texture(tex0, vUv).rgba;
 
     if(colorRGBA.a == 1.0){
 
-        vec2 newSt = vec2(st.x + noise(vec2(0.1, 0.1) ), st.y);
+        vec2 newSt = vec2(vUv.x + noiseScanLines(vec2(0.1, 0.1) ), vUv.y);
         float colorR = sin(time) * 0.5 + + 0.3 + 0.2 * texture(tex0,newSt).r;
 
-        float scanVol = st.y * 800 * scanL.x;
+        float scanVol = vUv.y * 800 * scanL.x;
         float scanLines = sin(scanVol)*0.04 * scanL.y;
 
-        colorRGBA.r -= scanLines * scanL.z;
-        colorRGBA.g -= scanLines * scanL.z;
-        colorRGBA.b -= scanLines * scanL.z;
+        colorRGBA.rgb -= scanLines * scanL.z;
     }
-    outColor = colorRGBA;
+    return colorRGBA.rgb;
 }
 
 
