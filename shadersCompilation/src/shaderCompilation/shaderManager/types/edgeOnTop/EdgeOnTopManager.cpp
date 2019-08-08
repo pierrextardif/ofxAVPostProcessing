@@ -10,11 +10,11 @@
 
 void EdgeOnTopManager::setup(){
     
-    string fullPath = pathToShader + name + "/shader";
-    filesystem::path path = filesystem::path(fullPath);
-    shader.load(path/"shader.vert", path/"shader.frag");
-    
-    if(!shader.isLoaded())cout << "issue loading the halftone shader" << endl;
+//    string fullPath = pathToShader + name + "/shader";
+//    filesystem::path path = filesystem::path(fullPath);
+//    shader.load(path/"shader.vert", path/"shader.frag");
+//    
+//    if(!shader.isLoaded())cout << "issue loading the halftone shader" << endl;
     
     initGui();
     
@@ -29,18 +29,15 @@ void EdgeOnTopManager::initGui(){
     shaderControl.add(ScaleH.set("ScaleH", 1, 0,1024));
 }
 
-void EdgeOnTopManager::begin(ofTexture tex){
+void EdgeOnTopManager::addUniforms(ofShader* shader, bool active){
     
-    shader.begin();
-    shader.setUniform1f("Volume", Volume);
-    shader.setUniform1f("ScaleW", ScaleW);
-    shader.setUniform1f("ScaleH", ScaleH);
+    shader->setUniform1f(name+"Active", active?1:0);
     
-    shader.setUniformTexture("tex0", tex, 0);
+    if(active){
+        shader->setUniform1f("Volume", Volume);
+        shader->setUniform1f("ScaleW", ScaleW);
+        shader->setUniform1f("ScaleH", ScaleH);
+    }
+    
     
 }
-
-void EdgeOnTopManager::end(){
-    shader.end();
-}
-

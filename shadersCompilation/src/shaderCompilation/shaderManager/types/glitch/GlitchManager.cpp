@@ -9,12 +9,12 @@
 
 void GlitchManager::setup(){
     
-    string fullPath = pathToShader + name + "/shader";
-    filesystem::path path = filesystem::path(fullPath);
-    shader.load(path/"shader.vert", path/"shader.frag");
-    
-    if(!shader.isLoaded())cout << "issue loading the halftone shader" << endl;
-    
+//    string fullPath = pathToShader + name + "/shader";
+//    filesystem::path path = filesystem::path(fullPath);
+//    shader.load(path/"shader.vert", path/"shader.frag");
+//
+//    if(!shader.isLoaded())cout << "issue loading the halftone shader" << endl;
+//
     initGui();
     
     initTextures();
@@ -35,24 +35,20 @@ void GlitchManager::initGui(){
 //    shaderControl.add(col_s.set("col_s", 1, 0,512));
 }
 
-void GlitchManager::begin(){
+void GlitchManager::addUniforms(ofShader* shader, bool active){
     
-    shader.begin();
-    shader.setUniformTexture("tDiffuse", image1.getTexture(),0);
-    shader.setUniformTexture("heightMap", image2.getTexture(),1);
-    shader.setUniform1f("amount", amount);
-    shader.setUniform1f("angle", angle);
-    shader.setUniform1f("seed", seed);
-    shader.setUniform1f("seed_x", seed_x);
-    shader.setUniform1f("seed_y", seed_y);
-    shader.setUniform1f("distortion_x", distortion_x);
-    shader.setUniform1f("distortion_y", distortion_y);
-    shader.setUniform1f("col_s", col_s);
+    shader->setUniform1f(name+"Active", active?1:0);
     
-}
-
-void GlitchManager::end(){
-    shader.end();
+    if(active){
+        shader->setUniformTexture("tDiffuse", image1.getTexture(),0);
+        shader->setUniform1f("amount", amount);
+        shader->setUniform1f("angle", angle);
+        shader->setUniform1f("seed", seed);
+        shader->setUniform1f("seed_x", seed_x);
+        shader->setUniform1f("seed_y", seed_y);
+        shader->setUniform1f("distortion_x", distortion_x);
+        shader->setUniform1f("distortion_y", distortion_y);
+    }
 }
 
 
@@ -76,9 +72,9 @@ ofImage GlitchManager::generateHeightTexture(int size){
 
 void GlitchManager::initTextures(){
     
-    string fullPath = "../../src/shaderManager/types/" + name + "/texture";
+    string fullPath = pathToShader + name + "/texture";
     filesystem::path path = filesystem::path(fullPath);
     image1.load(path/"yellowWater.jpg");
     // 1024 is the size of the image1
-    image2 = generateHeightTexture(1024);
+//    image2 = generateHeightTexture(1024);
 }

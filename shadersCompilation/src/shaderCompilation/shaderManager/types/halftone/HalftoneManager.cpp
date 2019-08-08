@@ -10,11 +10,11 @@
 
 void HalftoneManager::setup(){
     
-    string fullPath = pathToShader + name + "/shader";
-    filesystem::path path = filesystem::path(fullPath);
-    shader.load(path/"shader.vert", path/"shader.frag");
-    
-    if(!shader.isLoaded())cout << "issue loading the halftone shader" << endl;
+//    string fullPath = pathToShader + name + "/shader";
+//    filesystem::path path = filesystem::path(fullPath);
+//    shader.load(path/"shader.vert", path/"shader.frag");
+//
+//    if(!shader.isLoaded())cout << "issue loading the halftone shader" << endl;
     
     initGui();
     
@@ -34,23 +34,21 @@ void HalftoneManager::initGui(){
     shaderControl.add(blendingMode.set("blendingMode", 1, 1,5));
 }
 
-void HalftoneManager::begin(){
+void HalftoneManager::addUniforms(ofShader* shader, bool active){
     
-    shader.begin();
-    shader.setUniform1f("radius", radius);
-    shader.setUniform1f("rotateR", rotateR);
-    shader.setUniform1f("rotateG", rotateG);
-    shader.setUniform1f("rotateB", rotateB);
-    shader.setUniform1f("scatter", scatter);
-    shader.setUniform1f("width", WIDTH);
-    shader.setUniform1f("height", HEIGHT);
-    shader.setUniform1i("shape", shape);
-    shader.setUniform1f("blending", blending);
-    shader.setUniform1i("blendingMode", blendingMode);
+    shader->setUniform1f(name+"Active", active?1:0);
+    if(active){
+       
+        shader->setUniform1f("radius", radius);
+        shader->setUniform1f("rotateR", rotateR);
+        shader->setUniform1f("rotateG", rotateG);
+        shader->setUniform1f("rotateB", rotateB);
+        shader->setUniform1f("scatter", scatter);
+        shader->setUniform1f("width", WIDTH);
+        shader->setUniform1f("height", HEIGHT);
+        shader->setUniform1i("shape", shape);
+        shader->setUniform1f("blending", blending);
+        shader->setUniform1i("blendingMode", blendingMode);
+    }
     
 }
-
-void HalftoneManager::end(){
-    shader.end();
-}
-

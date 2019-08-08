@@ -36,8 +36,6 @@ class VerticalNoise : managerBase {
     void initGui();
     
     
-    void begin(ofTexture tex);
-    void end();
-};
+    void addUniforms(ofShader* shader, bool active);};
 
 #endif /* VerticalNoise_hpp */

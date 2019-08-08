@@ -9,7 +9,7 @@
 
 void dotFragTwistManager::setup(){
     
-    string fullPath = "../../src/shaderManager/typesDotF/" + name + "/shader";
+    string fullPath = pathToDotShader + name + "/shader";
     filesystem::path path = filesystem::path(fullPath);
     shader.load(path/"shader.vert", path/"shader.frag");
     

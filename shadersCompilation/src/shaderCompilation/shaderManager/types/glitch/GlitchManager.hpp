@@ -41,8 +41,7 @@ class GlitchManager : managerBase{
 
     
     
-    void begin();
-    void end();
+    void addUniforms(ofShader* shader, bool active);
     
     
     ofParameter<float>amount;

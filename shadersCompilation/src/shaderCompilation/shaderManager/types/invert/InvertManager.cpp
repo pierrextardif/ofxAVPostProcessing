@@ -9,26 +9,23 @@
 
 
 void InvertManager::setup(){
-    
-    string fullPath = pathToShader + name + "/shader";
-    filesystem::path path = filesystem::path(fullPath);
-    shader.load(path/"shader.vert", path/"shader.frag");
-    
-    if(!shader.isLoaded())cout << "issue loading the invert shader" << endl;
+//    
+//    string fullPath = pathToShader + name + "/shader";
+//    filesystem::path path = filesystem::path(fullPath);
+//    shader.load(path/"shader.vert", path/"shader.frag");
+//    
+//    if(!shader.isLoaded())cout << "issue loading the invert shader" << endl;
     
     shaderControl.setName("invert");
     
 }
 
-void InvertManager::begin(ofTexture tex){
+void InvertManager::addUniforms(ofShader* shader, bool active){
     
-    shader.begin();
-    shader.setUniform1f("Volume", 1.0);
-    shader.setUniformTexture("tex0", tex, 0);
+    shader->setUniform1f(name+"Active", active?1:0);
+    
+//    if(active){
+//        shader->setUniform1f("Volume", 1.0);
+//    }
     
 }
-
-void InvertManager::end(){
-    shader.end();
-}
-

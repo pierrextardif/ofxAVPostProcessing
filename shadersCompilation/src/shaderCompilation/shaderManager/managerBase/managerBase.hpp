@@ -20,6 +20,7 @@ class managerBase {
     
     string name = "";
     string pathToShader = "../../src/shaderCompilation/shaderManager/types/";
+    string pathToDotShader = "../../src/shaderCompilation/shaderManager/typesDotF/";
     ofShader shader;
     
     ofParameterGroup shaderControl;

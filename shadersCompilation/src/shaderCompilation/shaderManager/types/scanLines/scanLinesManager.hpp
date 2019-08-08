@@ -41,8 +41,7 @@ class ScanLinesManager : managerBase {
     
     
     
-    void begin(ofTexture tex);
-    void end();
+    void addUniforms(ofShader* shader, bool active);
 };
 
 #endif /* ScanLinesManager_hpp */

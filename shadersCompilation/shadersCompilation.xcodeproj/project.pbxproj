@@ -8,106 +8,79 @@
 
 /* Begin PBXBuildFile section */
 		014259909A3A0898DC5D1B1B /* Monochrome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E9481E74C26AB39128011D5 /* Monochrome.cpp */; };
-		021C3609E01EF8124D5B7D47 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 4C42D18C2AB1FB1BE5B83AF1 /* shader.frag */; };
+		0367E43F2E740E3B0F079649 /* invert.glsl in Sources */ = {isa = PBXBuildFile; fileRef = E4319593DD71F163E2DDF7DF /* invert.glsl */; };
 		03A7A88F6F1518052A5FDCE7 /* Twist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E74DC4AC82DCB9E4CB00B2E /* Twist.cpp */; };
 		0A55188BB01C64225D9FF839 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = BDC047D91BDA7FBB8414AF3F /* shader.vert */; };
-		136FD870D96474AE14F706E5 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = D04047B55B2B17BC19B2AB66 /* shader.frag */; };
+		1669BD4C979BCFA4D4ADD205 /* halftone.glsl in Sources */ = {isa = PBXBuildFile; fileRef = CF8C0844FA1E886F40E8C6DD /* halftone.glsl */; };
 		19462D783FC8B60D49486742 /* EdgeOnTopManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D07ED3DF9400132097860794 /* EdgeOnTopManager.cpp */; };
-		1D727D20AB561220F7BB2EB0 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 0DED6B66997CCFCAF39C24A3 /* shader.vert */; };
-		1DB484A92048DC6484B61CB5 /* dotFragInvertStrobeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC48D75D12252AA7A2EBB8 /* dotFragInvertStrobeManager.cpp */; };
-		212A68F53501092F50852D0F /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = AB3F9FEBDD8107319D659B46 /* shader.vert */; };
+		22ADA7CDDB06EE40E14A2235 /* edgeOnTop.glsl in Sources */ = {isa = PBXBuildFile; fileRef = C14680786233D69FAA653EC4 /* edgeOnTop.glsl */; };
 		22E09892872B43074F5D63F9 /* ofxOscParameterSync.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C611585187EC7F0A17EFE /* ofxOscParameterSync.cpp */; };
 		234706253E26D151FB2869C0 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0C830C492125CD037A54961 /* ofxBaseGui.cpp */; };
-		23AB70A0F3EEDA660CCBC081 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 2A7774CF6C36E1CCAFAFCA58 /* shader.frag */; };
 		267B077DC24BBD3F62DEC99F /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9629CC5F8512B63F824BF6B2 /* ofxSliderGroup.cpp */; };
 		26E58A0988E8F327E49C7FBE /* dotFragHSBManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB3FCBB0EE513DC41F90F803 /* dotFragHSBManager.cpp */; };
-		2833FEF1A653A205CDBC3CA2 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 6C81111E539592351CD8149A /* shader.vert */; };
 		286FAF885FF7F1F1AA003ED8 /* VerticalNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948C08414631C9DE1C0B38DA /* VerticalNoise.cpp */; };
-		287B2572BA419B21323DC4C3 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 6A036079825DAC035E631B85 /* shader.frag */; };
-		2ACD906D5714A429AB29774E /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 8D2F0538AA157463C436F567 /* shader.vert */; };
 		2B32AC5150C0560BEE393ECD /* InvertManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B7A7B95F71C1FE5E0B1A3FF /* InvertManager.cpp */; };
 		2BB68972ECD12488CE90A9D6 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = FDE253C3D4646EBED3794E89 /* shader.vert */; };
-		2BBDCE321856974410AB36C1 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 7B863C13F51E6DBE68A6EDE2 /* shader.vert */; };
-		2C951830248368D85C91FD2A /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 66615F9307E00492E3CE768E /* shader.vert */; };
 		2E10ECD6C8F192B2B6DCDCA0 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB4BE1D869B8A07980341064 /* ofxSlider.cpp */; };
 		2F40C5A6E8222541FA56E5E6 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 117A20E05CCDFB5D8368CFE6 /* shader.vert */; };
-		3A3E573288A602D0A3197052 /* dotFragDelayManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BB49407A6917B0E2AAE999A /* dotFragDelayManager.cpp */; };
+		3360D9867A7D10BF8D25FE0E /* fringe.glsl in Sources */ = {isa = PBXBuildFile; fileRef = 8DE81E565FA5EB35C10C125F /* fringe.glsl */; };
 		3AE967A2915233D836214BC8 /* yellowWater.jpg in Sources */ = {isa = PBXBuildFile; fileRef = C851E6A708EE2FC7D5AADF6E /* yellowWater.jpg */; };
 		3FDB72E67495151561C7C45D /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = C74F65A07C74313E29DC075E /* shader.frag */; };
 		40D976264D1D571EC0BB9D5A /* NoiseManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6F5B2B03C9134FEB67341DF6 /* NoiseManager.cpp */; };
-		413CD5D17FED407420220CC0 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 06619B8CEEA920CC8D01449B /* shader.frag */; };
 		41DF9B9DD54763E30BA553C6 /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5E89372127006B2C6EC78E6 /* OscPrintReceivedElements.cpp */; };
 		459D5AA7815A99B4A46CC5D8 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DEC35246417669CFF4E9BF2 /* ofxPanel.cpp */; };
 		4A216EC0422A3A0766445892 /* ofxOscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 69D9D936B23FDFF7DE212738 /* ofxOscMessage.cpp */; };
+		4A527DEEDFAE47F879B9BF8B /* mainShader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 861D17E76AA5894074022DF3 /* mainShader.vert */; };
 		4C83FBFB2C2061CB93D73F75 /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 649FC11B6275DD76790B7E6C /* UdpSocket.cpp */; };
-		4D2600523BC0B37AD3907E6C /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = F497F0F55BB2F503588676ED /* shader.vert */; };
 		50F48ADEBFB75D2B84BCBAE9 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 18AB949B943E9A4666FADADA /* shader.frag */; };
 		57065E6289D9C72E2C8616CF /* Base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3CEB48407FEB3C485B78C5 /* Base.cpp */; };
 		590DC284EBAF8A468FBDA39C /* GlitchManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 412EA0B63F6EEE47561FA2E3 /* GlitchManager.cpp */; };
 		5A0E3D6007B20EC20D8606A3 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = C8BF1F4175211AB665C9D2EE /* shader.frag */; };
 		5AC7AEAAC883AB9A4E574216 /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 338308928850EB86A08E8385 /* IpEndpointName.cpp */; };
-		5EA56F4F6296DCF7D03FF483 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 62FDB7043AF6A8A2043041AB /* shader.vert */; };
 		6210A3D659434D2291360465 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 152E4B6DB7455C491DD48D93 /* shader.frag */; };
 		622B1347900B81E4E564B301 /* dotFragTwistManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61FBAADB04757FC8A19609B9 /* dotFragTwistManager.cpp */; };
-		62694B6CB0DA60889636B9CF /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = AF3E33FF220E6E856DBDCF2E /* shader.frag */; };
 		68C9223A2437393BA19CC6F8 /* ShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E27B10CC40871F4EF35DD2C9 /* ShaderManager.cpp */; };
-		68D02F589A6D179DBC791FE0 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 81B6317D783CD6B0328A477A /* shader.frag */; };
 		69EC95A7C91D5FCA370C270B /* ThreeTones.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 11C7AAE24AC22975052999B1 /* ThreeTones.cpp */; };
-		6D7677A9AFD938EB8A8E118F /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EF391E8B15DE78438565C /* shader.frag */; };
 		6F1151B3C6A4B29096F5761F /* dotFragTurbulenceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7652E05DE85A37F1D43A03A0 /* dotFragTurbulenceManager.cpp */; };
-		6FB38F9182DAC3DFD5949557 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 76E0F8BE459CD77FEA54A357 /* shader.vert */; };
 		6FDE870699D43DFEE58C4CFF /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 26ABBCCB4F089A2286B09E72 /* shader.frag */; };
 		770172BF2CD6FE0C4C1E2D42 /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C156B097ECB624E4AF0C1E30 /* OscTypes.cpp */; };
-		779BAD8EEB0E5B1C6BDCCB4B /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = C2E264291E0E6617F564BA88 /* shader.frag */; };
-		7B5F3D8FE01FA353272B3E66 /* dotFragThreeTonesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D705EFCDAAF6B1FB8202E5E1 /* dotFragThreeTonesManager.cpp */; };
 		8004E9A6B5793C0745BEB46A /* Mirror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7918159487312394BFAF09F1 /* Mirror.cpp */; };
 		821D7F777174FBBFFC2F76D7 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 135AD35F6BC4806ABE66BAFE /* shader.vert */; };
 		82F97C3E2ED9139168531FFF /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C77E1260F7184457B53C9AB0 /* ofxLabel.cpp */; };
-		83D6C5A00CC2C213DB4F6D2C /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = C1C3DD222C2FC0DFBA31E6A3 /* shader.frag */; };
 		886E94742BC2AE75AD73B564 /* GuiApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4E755A84BC94B1AFACB9A1AA /* GuiApp.cpp */; };
-		89575BC7A84805B237629DD2 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 96C1426E3D0086826AC1A06F /* shader.vert */; };
 		8EB5E6C2A9C9617C75FB8126 /* FXAA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2594928751848B6CB899BB61 /* FXAA.cpp */; };
-		98EE3EE7C326C0A8E7B772C0 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = AF1AF60F7EDA07384408EC96 /* shader.vert */; };
 		994CEE906CCAB8D949911C96 /* MirrorAxis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A5E1FF521DA099341000B78 /* MirrorAxis.cpp */; };
+		99FF1DD879E340AF4F6E2034 /* glitch.glsl in Sources */ = {isa = PBXBuildFile; fileRef = DDBFA2B5BE4B273695B6924B /* glitch.glsl */; };
 		9AF75F77C3BA985CBF2E9DDE /* dotFragMirrorAxisManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A74F94CEDAD28BC75F97D5B /* dotFragMirrorAxisManager.cpp */; };
 		9D8358C848C33A71A6573C5E /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2628C3D77BA6F18C8F6D6F3E /* ofxToggle.cpp */; };
 		A5794B6133C0162DEE059979 /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 02C517B8E85B5879B79F9B87 /* OscOutboundPacketStream.cpp */; };
-		A70433D59C4181E236229BCA /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 4C2A7435253838FAF5E64626 /* shader.frag */; };
-		A806BC752C5FBAF4ACBFD964 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 0A5EB57466766F5EACEF88C4 /* shader.vert */; };
 		ABE5E7809A1F255E20B75ECE /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BFA72091C61F938E4126A640 /* ofxGuiGroup.cpp */; };
-		AC174327BEBEAB9898EAE304 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = AF8C5048D1E6FCAA47061F5C /* shader.frag */; };
-		AC6A1411A3AE8FDA7DE59CD6 /* dotFragFXAAManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74750D813BDA1C1733316B66 /* dotFragFXAAManager.cpp */; };
-		AC9036A05FC7CB3E45099A14 /* dotFragMirrorManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9E1AD672C599933C0BC8DDA /* dotFragMirrorManager.cpp */; };
 		ACE121F3B941377F224C721A /* scanLinesManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1AD02EF21B8A50DF7FE36C88 /* scanLinesManager.cpp */; };
-		B6732C91546960ECFFD32EF2 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = F55B4427DD3A9FAA387C8B48 /* shader.vert */; };
 		B8237B47FC078AB5B5869CE8 /* Turbolence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CC92C2F30159EC100C26C69 /* Turbolence.cpp */; };
 		B895D7581BFAD67866DE20EF /* shaderCompilation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76C98D4DD5147131BDB7D6DD /* shaderCompilation.cpp */; };
 		BA887981E4D0A7DCFC328B74 /* HSB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F774A21F9AA663EF94A3B5C8 /* HSB.cpp */; };
-		BB9BE65B486EA7101F129E46 /* dotFragEchoTraceManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD0E95B2826841F203107289 /* dotFragEchoTraceManager.cpp */; };
 		BD444C2540D1DEB2098A3973 /* HalftoneManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A3A5F72D62AB78825B458F6C /* HalftoneManager.cpp */; };
 		C1472CFBCBD25137203A8E49 /* InvertStrobe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB0A08B30227B7CA8377F859 /* InvertStrobe.cpp */; };
 		C1F5735337E9EEAE95381479 /* ofxOscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9C16C6433EC0A08259E068 /* ofxOscBundle.cpp */; };
-		C3E6860DE8E738ED10BB7C53 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 905D415453250D1E1E593AC8 /* shader.vert */; };
 		C3EA8F8C2E1F6E60D0F12604 /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 332F2DB4184FE403620ADD95 /* NetworkingUtils.cpp */; };
 		C41AAD5DDDEE010EBBF6B1FB /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 468C13740FE31E9D8BCFDEB9 /* OscReceivedElements.cpp */; };
 		C49E89702227B221E13018AD /* Delay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 67C4955394207BA9EE6A10B8 /* Delay.cpp */; };
 		C64FF57E2DD92F79680F85FE /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98B77A42EF831A80FE31FF94 /* ofxButton.cpp */; };
-		CBE7C0826C315C19FD079D67 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = BF4FB527987EBFF26B6ECF94 /* shader.frag */; };
-		CC489DB784EA6B72E78B09F0 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = D0FF0E5A9FEE992724EF7E1F /* shader.vert */; };
 		D405271054541043A61ED91A /* ofxColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31685B98464DAACAF16B70CA /* ofxColorPicker.cpp */; };
-		DE590A2033ADA35293B67E35 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = 6D3AC0B96693530396ADD52F /* shader.frag */; };
-		DEDC42EA36780AADCF7F7764 /* dotFragRadialRemapManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B9C96B0296C44256068EDD6 /* dotFragRadialRemapManager.cpp */; };
 		DEF4DC6855EA2F6359177485 /* FringeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E67D9343C5E25FC46BA30805 /* FringeManager.cpp */; };
 		E13FF40C2C50A715AFFFB97B /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 984828DE3AD630CCF2B39517 /* ofxOscSender.cpp */; };
+		E293771ADEA454C7DE557AF1 /* noise.glsl in Sources */ = {isa = PBXBuildFile; fileRef = B638BA854BB7040858454D64 /* noise.glsl */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		E998C00203D1583C5A7BF132 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = 8AC290327182E0DAECB85A98 /* shader.vert */; };
 		ED4BA18C7A584EEDCB633AD4 /* Live.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71D15F01351A6C70BE64CE50 /* Live.cpp */; };
-		EEF6C004FA6AF69B270FCDF7 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = D598177BD09662C6005540F4 /* shader.frag */; };
 		F0287896CC57C2D88D1B5DE0 /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCE629C560A9EEE1621FAEA3 /* ofxOscReceiver.cpp */; };
+		F0BF09634C9145D5249797C3 /* mainShader.frag in Sources */ = {isa = PBXBuildFile; fileRef = EA9AC26FA5826B12C3DAE0C6 /* mainShader.frag */; };
 		F54DC954846BB932D0E4A630 /* RadialRemap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D3B89C043D98A021AF15643 /* RadialRemap.cpp */; };
 		F69AA7967509EF25D13B7DA6 /* ofxInputField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E3FB14E431924F6F4B62EC0 /* ofxInputField.cpp */; };
+		F711EDF53A7575B693732CC9 /* verticalNoise.glsl in Sources */ = {isa = PBXBuildFile; fileRef = 1DF28428F25F3CC4CAEE7365 /* verticalNoise.glsl */; };
 		F7A629FA4AFA37C636DC4EEC /* dotFragMonochromeManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90D8BE02CD7989ADC840A8C0 /* dotFragMonochromeManager.cpp */; };
+		FA617EA9F054344A570EC346 /* scanLines.glsl in Sources */ = {isa = PBXBuildFile; fileRef = 90DA571C5F9086B8229DA7A9 /* scanLines.glsl */; };
 		FE206AE6F5E432BB9B307E7D /* EchoTrace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7E71B1DA610FD14E8F296569 /* EchoTrace.cpp */; };
 /* End PBXBuildFile section */
 
@@ -128,18 +101,13 @@
 		02C517B8E85B5879B79F9B87 /* OscOutboundPacketStream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OscOutboundPacketStream.cpp; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp; sourceTree = SOURCE_ROOT; };
 		03EAED74C317592EFA532CAE /* TimerListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TimerListener.h; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/TimerListener.h; sourceTree = SOURCE_ROOT; };
 		060AE188E527F3AEBA4E382D /* ofxOscArg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOscArg.h; path = ../local_addons/ofxOsc/src/ofxOscArg.h; sourceTree = SOURCE_ROOT; };
-		06619B8CEEA920CC8D01449B /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		06D1F5AAF7CA1C21F89149D0 /* Delay.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Delay.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Delay.h; sourceTree = SOURCE_ROOT; };
 		08598B0BBB5BE623893EB23C /* ofxToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxToggle.h; path = ../local_addons/ofxGui/src/ofxToggle.h; sourceTree = SOURCE_ROOT; };
 		0A5E1FF521DA099341000B78 /* MirrorAxis.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MirrorAxis.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/MirrorAxis.cpp; sourceTree = SOURCE_ROOT; };
-		0A5EB57466766F5EACEF88C4 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/types/scanLines/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		0B7A7B95F71C1FE5E0B1A3FF /* InvertManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InvertManager.cpp; path = src/shaderCompilation/shaderManager/types/invert/InvertManager.cpp; sourceTree = SOURCE_ROOT; };
-		0DDC48D75D12252AA7A2EBB8 /* dotFragInvertStrobeManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragInvertStrobeManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/dotFragInvertStrobeManager.cpp; sourceTree = SOURCE_ROOT; };
-		0DED6B66997CCFCAF39C24A3 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/types/verticalNoise/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		0F7BA5C2B60DB42B49ECA8DB /* PacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PacketListener.h; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h; sourceTree = SOURCE_ROOT; };
 		117A20E05CCDFB5D8368CFE6 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		11C7AAE24AC22975052999B1 /* ThreeTones.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ThreeTones.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/ThreeTones.cpp; sourceTree = SOURCE_ROOT; };
-		120D19FCA41AC3DFC9C913EE /* dotFragDelayManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragDelayManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/dotFragDelayManager.hpp; sourceTree = SOURCE_ROOT; };
 		135AD35F6BC4806ABE66BAFE /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		152E4B6DB7455C491DD48D93 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		175F19827AE1CF353B5ABC12 /* ofxOscBundle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOscBundle.h; path = ../local_addons/ofxOsc/src/ofxOscBundle.h; sourceTree = SOURCE_ROOT; };
@@ -147,6 +115,7 @@
 		18AB949B943E9A4666FADADA /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTwist/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		1A7C0ABEEA958DC69F92B949 /* VerticalNoise.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VerticalNoise.hpp; path = src/shaderCompilation/shaderManager/types/verticalNoise/VerticalNoise.hpp; sourceTree = SOURCE_ROOT; };
 		1AD02EF21B8A50DF7FE36C88 /* scanLinesManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scanLinesManager.cpp; path = src/shaderCompilation/shaderManager/types/scanLines/scanLinesManager.cpp; sourceTree = SOURCE_ROOT; };
+		1DF28428F25F3CC4CAEE7365 /* verticalNoise.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = verticalNoise.glsl; path = src/shaderCompilation/shaderManager/types/verticalNoise/shader/verticalNoise.glsl; sourceTree = SOURCE_ROOT; };
 		1E74DC4AC82DCB9E4CB00B2E /* Twist.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Twist.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Twist.cpp; sourceTree = SOURCE_ROOT; };
 		1F3F8C426DF31120D73CAB9B /* ofxDotFrag.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxDotFrag.h; path = ../local_addons/ofxDotFrag/src/ofxDotFrag.h; sourceTree = SOURCE_ROOT; };
 		2594928751848B6CB899BB61 /* FXAA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FXAA.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/FXAA.cpp; sourceTree = SOURCE_ROOT; };
@@ -155,9 +124,7 @@
 		26ABBCCB4F089A2286B09E72 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		26EF9E9598CFC94EEBC43A5F /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscOutboundPacketStream.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h; sourceTree = SOURCE_ROOT; };
 		2A74F94CEDAD28BC75F97D5B /* dotFragMirrorAxisManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragMirrorAxisManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.cpp; sourceTree = SOURCE_ROOT; };
-		2A7774CF6C36E1CCAFAFCA58 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/types/noise/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		2B245CCD433A1926062FD3A9 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscPrintReceivedElements.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.h; sourceTree = SOURCE_ROOT; };
-		2B9C96B0296C44256068EDD6 /* dotFragRadialRemapManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragRadialRemapManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/dotFragRadialRemapManager.cpp; sourceTree = SOURCE_ROOT; };
 		2E3FB14E431924F6F4B62EC0 /* ofxInputField.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxInputField.cpp; path = ../local_addons/ofxGui/src/ofxInputField.cpp; sourceTree = SOURCE_ROOT; };
 		2E9481E74C26AB39128011D5 /* Monochrome.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Monochrome.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Monochrome.cpp; sourceTree = SOURCE_ROOT; };
 		308D88CB92199CC4EA34047B /* NetworkingUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NetworkingUtils.h; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h; sourceTree = SOURCE_ROOT; };
@@ -165,8 +132,6 @@
 		31685B98464DAACAF16B70CA /* ofxColorPicker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxColorPicker.cpp; path = ../local_addons/ofxGui/src/ofxColorPicker.cpp; sourceTree = SOURCE_ROOT; };
 		332F2DB4184FE403620ADD95 /* NetworkingUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NetworkingUtils.cpp; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp; sourceTree = SOURCE_ROOT; };
 		338308928850EB86A08E8385 /* IpEndpointName.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IpEndpointName.cpp; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp; sourceTree = SOURCE_ROOT; };
-		34E7B3F0E971C5F40C01CCD0 /* dotFragMirrorManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragMirrorManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/dotFragMirrorManager.hpp; sourceTree = SOURCE_ROOT; };
-		381B858F0A83E2C72B810A6E /* dotFragEchoTraceManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragEchoTraceManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/dotFragEchoTraceManager.hpp; sourceTree = SOURCE_ROOT; };
 		386261FECFE2C7A5F251DED3 /* EdgeOnTopManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EdgeOnTopManager.hpp; path = src/shaderCompilation/shaderManager/types/edgeOnTop/EdgeOnTopManager.hpp; sourceTree = SOURCE_ROOT; };
 		3C87ED8E92EFFA1AE2A21FED /* dotFragTurbulenceManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragTurbulenceManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/dotFragTurbulenceManager.hpp; sourceTree = SOURCE_ROOT; };
 		3CC92C2F30159EC100C26C69 /* Turbolence.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Turbolence.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Turbolence.cpp; sourceTree = SOURCE_ROOT; };
@@ -175,60 +140,47 @@
 		42FECC0B446B3EA400A98D7D /* FXAA.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FXAA.h; path = ../local_addons/ofxDotFrag/src/dotfrag/FXAA.h; sourceTree = SOURCE_ROOT; };
 		4447CDE06E32CEE79F284344 /* OscException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscException.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscException.h; sourceTree = SOURCE_ROOT; };
 		468C13740FE31E9D8BCFDEB9 /* OscReceivedElements.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OscReceivedElements.cpp; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp; sourceTree = SOURCE_ROOT; };
-		4C2A7435253838FAF5E64626 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/types/fringe/shader/shader.frag; sourceTree = SOURCE_ROOT; };
-		4C42D18C2AB1FB1BE5B83AF1 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/types/invert/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		4E755A84BC94B1AFACB9A1AA /* GuiApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GuiApp.cpp; path = src/shaderCompilation/gui/GuiApp.cpp; sourceTree = SOURCE_ROOT; };
 		4EE3146718E2BD1804864F4C /* GuiApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GuiApp.h; path = src/shaderCompilation/gui/GuiApp.h; sourceTree = SOURCE_ROOT; };
 		57D8A39FFD71A3740E76F2FE /* dotFragHSBManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragHSBManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/dotFragHSBManager.hpp; sourceTree = SOURCE_ROOT; };
-		5BB49407A6917B0E2AAE999A /* dotFragDelayManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragDelayManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/dotFragDelayManager.cpp; sourceTree = SOURCE_ROOT; };
 		5F455508AF2BB6CA58BEA705 /* HalftoneManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HalftoneManager.hpp; path = src/shaderCompilation/shaderManager/types/halftone/HalftoneManager.hpp; sourceTree = SOURCE_ROOT; };
 		5F7F7A828DC9257A91519958 /* ofxOscParameterSync.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOscParameterSync.h; path = ../local_addons/ofxOsc/src/ofxOscParameterSync.h; sourceTree = SOURCE_ROOT; };
 		61FBAADB04757FC8A19609B9 /* dotFragTwistManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragTwistManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTwist/dotFragTwistManager.cpp; sourceTree = SOURCE_ROOT; };
-		62FDB7043AF6A8A2043041AB /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		6349ACDF35880443CCF877B8 /* ofxOscMessage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOscMessage.h; path = ../local_addons/ofxOsc/src/ofxOscMessage.h; sourceTree = SOURCE_ROOT; };
 		649FC11B6275DD76790B7E6C /* UdpSocket.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UdpSocket.cpp; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp; sourceTree = SOURCE_ROOT; };
-		66615F9307E00492E3CE768E /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/types/halftone/shader/shader.vert; sourceTree = SOURCE_ROOT; };
+		64D31F0818BD6C0D005543CF /* constants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = constants.h; path = src/constants.h; sourceTree = SOURCE_ROOT; };
 		67C4955394207BA9EE6A10B8 /* Delay.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Delay.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Delay.cpp; sourceTree = SOURCE_ROOT; };
 		69D9D936B23FDFF7DE212738 /* ofxOscMessage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOscMessage.cpp; path = ../local_addons/ofxOsc/src/ofxOscMessage.cpp; sourceTree = SOURCE_ROOT; };
-		6A036079825DAC035E631B85 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		6C308753569799B6631A3AA3 /* ofxOsc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOsc.h; path = ../local_addons/ofxOsc/src/ofxOsc.h; sourceTree = SOURCE_ROOT; };
-		6C81111E539592351CD8149A /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/types/noise/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		6D3AC0B96693530396ADD52F /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		6F53E73CF9BB468FB1B8D2FC /* OscReceivedElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscReceivedElements.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h; sourceTree = SOURCE_ROOT; };
 		6F5B2B03C9134FEB67341DF6 /* NoiseManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NoiseManager.cpp; path = src/shaderCompilation/shaderManager/types/noise/NoiseManager.cpp; sourceTree = SOURCE_ROOT; };
 		71D15F01351A6C70BE64CE50 /* Live.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Live.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Live.cpp; sourceTree = SOURCE_ROOT; };
 		7236676161A034A23012BC22 /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxGuiGroup.h; path = ../local_addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
-		74750D813BDA1C1733316B66 /* dotFragFXAAManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragFXAAManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/dotFragFXAAManager.cpp; sourceTree = SOURCE_ROOT; };
 		7652E05DE85A37F1D43A03A0 /* dotFragTurbulenceManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragTurbulenceManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/dotFragTurbulenceManager.cpp; sourceTree = SOURCE_ROOT; };
 		76C98D4DD5147131BDB7D6DD /* shaderCompilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = shaderCompilation.cpp; path = src/shaderCompilation/shaderCompilation.cpp; sourceTree = SOURCE_ROOT; };
-		76E0F8BE459CD77FEA54A357 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/types/invert/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		78D1D9AC91A9269C3C3398EC /* OscPacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscPacketListener.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h; sourceTree = SOURCE_ROOT; };
 		7918159487312394BFAF09F1 /* Mirror.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Mirror.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Mirror.cpp; sourceTree = SOURCE_ROOT; };
-		7B863C13F51E6DBE68A6EDE2 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		7D9E0D7C698CC295498AB612 /* ThreeTones.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ThreeTones.h; path = ../local_addons/ofxDotFrag/src/dotfrag/ThreeTones.h; sourceTree = SOURCE_ROOT; };
 		7E71B1DA610FD14E8F296569 /* EchoTrace.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EchoTrace.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/EchoTrace.cpp; sourceTree = SOURCE_ROOT; };
 		7EC331A15E39812B72C25DE9 /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSliderGroup.h; path = ../local_addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
 		7F42E49F5B189E9424D21814 /* shaderCompilation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shaderCompilation.hpp; path = src/shaderCompilation/shaderCompilation.hpp; sourceTree = SOURCE_ROOT; };
-		81B6317D783CD6B0328A477A /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/types/glitch/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		825A339B83751AFAB8C9C657 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MessageMappingOscPacketListener.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/MessageMappingOscPacketListener.h; sourceTree = SOURCE_ROOT; };
 		8418606430BF694792DFD99D /* Monochrome.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Monochrome.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Monochrome.h; sourceTree = SOURCE_ROOT; };
-		84FC47C2FF4A6028EA097C8F /* dotFragInvertStrobeManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragInvertStrobeManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/dotFragInvertStrobeManager.hpp; sourceTree = SOURCE_ROOT; };
+		861D17E76AA5894074022DF3 /* mainShader.vert */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = mainShader.vert; path = src/shaderCompilation/shaderManager/mainShader/mainShader.vert; sourceTree = SOURCE_ROOT; };
 		876DF62D2D428C181D5D2F45 /* ofxButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxButton.h; path = ../local_addons/ofxGui/src/ofxButton.h; sourceTree = SOURCE_ROOT; };
 		8AC290327182E0DAECB85A98 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTwist/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		8B6C611585187EC7F0A17EFE /* ofxOscParameterSync.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOscParameterSync.cpp; path = ../local_addons/ofxOsc/src/ofxOscParameterSync.cpp; sourceTree = SOURCE_ROOT; };
 		8CB0704AD0D0961B0A3CB963 /* FringeManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FringeManager.hpp; path = src/shaderCompilation/shaderManager/types/fringe/FringeManager.hpp; sourceTree = SOURCE_ROOT; };
-		8D2F0538AA157463C436F567 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/types/glitch/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		8D3B89C043D98A021AF15643 /* RadialRemap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RadialRemap.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/RadialRemap.cpp; sourceTree = SOURCE_ROOT; };
+		8DE81E565FA5EB35C10C125F /* fringe.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = fringe.glsl; path = src/shaderCompilation/shaderManager/types/fringe/shader/fringe.glsl; sourceTree = SOURCE_ROOT; };
 		8DEC35246417669CFF4E9BF2 /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxPanel.cpp; path = ../local_addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
-		8E7EF391E8B15DE78438565C /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/types/verticalNoise/shader/shader.frag; sourceTree = SOURCE_ROOT; };
-		905D415453250D1E1E593AC8 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/types/fringe/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		90D8BE02CD7989ADC840A8C0 /* dotFragMonochromeManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragMonochromeManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/dotFragMonochromeManager.cpp; sourceTree = SOURCE_ROOT; };
+		90DA571C5F9086B8229DA7A9 /* scanLines.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = scanLines.glsl; path = src/shaderCompilation/shaderManager/types/scanLines/shader/scanLines.glsl; sourceTree = SOURCE_ROOT; };
 		93D7FEF011E4C8CEA5DB7A23 /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxGui.h; path = ../local_addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
 		948C08414631C9DE1C0B38DA /* VerticalNoise.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VerticalNoise.cpp; path = src/shaderCompilation/shaderManager/types/verticalNoise/VerticalNoise.cpp; sourceTree = SOURCE_ROOT; };
 		954258E74EBA4479DD81FBA8 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxSlider.h; path = ../local_addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
 		955BC68028881AD99D5AB8B6 /* Turbolence.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Turbolence.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Turbolence.h; sourceTree = SOURCE_ROOT; };
 		9629CC5F8512B63F824BF6B2 /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxSliderGroup.cpp; path = ../local_addons/ofxGui/src/ofxSliderGroup.cpp; sourceTree = SOURCE_ROOT; };
-		96C1426E3D0086826AC1A06F /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/types/edgeOnTop/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		984828DE3AD630CCF2B39517 /* ofxOscSender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOscSender.cpp; path = ../local_addons/ofxOsc/src/ofxOscSender.cpp; sourceTree = SOURCE_ROOT; };
 		98B77A42EF831A80FE31FF94 /* ofxButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxButton.cpp; path = ../local_addons/ofxGui/src/ofxButton.cpp; sourceTree = SOURCE_ROOT; };
 		9B791DF773716FD8DA3ECFD4 /* InvertManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InvertManager.hpp; path = src/shaderCompilation/shaderManager/types/invert/InvertManager.hpp; sourceTree = SOURCE_ROOT; };
@@ -236,28 +188,20 @@
 		A0726BE7EAFE94BB69EA457D /* ofxBaseGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxBaseGui.h; path = ../local_addons/ofxGui/src/ofxBaseGui.h; sourceTree = SOURCE_ROOT; };
 		A3589F60FA41F9AB4AD5767F /* InvertStrobe.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InvertStrobe.h; path = ../local_addons/ofxDotFrag/src/dotfrag/InvertStrobe.h; sourceTree = SOURCE_ROOT; };
 		A3A5F72D62AB78825B458F6C /* HalftoneManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HalftoneManager.cpp; path = src/shaderCompilation/shaderManager/types/halftone/HalftoneManager.cpp; sourceTree = SOURCE_ROOT; };
-		AB3F9FEBDD8107319D659B46 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		AD0E95B2826841F203107289 /* dotFragEchoTraceManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragEchoTraceManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/dotFragEchoTraceManager.cpp; sourceTree = SOURCE_ROOT; };
 		ADAEF8DE2F9257C79F7F1230 /* MirrorAxis.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MirrorAxis.h; path = ../local_addons/ofxDotFrag/src/dotfrag/MirrorAxis.h; sourceTree = SOURCE_ROOT; };
-		AF1AF60F7EDA07384408EC96 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		AF3E33FF220E6E856DBDCF2E /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/types/edgeOnTop/shader/shader.frag; sourceTree = SOURCE_ROOT; };
-		AF8C5048D1E6FCAA47061F5C /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/types/halftone/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		B0C830C492125CD037A54961 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxBaseGui.cpp; path = ../local_addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
 		B47A6F7174395F48E3D462F8 /* dotFragTwistManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragTwistManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragTwist/dotFragTwistManager.hpp; sourceTree = SOURCE_ROOT; };
 		B61824DA7CAFABF4C8A0BDBB /* Twist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Twist.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Twist.h; sourceTree = SOURCE_ROOT; };
+		B638BA854BB7040858454D64 /* noise.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = noise.glsl; path = src/shaderCompilation/shaderManager/types/noise/shader/noise.glsl; sourceTree = SOURCE_ROOT; };
 		B7C87DAC6351CAB0C4E25140 /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxLabel.h; path = ../local_addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
 		B9A96AADCDC4392C1D8676CA /* dotFragMirrorAxisManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragMirrorAxisManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.hpp; sourceTree = SOURCE_ROOT; };
-		B9E1AD672C599933C0BC8DDA /* dotFragMirrorManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragMirrorManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/dotFragMirrorManager.cpp; sourceTree = SOURCE_ROOT; };
 		BA2C482B26F8E60D5B25F8ED /* HSB.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HSB.h; path = ../local_addons/ofxDotFrag/src/dotfrag/HSB.h; sourceTree = SOURCE_ROOT; };
 		BB3FCBB0EE513DC41F90F803 /* dotFragHSBManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragHSBManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/dotFragHSBManager.cpp; sourceTree = SOURCE_ROOT; };
 		BDC047D91BDA7FBB8414AF3F /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		BF4FB527987EBFF26B6ECF94 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		BFA72091C61F938E4126A640 /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxGuiGroup.cpp; path = ../local_addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
 		C004D98E067D088CB9175BFF /* OscHostEndianness.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscHostEndianness.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscHostEndianness.h; sourceTree = SOURCE_ROOT; };
-		C11A878401A8ACB3DC9820CD /* dotFragFXAAManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragFXAAManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/dotFragFXAAManager.hpp; sourceTree = SOURCE_ROOT; };
+		C14680786233D69FAA653EC4 /* edgeOnTop.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = edgeOnTop.glsl; path = src/shaderCompilation/shaderManager/types/edgeOnTop/shader/edgeOnTop.glsl; sourceTree = SOURCE_ROOT; };
 		C156B097ECB624E4AF0C1E30 /* OscTypes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OscTypes.cpp; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp; sourceTree = SOURCE_ROOT; };
-		C1C3DD222C2FC0DFBA31E6A3 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/shader/shader.frag; sourceTree = SOURCE_ROOT; };
-		C2E264291E0E6617F564BA88 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/shader/shader.frag; sourceTree = SOURCE_ROOT; };
 		C5B51D2F6EC6D7591F45DA33 /* RadialRemap.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RadialRemap.h; path = ../local_addons/ofxDotFrag/src/dotfrag/RadialRemap.h; sourceTree = SOURCE_ROOT; };
 		C6A59B10DFE32BCB364CD7C8 /* OscTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OscTypes.h; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h; sourceTree = SOURCE_ROOT; };
 		C74F65A07C74313E29DC075E /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader/shader.frag; sourceTree = SOURCE_ROOT; };
@@ -269,15 +213,11 @@
 		CC0C45938D83C7265E07E426 /* dotFragMonochromeManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragMonochromeManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/dotFragMonochromeManager.hpp; sourceTree = SOURCE_ROOT; };
 		CCE629C560A9EEE1621FAEA3 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOscReceiver.cpp; path = ../local_addons/ofxOsc/src/ofxOscReceiver.cpp; sourceTree = SOURCE_ROOT; };
 		CDB3DEEBB8599D5F27CCD9DE /* Mirror.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Mirror.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Mirror.h; sourceTree = SOURCE_ROOT; };
-		D04047B55B2B17BC19B2AB66 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/shader/shader.frag; sourceTree = SOURCE_ROOT; };
+		CF8C0844FA1E886F40E8C6DD /* halftone.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = halftone.glsl; path = src/shaderCompilation/shaderManager/types/halftone/shader/halftone.glsl; sourceTree = SOURCE_ROOT; };
 		D07ED3DF9400132097860794 /* EdgeOnTopManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EdgeOnTopManager.cpp; path = src/shaderCompilation/shaderManager/types/edgeOnTop/EdgeOnTopManager.cpp; sourceTree = SOURCE_ROOT; };
-		D0FF0E5A9FEE992724EF7E1F /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		D24C371566C4A98833FCF72F /* constants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = constants.h; path = src/constants.h; sourceTree = SOURCE_ROOT; };
 		D5471DB8E4228C898132735B /* scanLinesManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scanLinesManager.hpp; path = src/shaderCompilation/shaderManager/types/scanLines/scanLinesManager.hpp; sourceTree = SOURCE_ROOT; };
-		D598177BD09662C6005540F4 /* shader.frag */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.frag; path = src/shaderCompilation/shaderManager/types/scanLines/shader/shader.frag; sourceTree = SOURCE_ROOT; };
-		D705EFCDAAF6B1FB8202E5E1 /* dotFragThreeTonesManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dotFragThreeTonesManager.cpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/dotFragThreeTonesManager.cpp; sourceTree = SOURCE_ROOT; };
+		DDBFA2B5BE4B273695B6924B /* glitch.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = glitch.glsl; path = src/shaderCompilation/shaderManager/types/glitch/shader/glitch.glsl; sourceTree = SOURCE_ROOT; };
 		E19AC41C639251D91F4831D3 /* Base.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Base.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Base.h; sourceTree = SOURCE_ROOT; };
-		E27692FEEDDF37938E5A1411 /* dotFragRadialRemapManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragRadialRemapManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/dotFragRadialRemapManager.hpp; sourceTree = SOURCE_ROOT; };
 		E27B10CC40871F4EF35DD2C9 /* ShaderManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShaderManager.cpp; path = src/shaderCompilation/shaderManager/ShaderManager.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AC2163EDD300A6A9E2 /* ofCamera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofCamera.cpp; path = ../../../libs/openFrameworks/3d/ofCamera.cpp; sourceTree = SOURCE_ROOT; };
 		E42962AD2163EDD300A6A9E2 /* ofMesh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofMesh.h; path = ../../../libs/openFrameworks/3d/ofMesh.h; sourceTree = SOURCE_ROOT; };
@@ -454,6 +394,7 @@
 		E42963712163EDD300A6A9E2 /* ofFmodSoundPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofFmodSoundPlayer.h; path = ../../../libs/openFrameworks/sound/ofFmodSoundPlayer.h; sourceTree = SOURCE_ROOT; };
 		E42963722163EDD300A6A9E2 /* ofSoundBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ofSoundBuffer.cpp; path = ../../../libs/openFrameworks/sound/ofSoundBuffer.cpp; sourceTree = SOURCE_ROOT; };
 		E42963732163EDD300A6A9E2 /* ofSoundBaseTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ofSoundBaseTypes.h; path = ../../../libs/openFrameworks/sound/ofSoundBaseTypes.h; sourceTree = SOURCE_ROOT; };
+		E4319593DD71F163E2DDF7DF /* invert.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = invert.glsl; path = src/shaderCompilation/shaderManager/types/invert/shader/invert.glsl; sourceTree = SOURCE_ROOT; };
 		E4AEF8ABF9A7A92C31B2E387 /* UdpSocket.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = UdpSocket.h; path = ../local_addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* shadersCompilationDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shadersCompilationDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -464,18 +405,16 @@
 		E57520F86CB8717F47F840C0 /* ofxOscReceiver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxOscReceiver.h; path = ../local_addons/ofxOsc/src/ofxOscReceiver.h; sourceTree = SOURCE_ROOT; };
 		E5E89372127006B2C6EC78E6 /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OscPrintReceivedElements.cpp; path = ../local_addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp; sourceTree = SOURCE_ROOT; };
 		E67D9343C5E25FC46BA30805 /* FringeManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FringeManager.cpp; path = src/shaderCompilation/shaderManager/types/fringe/FringeManager.cpp; sourceTree = SOURCE_ROOT; };
+		EA9AC26FA5826B12C3DAE0C6 /* mainShader.frag */ = {isa = PBXFileReference; explicitFileType = sourcecode.glsl; fileEncoding = 4; name = mainShader.frag; path = src/shaderCompilation/shaderManager/mainShader/mainShader.frag; sourceTree = SOURCE_ROOT; };
 		EA9C16C6433EC0A08259E068 /* ofxOscBundle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofxOscBundle.cpp; path = ../local_addons/ofxOsc/src/ofxOscBundle.cpp; sourceTree = SOURCE_ROOT; };
 		EB54F9EAC02B5C675C640841 /* ofxInputField.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxInputField.h; path = ../local_addons/ofxGui/src/ofxInputField.h; sourceTree = SOURCE_ROOT; };
 		EEA68434042FBE5D33B2E7AA /* ofxPanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ofxPanel.h; path = ../local_addons/ofxGui/src/ofxPanel.h; sourceTree = SOURCE_ROOT; };
 		F0B08192475B5DB203180A18 /* Live.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Live.h; path = ../local_addons/ofxDotFrag/src/dotfrag/Live.h; sourceTree = SOURCE_ROOT; };
 		F1A012366A223344F14B0301 /* NoiseManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NoiseManager.hpp; path = src/shaderCompilation/shaderManager/types/noise/NoiseManager.hpp; sourceTree = SOURCE_ROOT; };
-		F497F0F55BB2F503588676ED /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		F55B4427DD3A9FAA387C8B48 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/shader/shader.vert; sourceTree = SOURCE_ROOT; };
 		F774A21F9AA663EF94A3B5C8 /* HSB.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HSB.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/HSB.cpp; sourceTree = SOURCE_ROOT; };
 		FA3CEB48407FEB3C485B78C5 /* Base.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Base.cpp; path = ../local_addons/ofxDotFrag/src/dotfrag/Base.cpp; sourceTree = SOURCE_ROOT; };
 		FBA03C2704454766B0502AF7 /* managerBase.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = managerBase.hpp; path = src/shaderCompilation/shaderManager/managerBase/managerBase.hpp; sourceTree = SOURCE_ROOT; };
 		FDE253C3D4646EBED3794E89 /* shader.vert */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = shader.vert; path = src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader/shader.vert; sourceTree = SOURCE_ROOT; };
-		FE174CB1BF055A3C55D1A870 /* dotFragThreeTonesManager.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dotFragThreeTonesManager.hpp; path = src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/dotFragThreeTonesManager.hpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -499,15 +438,6 @@
 			name = dotFragMirrorAxis;
 			sourceTree = "<group>";
 		};
-		08885533987B2CEE2524D5FE /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				F55B4427DD3A9FAA387C8B48 /* shader.vert */,
-				D04047B55B2B17BC19B2AB66 /* shader.frag */,
-			);
-			name = shader;
-			sourceTree = "<group>";
-		};
 		0BC95B2FB816343729E2D98C /* scanLines */ = {
 			isa = PBXGroup;
 			children = (
@@ -521,8 +451,7 @@
 		0E22DE0892B312F596A2DBBE /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				6C81111E539592351CD8149A /* shader.vert */,
-				2A7774CF6C36E1CCAFAFCA58 /* shader.frag */,
+				B638BA854BB7040858454D64 /* noise.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -600,16 +529,6 @@
 				649FC11B6275DD76790B7E6C /* UdpSocket.cpp */,
 			);
 			name = posix;
-			sourceTree = "<group>";
-		};
-		305476F40F40F3B14B811146 /* dotFragInvertStrobe */ = {
-			isa = PBXGroup;
-			children = (
-				84FC47C2FF4A6028EA097C8F /* dotFragInvertStrobeManager.hpp */,
-				0DDC48D75D12252AA7A2EBB8 /* dotFragInvertStrobeManager.cpp */,
-				08885533987B2CEE2524D5FE /* shader */,
-			);
-			name = dotFragInvertStrobe;
 			sourceTree = "<group>";
 		};
 		33B99DF9D79A60CBFE7080EF /* src */ = {
@@ -693,21 +612,10 @@
 			name = shader;
 			sourceTree = "<group>";
 		};
-		3ED5B34DE3D47E163FD2B346 /* dotFragEchoTrace */ = {
-			isa = PBXGroup;
-			children = (
-				AD0E95B2826841F203107289 /* dotFragEchoTraceManager.cpp */,
-				381B858F0A83E2C72B810A6E /* dotFragEchoTraceManager.hpp */,
-				91E190CA661B839D296DE011 /* shader */,
-			);
-			name = dotFragEchoTrace;
-			sourceTree = "<group>";
-		};
 		476D562C085C31950A5BB138 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				0A5EB57466766F5EACEF88C4 /* shader.vert */,
-				D598177BD09662C6005540F4 /* shader.frag */,
+				90DA571C5F9086B8229DA7A9 /* scanLines.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -780,8 +688,7 @@
 		7AA220D489DE424CE4E19C5E /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				905D415453250D1E1E593AC8 /* shader.vert */,
-				4C2A7435253838FAF5E64626 /* shader.frag */,
+				8DE81E565FA5EB35C10C125F /* fringe.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -789,17 +696,7 @@
 		7D222590043717428C565967 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				96C1426E3D0086826AC1A06F /* shader.vert */,
-				AF3E33FF220E6E856DBDCF2E /* shader.frag */,
-			);
-			name = shader;
-			sourceTree = "<group>";
-		};
-		7D98C88497F94710A6602C7B /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				F497F0F55BB2F503588676ED /* shader.vert */,
-				C1C3DD222C2FC0DFBA31E6A3 /* shader.frag */,
+				C14680786233D69FAA653EC4 /* edgeOnTop.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -823,15 +720,6 @@
 			name = verticalNoise;
 			sourceTree = "<group>";
 		};
-		83E1EB37C4BAC6F5DC046F72 /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				AF1AF60F7EDA07384408EC96 /* shader.vert */,
-				06619B8CEEA920CC8D01449B /* shader.frag */,
-			);
-			name = shader;
-			sourceTree = "<group>";
-		};
 		88A68BCD795DB2F3DDB8EFC6 /* shaderManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -839,6 +727,7 @@
 				9DFE020A1F0BB01A11594FC3 /* ShaderManager.hpp */,
 				5B0B4D89525D18548B43C973 /* types */,
 				D389B44548CA378A0350103B /* typesDotF */,
+				CFB15F5FC91B41C57DA880F6 /* mainShader */,
 				E27B10CC40871F4EF35DD2C9 /* ShaderManager.cpp */,
 			);
 			name = shaderManager;
@@ -847,29 +736,9 @@
 		911CD9FF32EEA849256FFAA7 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				0DED6B66997CCFCAF39C24A3 /* shader.vert */,
-				8E7EF391E8B15DE78438565C /* shader.frag */,
+				1DF28428F25F3CC4CAEE7365 /* verticalNoise.glsl */,
 			);
 			name = shader;
-			sourceTree = "<group>";
-		};
-		91E190CA661B839D296DE011 /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				7B863C13F51E6DBE68A6EDE2 /* shader.vert */,
-				BF4FB527987EBFF26B6ECF94 /* shader.frag */,
-			);
-			name = shader;
-			sourceTree = "<group>";
-		};
-		97303F8AA937BD723384F056 /* dotFragDelay */ = {
-			isa = PBXGroup;
-			children = (
-				120D19FCA41AC3DFC9C913EE /* dotFragDelayManager.hpp */,
-				7D98C88497F94710A6602C7B /* shader */,
-				5BB49407A6917B0E2AAE999A /* dotFragDelayManager.cpp */,
-			);
-			name = dotFragDelay;
 			sourceTree = "<group>";
 		};
 		99406B621DFAD3564BD6757A /* oscpack */ = {
@@ -880,20 +749,10 @@
 			name = oscpack;
 			sourceTree = "<group>";
 		};
-		9E6B11CB20FFB7A75F135B76 /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				AB3F9FEBDD8107319D659B46 /* shader.vert */,
-				6A036079825DAC035E631B85 /* shader.frag */,
-			);
-			name = shader;
-			sourceTree = "<group>";
-		};
 		9EC0D83FF63BD3DE00BD9C5A /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				8D2F0538AA157463C436F567 /* shader.vert */,
-				81B6317D783CD6B0328A477A /* shader.frag */,
+				DDBFA2B5BE4B273695B6924B /* glitch.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -914,15 +773,6 @@
 				7AA220D489DE424CE4E19C5E /* shader */,
 			);
 			name = fringe;
-			sourceTree = "<group>";
-		};
-		A9AC794B608CC83F72168355 /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				62FDB7043AF6A8A2043041AB /* shader.vert */,
-				C2E264291E0E6617F564BA88 /* shader.frag */,
-			);
-			name = shader;
 			sourceTree = "<group>";
 		};
 		B010A9299ABC41CD6FDB3F55 /* ip */ = {
@@ -968,8 +818,7 @@
 		B9EA509AC3EEE4156C6EF432 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				76E0F8BE459CD77FEA54A357 /* shader.vert */,
-				4C42D18C2AB1FB1BE5B83AF1 /* shader.frag */,
+				E4319593DD71F163E2DDF7DF /* invert.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -979,16 +828,6 @@
 			children = (
 			);
 			name = addons;
-			sourceTree = "<group>";
-		};
-		BB97ECFF154661DCDCFBB0DE /* dotFragThreeTones */ = {
-			isa = PBXGroup;
-			children = (
-				FE174CB1BF055A3C55D1A870 /* dotFragThreeTonesManager.hpp */,
-				D705EFCDAAF6B1FB8202E5E1 /* dotFragThreeTonesManager.cpp */,
-				9E6B11CB20FFB7A75F135B76 /* shader */,
-			);
-			name = dotFragThreeTones;
 			sourceTree = "<group>";
 		};
 		C0BD68C777B0D0E23A19E183 /* libs */ = {
@@ -1018,19 +857,21 @@
 			name = gui;
 			sourceTree = "<group>";
 		};
+		CFB15F5FC91B41C57DA880F6 /* mainShader */ = {
+			isa = PBXGroup;
+			children = (
+				EA9AC26FA5826B12C3DAE0C6 /* mainShader.frag */,
+				861D17E76AA5894074022DF3 /* mainShader.vert */,
+			);
+			name = mainShader;
+			sourceTree = "<group>";
+		};
 		D389B44548CA378A0350103B /* typesDotF */ = {
 			isa = PBXGroup;
 			children = (
-				305476F40F40F3B14B811146 /* dotFragInvertStrobe */,
 				670F050351DD79AEDC86F53C /* dotFragHSB */,
-				D890EC2FA5E003D24BD21763 /* dotFragMirror */,
-				ED9C2E505B7274156D4A0220 /* dotFragFXAA */,
 				0FCD6CC0A77CD4C1C15CBB87 /* dotFragTwist */,
-				97303F8AA937BD723384F056 /* dotFragDelay */,
-				FA87B9B6D6F19436FFD6AFE4 /* dotFragRadialRemap */,
-				BB97ECFF154661DCDCFBB0DE /* dotFragThreeTones */,
 				05131A9FDE43548470EAFBDE /* dotFragMirrorAxis */,
-				3ED5B34DE3D47E163FD2B346 /* dotFragEchoTrace */,
 				FB89FB30D4D1DFCB80ACC550 /* dotFragTurbulence */,
 				21E2AF1EC3816E1F986FEB56 /* dotFragMonochrome */,
 			);
@@ -1062,16 +903,6 @@
 				33B99DF9D79A60CBFE7080EF /* src */,
 			);
 			name = ofxDotFrag;
-			sourceTree = "<group>";
-		};
-		D890EC2FA5E003D24BD21763 /* dotFragMirror */ = {
-			isa = PBXGroup;
-			children = (
-				34E7B3F0E971C5F40C01CCD0 /* dotFragMirrorManager.hpp */,
-				E98D343E43B4687AC27C8809 /* shader */,
-				B9E1AD672C599933C0BC8DDA /* dotFragMirrorManager.cpp */,
-			);
-			name = dotFragMirror;
 			sourceTree = "<group>";
 		};
 		E0E95FE8EC849B397949252B /* osc */ = {
@@ -1394,20 +1225,11 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				D24C371566C4A98833FCF72F /* constants.h */,
 				56AA0A4596A4ACE61914E69B /* shaderCompilation */,
+				64D31F0818BD6C0D005543CF /* constants.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
-		};
-		E98D343E43B4687AC27C8809 /* shader */ = {
-			isa = PBXGroup;
-			children = (
-				D0FF0E5A9FEE992724EF7E1F /* shader.vert */,
-				6D3AC0B96693530396ADD52F /* shader.frag */,
-			);
-			name = shader;
-			sourceTree = "<group>";
 		};
 		ECF7063E0549130203CEF452 /* glitch */ = {
 			isa = PBXGroup;
@@ -1418,26 +1240,6 @@
 				25E0072C3297100E957ED6BE /* GlitchManager.hpp */,
 			);
 			name = glitch;
-			sourceTree = "<group>";
-		};
-		ED9C2E505B7274156D4A0220 /* dotFragFXAA */ = {
-			isa = PBXGroup;
-			children = (
-				74750D813BDA1C1733316B66 /* dotFragFXAAManager.cpp */,
-				C11A878401A8ACB3DC9820CD /* dotFragFXAAManager.hpp */,
-				83E1EB37C4BAC6F5DC046F72 /* shader */,
-			);
-			name = dotFragFXAA;
-			sourceTree = "<group>";
-		};
-		FA87B9B6D6F19436FFD6AFE4 /* dotFragRadialRemap */ = {
-			isa = PBXGroup;
-			children = (
-				E27692FEEDDF37938E5A1411 /* dotFragRadialRemapManager.hpp */,
-				A9AC794B608CC83F72168355 /* shader */,
-				2B9C96B0296C44256068EDD6 /* dotFragRadialRemapManager.cpp */,
-			);
-			name = dotFragRadialRemap;
 			sourceTree = "<group>";
 		};
 		FB89FB30D4D1DFCB80ACC550 /* dotFragTurbulence */ = {
@@ -1453,8 +1255,7 @@
 		FFB27127418B04F2D58C3C80 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				66615F9307E00492E3CE768E /* shader.vert */,
-				AF8C5048D1E6FCAA47061F5C /* shader.frag */,
+				CF8C0844FA1E886F40E8C6DD /* halftone.glsl */,
 			);
 			name = shader;
 			sourceTree = "<group>";
@@ -1560,66 +1361,39 @@
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				2B32AC5150C0560BEE393ECD /* InvertManager.cpp in Sources */,
-				6FB38F9182DAC3DFD5949557 /* shader.vert in Sources */,
-				021C3609E01EF8124D5B7D47 /* shader.frag in Sources */,
+				0367E43F2E740E3B0F079649 /* invert.glsl in Sources */,
 				590DC284EBAF8A468FBDA39C /* GlitchManager.cpp in Sources */,
 				3AE967A2915233D836214BC8 /* yellowWater.jpg in Sources */,
-				2ACD906D5714A429AB29774E /* shader.vert in Sources */,
-				68D02F589A6D179DBC791FE0 /* shader.frag in Sources */,
+				99FF1DD879E340AF4F6E2034 /* glitch.glsl in Sources */,
 				286FAF885FF7F1F1AA003ED8 /* VerticalNoise.cpp in Sources */,
-				1D727D20AB561220F7BB2EB0 /* shader.vert in Sources */,
-				6D7677A9AFD938EB8A8E118F /* shader.frag in Sources */,
+				F711EDF53A7575B693732CC9 /* verticalNoise.glsl in Sources */,
 				40D976264D1D571EC0BB9D5A /* NoiseManager.cpp in Sources */,
-				2833FEF1A653A205CDBC3CA2 /* shader.vert in Sources */,
-				23AB70A0F3EEDA660CCBC081 /* shader.frag in Sources */,
-				A806BC752C5FBAF4ACBFD964 /* shader.vert in Sources */,
-				EEF6C004FA6AF69B270FCDF7 /* shader.frag in Sources */,
+				E293771ADEA454C7DE557AF1 /* noise.glsl in Sources */,
+				FA617EA9F054344A570EC346 /* scanLines.glsl in Sources */,
 				ACE121F3B941377F224C721A /* scanLinesManager.cpp in Sources */,
 				19462D783FC8B60D49486742 /* EdgeOnTopManager.cpp in Sources */,
-				89575BC7A84805B237629DD2 /* shader.vert in Sources */,
-				62694B6CB0DA60889636B9CF /* shader.frag in Sources */,
+				22ADA7CDDB06EE40E14A2235 /* edgeOnTop.glsl in Sources */,
 				DEF4DC6855EA2F6359177485 /* FringeManager.cpp in Sources */,
-				C3E6860DE8E738ED10BB7C53 /* shader.vert in Sources */,
-				A70433D59C4181E236229BCA /* shader.frag in Sources */,
+				3360D9867A7D10BF8D25FE0E /* fringe.glsl in Sources */,
 				BD444C2540D1DEB2098A3973 /* HalftoneManager.cpp in Sources */,
-				2C951830248368D85C91FD2A /* shader.vert in Sources */,
-				AC174327BEBEAB9898EAE304 /* shader.frag in Sources */,
-				1DB484A92048DC6484B61CB5 /* dotFragInvertStrobeManager.cpp in Sources */,
-				B6732C91546960ECFFD32EF2 /* shader.vert in Sources */,
-				136FD870D96474AE14F706E5 /* shader.frag in Sources */,
+				1669BD4C979BCFA4D4ADD205 /* halftone.glsl in Sources */,
 				26E58A0988E8F327E49C7FBE /* dotFragHSBManager.cpp in Sources */,
 				2BB68972ECD12488CE90A9D6 /* shader.vert in Sources */,
 				6FDE870699D43DFEE58C4CFF /* shader.frag in Sources */,
-				CC489DB784EA6B72E78B09F0 /* shader.vert in Sources */,
-				DE590A2033ADA35293B67E35 /* shader.frag in Sources */,
-				AC9036A05FC7CB3E45099A14 /* dotFragMirrorManager.cpp in Sources */,
-				AC6A1411A3AE8FDA7DE59CD6 /* dotFragFXAAManager.cpp in Sources */,
-				98EE3EE7C326C0A8E7B772C0 /* shader.vert in Sources */,
-				413CD5D17FED407420220CC0 /* shader.frag in Sources */,
 				622B1347900B81E4E564B301 /* dotFragTwistManager.cpp in Sources */,
 				E998C00203D1583C5A7BF132 /* shader.vert in Sources */,
 				50F48ADEBFB75D2B84BCBAE9 /* shader.frag in Sources */,
-				4D2600523BC0B37AD3907E6C /* shader.vert in Sources */,
-				83D6C5A00CC2C213DB4F6D2C /* shader.frag in Sources */,
-				3A3E573288A602D0A3197052 /* dotFragDelayManager.cpp in Sources */,
-				5EA56F4F6296DCF7D03FF483 /* shader.vert in Sources */,
-				779BAD8EEB0E5B1C6BDCCB4B /* shader.frag in Sources */,
-				DEDC42EA36780AADCF7F7764 /* dotFragRadialRemapManager.cpp in Sources */,
-				7B5F3D8FE01FA353272B3E66 /* dotFragThreeTonesManager.cpp in Sources */,
-				212A68F53501092F50852D0F /* shader.vert in Sources */,
-				287B2572BA419B21323DC4C3 /* shader.frag in Sources */,
 				2F40C5A6E8222541FA56E5E6 /* shader.vert in Sources */,
 				5A0E3D6007B20EC20D8606A3 /* shader.frag in Sources */,
 				9AF75F77C3BA985CBF2E9DDE /* dotFragMirrorAxisManager.cpp in Sources */,
-				BB9BE65B486EA7101F129E46 /* dotFragEchoTraceManager.cpp in Sources */,
-				2BBDCE321856974410AB36C1 /* shader.vert in Sources */,
-				CBE7C0826C315C19FD079D67 /* shader.frag in Sources */,
 				6F1151B3C6A4B29096F5761F /* dotFragTurbulenceManager.cpp in Sources */,
 				821D7F777174FBBFFC2F76D7 /* shader.vert in Sources */,
 				6210A3D659434D2291360465 /* shader.frag in Sources */,
 				0A55188BB01C64225D9FF839 /* shader.vert in Sources */,
 				3FDB72E67495151561C7C45D /* shader.frag in Sources */,
 				F7A629FA4AFA37C636DC4EEC /* dotFragMonochromeManager.cpp in Sources */,
+				F0BF09634C9145D5249797C3 /* mainShader.frag in Sources */,
+				4A527DEEDFAE47F879B9BF8B /* mainShader.vert in Sources */,
 				68C9223A2437393BA19CC6F8 /* ShaderManager.cpp in Sources */,
 				B895D7581BFAD67866DE20EF /* shaderCompilation.cpp in Sources */,
 				886E94742BC2AE75AD73B564 /* GuiApp.cpp in Sources */,
@@ -1693,6 +1467,7 @@
 					src/shaderCompilation,
 					src/shaderCompilation/gui,
 					src/shaderCompilation/shaderManager,
+					src/shaderCompilation/shaderManager/mainShader,
 					src/shaderCompilation/shaderManager/managerBase,
 					src/shaderCompilation/shaderManager/types/edgeOnTop,
 					src/shaderCompilation/shaderManager/types/edgeOnTop/shader,
@@ -1711,26 +1486,12 @@
 					src/shaderCompilation/shaderManager/types/scanLines/shader,
 					src/shaderCompilation/shaderManager/types/verticalNoise,
 					src/shaderCompilation/shaderManager/types/verticalNoise/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTwist,
@@ -1773,6 +1534,7 @@
 					src/shaderCompilation,
 					src/shaderCompilation/gui,
 					src/shaderCompilation/shaderManager,
+					src/shaderCompilation/shaderManager/mainShader,
 					src/shaderCompilation/shaderManager/managerBase,
 					src/shaderCompilation/shaderManager/types/edgeOnTop,
 					src/shaderCompilation/shaderManager/types/edgeOnTop/shader,
@@ -1791,26 +1553,12 @@
 					src/shaderCompilation/shaderManager/types/scanLines/shader,
 					src/shaderCompilation/shaderManager/types/verticalNoise,
 					src/shaderCompilation/shaderManager/types/verticalNoise/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTwist,
@@ -1869,6 +1617,7 @@
 					src/shaderCompilation,
 					src/shaderCompilation/gui,
 					src/shaderCompilation/shaderManager,
+					src/shaderCompilation/shaderManager/mainShader,
 					src/shaderCompilation/shaderManager/managerBase,
 					src/shaderCompilation/shaderManager/types/edgeOnTop,
 					src/shaderCompilation/shaderManager/types/edgeOnTop/shader,
@@ -1887,26 +1636,12 @@
 					src/shaderCompilation/shaderManager/types/scanLines/shader,
 					src/shaderCompilation/shaderManager/types/verticalNoise,
 					src/shaderCompilation/shaderManager/types/verticalNoise/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTwist,
@@ -1960,6 +1695,7 @@
 					src/shaderCompilation,
 					src/shaderCompilation/gui,
 					src/shaderCompilation/shaderManager,
+					src/shaderCompilation/shaderManager/mainShader,
 					src/shaderCompilation/shaderManager/managerBase,
 					src/shaderCompilation/shaderManager/types/edgeOnTop,
 					src/shaderCompilation/shaderManager/types/edgeOnTop/shader,
@@ -1978,26 +1714,12 @@
 					src/shaderCompilation/shaderManager/types/scanLines/shader,
 					src/shaderCompilation/shaderManager/types/verticalNoise,
 					src/shaderCompilation/shaderManager/types/verticalNoise/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTwist,
@@ -2040,6 +1762,7 @@
 					src/shaderCompilation,
 					src/shaderCompilation/gui,
 					src/shaderCompilation/shaderManager,
+					src/shaderCompilation/shaderManager/mainShader,
 					src/shaderCompilation/shaderManager/managerBase,
 					src/shaderCompilation/shaderManager/types/edgeOnTop,
 					src/shaderCompilation/shaderManager/types/edgeOnTop/shader,
@@ -2058,26 +1781,12 @@
 					src/shaderCompilation/shaderManager/types/scanLines/shader,
 					src/shaderCompilation/shaderManager/types/verticalNoise,
 					src/shaderCompilation/shaderManager/types/verticalNoise/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTwist,
@@ -2125,6 +1834,7 @@
 					src/shaderCompilation,
 					src/shaderCompilation/gui,
 					src/shaderCompilation/shaderManager,
+					src/shaderCompilation/shaderManager/mainShader,
 					src/shaderCompilation/shaderManager/managerBase,
 					src/shaderCompilation/shaderManager/types/edgeOnTop,
 					src/shaderCompilation/shaderManager/types/edgeOnTop/shader,
@@ -2143,26 +1853,12 @@
 					src/shaderCompilation/shaderManager/types/scanLines/shader,
 					src/shaderCompilation/shaderManager/types/verticalNoise,
 					src/shaderCompilation/shaderManager/types/verticalNoise/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragDelay/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragEchoTrace/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragFXAA/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragHSB/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragInvertStrobe/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragMirror/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMirrorAxis/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragMonochrome/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragRadialRemap/shader,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones,
-					src/shaderCompilation/shaderManager/typesDotF/dotFragThreeTones/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTurbulence/shader,
 					src/shaderCompilation/shaderManager/typesDotF/dotFragTwist,

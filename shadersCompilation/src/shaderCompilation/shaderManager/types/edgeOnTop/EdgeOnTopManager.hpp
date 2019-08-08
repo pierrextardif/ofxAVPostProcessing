@@ -36,9 +36,7 @@ class EdgeOnTopManager : managerBase {
     void initGui();
     
     
-    void begin(ofTexture tex);
-    void end();
-    
+    void addUniforms(ofShader* shader, bool active);    
     
     ofParameter<float>Volume;
     ofParameter<float>ScaleW;

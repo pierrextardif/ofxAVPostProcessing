@@ -22,19 +22,11 @@
 #include "types/scanLines/scanLinesManager.hpp"
 
 // ==== ShaderHandlers ofxDotFrag ==== //
-#include "typesDotF/dotFragDelay/dotFragDelayManager.hpp"
 #include "typesDotF/dotFragHSB/dotFragHSBManager.hpp"
-#include "typesDotF/dotFragMirror/dotFragMirrorManager.hpp"
 #include "typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.hpp"
-#include "typesDotF/dotFragThreeTones/dotFragThreeTonesManager.hpp"
-#include "typesDotF/dotFragInvertStrobe/dotFragInvertStrobeManager.hpp"
-#include "typesDotF/dotFragEchoTrace/dotFragEchoTraceManager.hpp"
 #include "typesDotF/dotFragTurbulence/dotFragTurbulenceManager.hpp"
-#include "typesDotF/dotFragFXAA/dotFragFXAAManager.hpp"
 #include "typesDotF/dotFragTwist/dotFragTwistManager.hpp"
-#include "typesDotF/dotFragRadialRemap/dotFragRadialRemapManager.hpp"
 #include "typesDotF/dotFragMonochrome/dotFragMonochromeManager.hpp"
-#include "typesDotF/dotFragDelay/dotFragDelayManager.hpp"
 
 
 class ShaderManager{
@@ -45,21 +37,20 @@ class ShaderManager{
     }
     
     // ==== shader Managers ==== //
-    HalftoneManager                 halftoneShader;
-    GlitchManager                   glitchShader;
-    FringeManager                   fringeShader;
-    InvertManager                   invertShader;
-    VerticalNoise                   vertNoiseShader;
-    NoiseManager                    noiseShader;
-    EdgeOnTopManager                edgeOnTopShader;
-    ScanLinesManager                scanLinesShader;
+    HalftoneManager                 halftoneManager;
+    GlitchManager                   glitchManager;
+    FringeManager                   fringeManager;
+    InvertManager                   invertManager;
+    VerticalNoise                   vertNoiseManager;
+    NoiseManager                    noiseManager;
+    EdgeOnTopManager                edgeOnTopManager;
+    ScanLinesManager                scanLinesManager;
     
-    dotFragHSBManager               dotFragHSB;
-    dotFragMirrorAxisManager        dotFragMirrorAxis;
-    dotFragTurbulenceManager        dotFragTurbulence;
-    dotFragTwistManager             dotFragTwist;
-    dotFragMonochromeManager        dotFragMonochrome;
-//    dotFragDelayManager             dotFragDelay;
+//    dotFragHSBManager               dotFragHSB;
+//    dotFragMirrorAxisManager        dotFragMirrorAxis;
+//    dotFragTurbulenceManager        dotFragTurbulence;
+//    dotFragTwistManager             dotFragTwist;
+//    dotFragMonochromeManager        dotFragMonochrome;
     
     
     void setup(ofFbo* f, ofFbo::Settings settings);
@@ -71,10 +62,10 @@ class ShaderManager{
     // points to swapping fbos for multi shader effects
     ofFbo *srcPtr;
     ofFbo *dstPtr;
+
     
-    void tableShaderCorrespondanceBegin(int indexShader);
-    void tableShaderCorrespondanceEnd(int indexShader);
     
+    ofShader mainShader;
 };
 
 #endif /* ShaderManager_hpp */

@@ -1,4 +1,4 @@
-//
+	//
 //  shaderCompilation.hpp
 //  shadersCompilation
 //
@@ -21,7 +21,7 @@ class shaderCompilation{
         
     }
     
-    GuiApp gui;
+    GuiApp guiPanel;
     bool guiON = true;
     
     

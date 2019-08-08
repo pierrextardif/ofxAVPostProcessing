@@ -14,7 +14,10 @@
 // ==== constants imports ==== //
 #include "../../../constants.h"
 
-class dotFragTwistManager {
+// ==== include the baseManager ==== //
+#include "../../managerBase/managerBase.hpp"
+
+class dotFragTwistManager : managerBase {
     
     public :
     

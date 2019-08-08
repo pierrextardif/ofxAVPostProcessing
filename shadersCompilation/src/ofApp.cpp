@@ -14,39 +14,6 @@ void ofApp::setup(){
     
     
     shaderComp.setup(WIDTH, HEIGHT);
-//
-//    gui.setup();
-//
-//    ofFbo::Settings settings;
-//    settings.width = WIDTH;
-//    settings.height = HEIGHT;
-//    fbo.allocate(WIDTH, HEIGHT);
-//
-//
-//
-//
-//
-//    // ==== shaders ==== //
-//    sManager.setup(&fbo, settings);
-//    gui.add(sManager.halftoneShader.shaderControl);
-//    gui.add(sManager.glitchShader.shaderControl);
-//    gui.add(sManager.fringeShader.shaderControl);
-//    gui.add(sManager.invertShader.shaderControl);
-//    gui.add(sManager.vertNoiseShader.shaderControl);
-//    gui.add(sManager.noiseShader.shaderControl);
-//    gui.add(sManager.edgeOnTopShader.shaderControl);
-//    gui.add(sManager.scanLinesShader.shaderControl);
-//    //dot frag
-//    gui.add(sManager.dotFragHSB.shaderControl);
-//    gui.add(sManager.dotFragMirrorAxis.shaderControl);
-//    gui.add(sManager.dotFragTurbulence.shaderControl);
-//    gui.add(sManager.dotFragTwist.shaderControl);
-////    gui.add(    );
-//    gui.add(sManager.dotFragMonochrome.shaderControl);
-////    gui.add(sManager.dotFragDelay.shaderControl);
-//    gui.finishSetup();
-//
-//    gui.gui.loadFromFile("settings.xml");
 };
 
 void ofApp::update(){

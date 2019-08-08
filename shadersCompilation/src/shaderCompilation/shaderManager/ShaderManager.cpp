@@ -12,15 +12,9 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
     // ==== buffer shaders ==== //
     sourceBuf = f;
     
-//    dotFragDelay.fDelay1.allocate(settings);
-//    dotFragDelay.fDelay2.allocate(settings);
-    
-//    for( int i = 0; i < dotFragDelay.fbos.size(); i++){
-//        dotFragDelay.fbos[i].allocate( settings );
-//        dotFragDelay.fbos[i].begin();
-//        ofClear(0, 0, 0, 0);
-//        dotFragDelay.fbos[i].end();
-//    }
+    // ==== main shader Load ==== //
+    mainShader.load("../../src/shaderCompilation/shaderManager/mainShader/mainShader.vert",
+                    "../../src/shaderCompilation/shaderManager/mainShader/mainShader.frag");
 }
 
 
@@ -28,123 +22,20 @@ void ShaderManager::setup(ofFbo* f, ofFbo::Settings settings){
 void ShaderManager::draw(vector <ofParameter<bool>> activeShaders){
     
     srcPtr = sourceBuf;
-    dstPtr = sourceBuf;
     
-    for( int i = 0; i < activeShaders.size(); i++){
-        if(activeShaders[i]){
-            dstPtr->begin();
-            tableShaderCorrespondanceBegin(i);
-            srcPtr->draw(0,0);
-            tableShaderCorrespondanceEnd(i);
-            dstPtr->end();
-            
-            swap(srcPtr, dstPtr);
-        }
-    }
+    mainShader.begin();
     
+    halftoneManager.addUniforms(    &mainShader, activeShaders[0]);
+    glitchManager.addUniforms(      &mainShader, activeShaders[1]);
+    fringeManager.addUniforms(      &mainShader, activeShaders[2]);
+    invertManager.addUniforms(      &mainShader, activeShaders[3]);
+    vertNoiseManager.addUniforms(   &mainShader, activeShaders[4]);
+    noiseManager.addUniforms(       &mainShader, activeShaders[5]);
+    edgeOnTopManager.addUniforms(   &mainShader, activeShaders[6]);
+    scanLinesManager.addUniforms(   &mainShader, activeShaders[7]);
+    
+    mainShader.setUniformTexture("tex0", srcPtr->getTextureReference(), 0);
     srcPtr->draw(0,0);
+    mainShader.end();
     
-    
 }
-
-void ShaderManager::tableShaderCorrespondanceBegin(int indexShader){
-    switch(indexShader){
-        case 0:
-            halftoneShader.begin();
-            break;
-        case 1:
-            glitchShader.begin();
-            break;
-        case 2:
-            fringeShader.begin(srcPtr->getTextureReference());
-            break;
-        case 3:
-            invertShader.begin(srcPtr->getTextureReference());
-            break;
-        case 4:
-            vertNoiseShader.begin(srcPtr->getTextureReference());
-            break;
-        case 5:
-            noiseShader.begin(srcPtr->getTextureReference());
-            break;
-        case 6:
-            edgeOnTopShader.begin(srcPtr->getTextureReference());
-            break;
-        case 7:
-            scanLinesShader.begin(srcPtr->getTextureReference());
-            break;
-            
-        case 8:
-            dotFragHSB.begin(srcPtr->getTextureReference());
-            break;
-        case 9:
-            dotFragMirrorAxis.begin(srcPtr->getTextureReference());
-            break;
-            
-        case 10:
-            dotFragTurbulence.begin(srcPtr->getTextureReference());
-            break;
-        case 11:
-            dotFragTwist.begin(srcPtr->getTextureReference());
-            break;
-        case 12:
-            dotFragMonochrome.begin(srcPtr->getTextureReference());
-            break;
-//        case 13:
-//            dotFragDelay.begin(srcPtr->getTextureReference());
-//            break;
-            
-    }
-}
-
-
-
-void ShaderManager::tableShaderCorrespondanceEnd(int indexShader){
-    switch(indexShader){
-        case 0:
-            halftoneShader.end();
-            
-            break;
-        case 1:
-            glitchShader.end();
-            break;
-        case 2:
-            fringeShader.end();
-            break;
-        case 3:
-            invertShader.end();
-            break;
-        case 4:
-            vertNoiseShader.end();
-            break;
-        case 5:
-            noiseShader.end();
-            break;
-        case 6:
-            edgeOnTopShader.end();
-            break;
-        case 7:
-            scanLinesShader.end();
-            break;
-        case 8:
-            dotFragHSB.end();
-            break;
-        case 9:
-            dotFragMirrorAxis.end();
-            break;
-        case 10:
-            dotFragTurbulence.end();
-            break;
-        case 11:
-            dotFragTwist.end();
-            break;
-        case 12:
-            dotFragMonochrome.end();
-            break;
-//        case 13:
-//            dotFragDelay.end();
-//            break;
-            
-    }
-}
-

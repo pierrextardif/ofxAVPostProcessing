@@ -36,8 +36,7 @@ class HalftoneManager : managerBase {
     void initGui();
     
     
-    void begin();
-    void end();
+    void addUniforms(ofShader* shader, bool active);
     
     ofParameter<float>radius;
     ofParameter<float>rotateR;

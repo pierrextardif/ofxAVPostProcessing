@@ -34,8 +34,7 @@ class InvertManager : managerBase {
     void setup();
     // ==== control ==== //    
     
-    void begin(ofTexture tex);
-    void end();
+    void addUniforms(ofShader* shader, bool active);
     
     
     ofParameter<float>Volume;
