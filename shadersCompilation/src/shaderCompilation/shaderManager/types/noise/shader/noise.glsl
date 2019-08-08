@@ -1,4 +1,4 @@
-
+// uniforms
 uniform float noiseActive;
 uniform float VolumeNoise;
 

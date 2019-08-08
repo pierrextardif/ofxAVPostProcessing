@@ -10,6 +10,7 @@
 
 #include <stdio.h>
 #include "ofMain.h"
+#include "ofEvents.h"
 
 // ==== custom ==== //
 #include "gui/GuiApp.h"
@@ -32,6 +33,8 @@ class shaderCompilation{
     void setup(int _width, int _height);
     void update();
     void draw();
+    
+    void keyPressed(ofKeyEventArgs &keyArgs);
     
     void begin();
     void end();

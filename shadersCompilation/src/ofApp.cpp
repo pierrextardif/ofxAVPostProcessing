@@ -49,9 +49,6 @@ void ofApp::draw(){
 };
 
 void ofApp::keyPressed(int key){
-//    if(key == 'g'){
-//        guiON = !guiON;
-//    }
 };
 
 ofVboMesh ofApp::setupSphere(int radius, int amount){

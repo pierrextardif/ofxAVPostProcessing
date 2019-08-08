@@ -22,11 +22,11 @@
 #include "types/scanLines/scanLinesManager.hpp"
 
 // ==== ShaderHandlers ofxDotFrag ==== //
-#include "typesDotF/dotFragHSB/dotFragHSBManager.hpp"
-#include "typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.hpp"
-#include "typesDotF/dotFragTurbulence/dotFragTurbulenceManager.hpp"
-#include "typesDotF/dotFragTwist/dotFragTwistManager.hpp"
-#include "typesDotF/dotFragMonochrome/dotFragMonochromeManager.hpp"
+//#include "typesDotF/dotFragHSB/dotFragHSBManager.hpp"
+//#include "typesDotF/dotFragMirrorAxis/dotFragMirrorAxisManager.hpp"
+//#include "typesDotF/dotFragTurbulence/dotFragTurbulenceManager.hpp"
+//#include "typesDotF/dotFragTwist/dotFragTwistManager.hpp"
+//#include "typesDotF/dotFragMonochrome/dotFragMonochromeManager.hpp"
 
 
 class ShaderManager{

@@ -14,7 +14,6 @@ class ofApp : public ofBaseApp{
     
     ofEasyCam  cam;
     
-    shaderCompilation shaderComp;
     
     ofVboMesh vbo;
     
@@ -27,5 +26,8 @@ class ofApp : public ofBaseApp{
     ofVboMesh setupSphere(int radius, int amount);
     void calculateOnePos(ofVboMesh* vbo, float amount, float radius,float propI, float i, float j);
     void addToVbo(ofVboMesh* vbo, ofVec3f v, ofVec2f texCoord, ofColor col);
+    
+    
+    shaderCompilation shaderComp;
     
 };

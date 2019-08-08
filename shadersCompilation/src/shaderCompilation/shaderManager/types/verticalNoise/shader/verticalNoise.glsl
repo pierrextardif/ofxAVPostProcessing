@@ -1,7 +1,8 @@
-float Volume = 1.0;
-
+// uniforms
 uniform float verticalNoiseActive;
 uniform float Phase;
+
+float Volume = 1.0;
 
 const int   oct  = 8;
 const float per  = 0.5;

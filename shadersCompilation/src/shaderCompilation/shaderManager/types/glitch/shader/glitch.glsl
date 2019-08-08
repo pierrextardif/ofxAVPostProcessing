@@ -1,4 +1,4 @@
-// uniforms declared here for clarity
+// uniforms
 uniform float glitchActive;
 uniform sampler2DRect tDisp;
 uniform float amount;

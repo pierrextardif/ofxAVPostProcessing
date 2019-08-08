@@ -1,4 +1,4 @@
-// invert colors
+// uniforms
 uniform float invertActive;
 uniform float VolumeInvert;
 

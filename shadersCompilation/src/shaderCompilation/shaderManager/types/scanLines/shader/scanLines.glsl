@@ -1,4 +1,4 @@
-
+// uniforms
 uniform  float scanLinesActive;
 uniform float time;
 uniform vec3 scanL;

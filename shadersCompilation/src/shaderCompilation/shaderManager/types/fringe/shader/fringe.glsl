@@ -1,4 +1,4 @@
-
+// uniforms
 uniform float fringeActive;
 uniform float VolumeFringe;
 uniform float ScaleW;

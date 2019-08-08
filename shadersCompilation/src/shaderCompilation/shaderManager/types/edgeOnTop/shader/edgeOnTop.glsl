@@ -1,4 +1,4 @@
-
+// uniforms
 uniform float edgeOnTopActive;
 
 vec3 edgeOnTopColors(vec2 vUv, sampler2DRect tex){

@@ -34,7 +34,9 @@ void shaderCompilation::setup(int _width, int _height){
 //    gui.add(sManager.dotFragMonochrome.shaderControl);
     guiPanel.finishSetup();
     
-    guiPanel.gui.loadFromFile("settings.xml");
+//    guiPanel.gui.loadFromFile("settings.xml");
+    
+    ofAddListener(ofEvents().keyPressed, this, &shaderCompilation::keyPressed);
 }
 
 void shaderCompilation::update(){
@@ -52,4 +54,8 @@ void shaderCompilation::end(){
     sManager.draw(guiPanel.activatedShaders);
     if(guiON)guiPanel.draw();
     
+}
+
+void shaderCompilation::keyPressed(ofKeyEventArgs &keyArgs){
+    if(keyArgs.key == 'g')guiON = !guiON;
 }
