@@ -74,7 +74,7 @@ void ofApp::draw()
     ofDrawBitmapString("Number keys toggle effects, mouse rotates scene", 10, 20);
     for (unsigned i = 0; i < post.size(); ++i)
     {
-        if (post[i]->getEnabled()) ofSetColor(0, 255, 255);
+        if (post[i+5]->getEnabled()) ofSetColor(0, 255, 255);
         else ofSetColor(255, 0, 0);
         ostringstream oss;
         oss << i << ": " << post[i]->getName() << (post[i]->getEnabled()?" (on)":" (off)");
