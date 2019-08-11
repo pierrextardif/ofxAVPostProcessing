@@ -1,7 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
-#include "shaderCompilation/shaderCompilation.hpp"
+//#include "shaderCompilation/shaderCompilation.hpp"
+// custom post Processing shaders
+#include "ofxAVPostProcessing.hpp"
 
 
 class ofApp : public ofBaseApp{
@@ -28,6 +30,7 @@ class ofApp : public ofBaseApp{
     void addToVbo(ofVboMesh* vbo, ofVec3f v, ofVec2f texCoord, ofColor col);
     
     
-    shaderCompilation shaderComp;
+    // custom shader
+    ofxAVPostProcessing shaderComp;
     
 };
