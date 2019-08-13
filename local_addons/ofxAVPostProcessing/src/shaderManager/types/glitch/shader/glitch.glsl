@@ -11,7 +11,7 @@ uniform int iterationsGlitch;
 
 
 vec4 glitchColors(vec2 vUv, sampler2DRect tex, OffsetRGB offsetUV, int indexSeed){
-
+    
     float xs = floor(vUv.x / 0.5);
     float ys = floor(vUv.y / 0.5);
     vec4 normal = rgbFromOffset(tex, vUv*seed*seed, offsetUV);
@@ -29,8 +29,8 @@ vec4 glitchColors(vec2 vUv, sampler2DRect tex, OffsetRGB offsetUV, int indexSeed
             vUv.x = 1. - (vUv.x + distortion_x);
         }
     }
-    vUv.x+=normal.x*seed_x*((seed + indexSeed * 0.4)/5.);
-    vUv.y+=normal.y*seed_y*((seed + indexSeed * 0.4)/5.);
+    vUv.x+=normal.x*seed_x*((seed + indexSeed)/5.);
+    vUv.y+=normal.y*seed_y*((seed + indexSeed)/5.);
     //base from RGB shift shader
     vec2 offset = amount*vec2( cos(angle), sin(angle));
     vec4 cr = rgbFromOffset(tex, vUv + offset, offsetUV);
