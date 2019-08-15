@@ -19,6 +19,8 @@ void dotFragMirrorAxisManager::initGui(){
     
     shaderControl.add(horizontal.set("horizontal", false));
     shaderControl.add(vertical.set("vertical", false));
+    shaderControl.add(doubleMatHorizontally.set("doubleMatHorizontally", false));
+    shaderControl.add(doubleMatVertically.set("doubleMatVertically", false));
                       
     
 }
@@ -30,5 +32,8 @@ void dotFragMirrorAxisManager::addUniforms(ofShader* shader, bool active){
     if(active){
         shader->setUniform1f("u_horizontal", (horizontal)?   1.0f : 0.0f );
         shader->setUniform1f("u_vertical",   (vertical)?     1.0f : 0.0f );
+        
+        shader->setUniform1f("doubleMatHorizontally",     (doubleMatHorizontally)?  1.0f : 0.0f );
+        shader->setUniform1f("doubleMatVertically",       (doubleMatVertically)?  1.0f : 0.0f );
     }
 }

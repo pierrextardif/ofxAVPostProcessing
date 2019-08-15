@@ -34,6 +34,8 @@ class dotFragMirrorAxisManager : managerBase {
     
     ofParameter<bool> horizontal;
     ofParameter<bool> vertical;
+    ofParameter<bool> doubleMatHorizontally;
+    ofParameter<bool> doubleMatVertically;
 };
 
 

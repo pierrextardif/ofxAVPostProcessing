@@ -25,10 +25,15 @@ void EdgeOnTopManager::initGui(){
     shaderControl.setName("edgeOnTop");
     
     shaderControl.add(Volume.set("Volume", 0.1, 0,1));
+//    shaderControl.add(color.set("color", {0,0,0}, {0,0,0}, {1,1,1}));
 }
 
 void EdgeOnTopManager::addUniforms(ofShader* shader, bool active){
     
     shader->setUniform1f(name+"Active", active?1:0);
-        
+    
+//    if(active){
+//        shader->setUniform3f("colorEdges", color->x, color->y, color->z);
+//    }
+    
 }

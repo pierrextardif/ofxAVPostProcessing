@@ -10,7 +10,7 @@ uniform float distortion_y;
 uniform int iterationsGlitch;
 
 
-vec4 glitchColors(vec2 vUv, sampler2DRect tex, OffsetRGB offsetUV, int indexSeed){
+vec4 glitchColors(vec2 vUv, sampler2DRect tex, OffsetRGB offsetUV, float indexSeed){
     
     float xs = floor(vUv.x / 0.5);
     float ys = floor(vUv.y / 0.5);

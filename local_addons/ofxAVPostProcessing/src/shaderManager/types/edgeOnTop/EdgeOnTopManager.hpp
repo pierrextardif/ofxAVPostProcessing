@@ -35,6 +35,7 @@ class EdgeOnTopManager : managerBase {
     ofParameter<float>Volume;
     ofParameter<float>ScaleW;
     ofParameter<float>ScaleH;
+//    ofParameter < ofVec3f > color;
 };
 
 #endif /* EdgeOnTopManager_hpp */

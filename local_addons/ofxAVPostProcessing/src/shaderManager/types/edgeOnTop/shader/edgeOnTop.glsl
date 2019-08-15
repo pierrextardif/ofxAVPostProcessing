@@ -1,5 +1,6 @@
 // uniforms
 uniform float edgeOnTopActive;
+//uniform vec3 colorEdges;
 
 vec3 edgeOnTopColors(vec2 vUv, sampler2DRect tex, OffsetRGB offsetUV){
     vec2 st = vUv;

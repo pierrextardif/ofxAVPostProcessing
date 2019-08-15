@@ -58,7 +58,7 @@ void main () {
     
     // uv texture coordinates changes
     vec2 uV = vUv;
-    if(mirrorAxisActive == 1)       uV = mirrorAxis(uV);
+    if(mirrorAxisActive == 1)       uV = mirrorAxis(uV, tex0);
     if(verticalNoiseActive == 1)    uV = verticalNoiseColors(uV, iTime);
     if(turbulenceActive == 1)       uV = turbulence(uV, iTime);
     if(twistActive == 1)            uV = twist(uV, iTime);
@@ -78,12 +78,11 @@ void main () {
     if(halftoneActive == 1)colors.rgb = halftoneColors(uV, tex0, colors, offsetUV);
     if(glitchActive == 1){
         for( int i = 0; i < iterationsGlitch; i++){
-            vec4 newC = glitchColors( uV, tex0, offsetUV, i);
-            colors.rgba = mix(newC, colors, colors - newC);
             
+            vec4 newC = glitchColors( uV, tex0, offsetUV, i*sin(iTime * 2));
+            colors.rgba = mix(newC, colors, colors - newC);
         }
     }
-    
     
     if(edgeOnTopActive == 1)        colors.rgb += edgeOnTopColors(uV, tex0, offsetUV);
     if(monochromeActive == 1)       colors = monochrome(colors);
