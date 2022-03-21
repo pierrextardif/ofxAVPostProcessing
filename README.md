@@ -1,6 +1,6 @@
 # ofxAVPostProcessing
 
-Repository to create a local addon for postProcessing visual effects.
+Repository to create a local addon for postProcessing visual effects using a single buffer pass.
 
 
 
